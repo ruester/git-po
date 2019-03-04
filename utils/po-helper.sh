@@ -152,8 +152,8 @@ gen_core_pot() {
 		builtin/push.c
 		builtin/reset.c"
 
-	if ! git diff --quiet HEAD && git diff --quiet --cached; then
-		hiecho >&2 "ERROR: workspace not clean"
+	if ! git diff --quiet HEAD -- $LOCALIZED_C && git diff --quiet --cached -- $LOCALIZED_C; then
+		hiecho >&2 "ERROR: workspace not clean for files: ${LOCALIZED_C}"
 		exit 1
 	fi
 
@@ -166,7 +166,7 @@ gen_core_pot() {
 	xgettext -o${potfile}+ ${XGETTEXT_FLAGS_C} ${LOCALIZED_C}
 
 	# Reverting the munged source, leaving only the updated target
-	git reset --hard >/dev/null 2>&1
+	git checkout -- $LOCALIZED_C
 	mv ${potfile}+ ${potfile}
 
 	core_pot_generated=yes
