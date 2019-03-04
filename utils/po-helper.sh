@@ -242,16 +242,23 @@ check () {
 		echo "Note:     po-helper.sh check update <remote>"
 		echo "------------------------------------------------------------"
 	fi
+
 	while test $# -gt 0
 	do
 		case "$1" in
 		*.po)
-			prompt1=$(printf "%-10s: " $1)
+			f=${1##*/}
+			if test $f != ${f#core-}
+			then
+				shift
+				continue
+			fi
+			prompt1=$(printf "%-10s: " $f)
 			prompt2=$(printf "%-10s  " " ")
-			check_po "$1" 2>&1 |
+			check_po "$f" 2>&1 |
 				sed -e "1 s/^/$prompt1/" |
 				sed -e "2,$ s/^/$prompt2/"
-			check_core "$1" 2>&1 |
+			check_core "$f" 2>&1 |
 				sed -e "s/^/$prompt2/"
 			;;
 		commit | commits)
