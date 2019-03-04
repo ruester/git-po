@@ -12,6 +12,8 @@ then
 	. ~/.config/po-helper
 fi
 
+CORE_POT=po/core.pot
+
 usage () {
 	cat <<-\END_OF_USAGE
 Maintaince script for l10n files and commits.
@@ -118,8 +120,8 @@ notes_for_l10n_team_leader () {
 	END_OF_NOTES
 }
 
-generate_essential_pot() {
-	potfile=$1
+gen_core_pot() {
+	potfile=$CORE_POT
 
 	XGETTEXT_FLAGS="
 		--force-po
@@ -155,16 +157,14 @@ generate_essential_pot() {
 	mv ${potfile}+ ${potfile}
 }
 
-# Create essential pot file and check against XXX.po
-check_essential () {
-	ESSENTIAL_POT=po/essential.pot
-
-	generate_essential_pot $ESSENTIAL_POT
+# Create core pot file and check against XXX.po
+check_core () {
+	gen_core_pot
 
 	if test $# -eq 0
 	then
-		echo >&2 "Generate pot file: $ESSENTIAL_POT"
-		msgfmt --stat $ESSENTIAL_POT
+		echo >&2 "Generate pot file: $CORE_POT"
+		msgfmt --stat $CORE_POT
 		return 0
 	fi
 
@@ -173,24 +173,24 @@ check_essential () {
 		locale=${locale##*/}
 		locale=${locale%.po}
 		po=$PODIR/$locale.po
-		essential_po=$PODIR/essential-$locale.po
-		essential_mo=$PODIR/essential-$locale.mo
-		if test ! -f "$essential_po"
+		core_po=$PODIR/core-$locale.po
+		core_mo=$PODIR/core-$locale.mo
+		if test ! -f "$core_po"
 		then
 			if test ! -f "$po"
 			then
 				echo >&2 "ERROR: file '$po' does not exist."
 				return 1
 			else
-				cp "$po" "$essential_po"
+				cp "$po" "$core_po"
 			fi
 		fi
-		printf "[essential %s] " "$locale"
-		msgmerge --add-location --backup=off -U "$essential_po" "$ESSENTIAL_POT"
-		mkdir -p "${essential_mo%/*}"
-		printf "[essential %s] " "$locale"
-		msgfmt -o "$essential_mo" --check --statistics "$essential_po"
-		rm -f "$essential_mo"
+		printf "[core %s] " "$locale"
+		msgmerge --add-location --backup=off -U "$core_po" "$CORE_POT"
+		mkdir -p "${core_mo%/*}"
+		printf "[core %s] " "$locale"
+		msgfmt -o "$core_mo" --check --statistics "$core_po"
+		rm -f "$core_mo"
 	done
 }
 
@@ -225,7 +225,7 @@ check () {
 		case "$1" in
 		*.po)
 			check_po "$1"
-			check_essential "$1"
+			check_core "$1"
 			;;
 		commit | commits)
 			shift
@@ -843,9 +843,12 @@ do
 		check "$@"
 		break
 		;;
-	essential | check-essential)
+	gen-core-pot)
+		gen_core_pot
+		;;
+	check-core)
 		shift
-		check_essential "$@"
+		check_core "$@"
 		break
 		;;
 	diff)
