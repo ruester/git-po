@@ -2,9 +2,6 @@
 #
 # Copyright (c) 2012 Jiang Xin
 
-PODIR=$(git rev-parse --show-cdup)po
-POTFILE=$PODIR/git.pot
-TEAMSFILE=$PODIR/TEAMS
 GETTEXT14_PATH=/opt/gettext/0.14.4/bin
 
 if test -f ~/.config/po-helper
@@ -12,7 +9,18 @@ then
 	. ~/.config/po-helper
 fi
 
+TOPDIR="$(git rev-parse --show-toplevel 2>/dev/null)"
+if test "$TOPDIR" = ""
+then
+	echo >&2 "Please run this command in git.git worktree"
+	exit 1
+fi
+cd "$TOPDIR"
+
+POTFILE=po/git.pot
+TEAMSFILE=po/TEAMS
 CORE_POT=po/core.pot
+core_pot_generated=
 
 usage () {
 	cat <<-\END_OF_USAGE
@@ -85,8 +93,8 @@ update_po () {
 	do
 		locale=${locale##*/}
 		locale=${locale%.po}
-		po=$PODIR/$locale.po
-		mo=$PODIR/build/locale/$locale/LC_MESSAGES/git.mo
+		po=po/$locale.po
+		mo=po/build/locale/$locale/LC_MESSAGES/git.mo
 		if test -n "$locale"
 		then
 			if test -f "$po"
@@ -123,6 +131,11 @@ notes_for_l10n_team_leader () {
 gen_core_pot() {
 	potfile=$CORE_POT
 
+	if test "$core_pot_generated" = "yes"
+	then
+		return 0
+	fi
+
 	XGETTEXT_FLAGS="
 		--force-po
 		--add-comments=TRANSLATORS:
@@ -140,7 +153,7 @@ gen_core_pot() {
 		builtin/reset.c"
 
 	if ! git diff --quiet HEAD && git diff --quiet --cached; then
-		echo >&2 "ERROR: workspace not clean"
+		hiecho >&2 "ERROR: workspace not clean"
 		exit 1
 	fi
 
@@ -155,42 +168,42 @@ gen_core_pot() {
 	# Reverting the munged source, leaving only the updated target
 	git reset --hard >/dev/null 2>&1
 	mv ${potfile}+ ${potfile}
+
+	core_pot_generated=yes
 }
 
 # Create core pot file and check against XXX.po
 check_core () {
 	gen_core_pot
 
-	if test $# -eq 0
-	then
-		echo >&2 "Generate pot file: $CORE_POT"
-		msgfmt --stat $CORE_POT
-		return 0
-	fi
-
 	for locale
 	do
 		locale=${locale##*/}
 		locale=${locale%.po}
-		po=$PODIR/$locale.po
-		core_po=$PODIR/core-$locale.po
-		core_mo=$PODIR/core-$locale.mo
+		if test $locale != ${locale#core-}
+		then
+			continue
+		fi
+		po=po/$locale.po
+		core_po=po/core-$locale.po
+		core_mo=po/core-$locale.mo
 		if test ! -f "$core_po"
 		then
 			if test ! -f "$po"
 			then
-				echo >&2 "ERROR: file '$po' does not exist."
-				return 1
+				hiecho >&2 "ERROR: file '$po' does not exist."
+				continue
 			else
 				cp "$po" "$core_po"
 			fi
 		fi
-		printf "[core %s] " "$locale"
-		msgmerge --add-location --backup=off -U "$core_po" "$CORE_POT"
-		mkdir -p "${core_mo%/*}"
-		printf "[core %s] " "$locale"
-		msgfmt -o "$core_mo" --check --statistics "$core_po"
-		rm -f "$core_mo"
+		prompt="[core $locale] "
+		(
+			msgmerge --add-location --backup=off -U "$core_po" "$CORE_POT"
+			mkdir -p "${core_mo%/*}"
+			msgfmt -o "$core_mo" --check --statistics "$core_po"
+			rm -f "$core_mo"
+		) 2>&1 | sed -e "s/^/$prompt/g"
 	done
 }
 
@@ -199,10 +212,19 @@ check () {
 	if test $# -eq 0
 	then
 		echo "------------------------------------------------------------"
-		ls $PODIR/*.po |
+		ls po/*.po |
 		while read f
 		do
-			printf "%-10s: %s\n" "${f##*/}" "$(check_po "$f" 2>&1)"
+			f=${f##*/}
+			if test $f != ${f#core-}
+			then
+				continue
+			fi
+			prompt1=$(printf "%-10s: " $f)
+			prompt2=$(printf "%-10s  " " ")
+			check_po "$f" 2>&1 |
+				sed -e "1 s/^/$prompt1/" |
+				sed -e "2,$ s/^/$prompt2/"
 		done
 
 		echo "------------------------------------------------------------"
@@ -224,8 +246,13 @@ check () {
 	do
 		case "$1" in
 		*.po)
-			check_po "$1"
-			check_core "$1"
+			prompt1=$(printf "%-10s: " $1)
+			prompt2=$(printf "%-10s  " " ")
+			check_po "$1" 2>&1 |
+				sed -e "1 s/^/$prompt1/" |
+				sed -e "2,$ s/^/$prompt2/"
+			check_core "$1" 2>&1 |
+				sed -e "s/^/$prompt2/"
 			;;
 		commit | commits)
 			shift
@@ -266,25 +293,25 @@ check_po () {
 	do
 		locale=${locale##*/}
 		locale=${locale%.po}
-		po=$PODIR/$locale.po
-		mo=$PODIR/build/locale/$locale/LC_MESSAGES/git.mo
+		po=po/$locale.po
+		mo=po/build/locale/$locale/LC_MESSAGES/git.mo
 		if test -n "$locale"
 		then
 			if test -f "$po"
 			then
 				mkdir -p "${mo%/*}"
 				msgfmt -o "$mo" --check --statistics "$po"
-				if test -x "${GETTEXT14_PATH}/msgfmt"
+				if test -n "${GETTEXT14_PATH}" && test -x "${GETTEXT14_PATH}/msgfmt"
 				then
 					${GETTEXT14_PATH}/msgfmt -o "$mo" --check "$po"
 					if test $? -eq 0
 					then
-						printf "\t[gettext 0.14] ok\n"
+						printf "[gettext 0.14] ok\n"
 					else
-						printf "\tERROR: [gettext 0.14] failed for '%s'\n" "$po"
+						hiecho >&2 "ERROR: [gettext 0.14] failed for '%s'\n" "$po"
 					fi
 				else
-					printf >&2 "\tWARNING: gettext 0.14 not found.\n"
+					hiecho >&2 "WARNING: gettext 0.14 not found.\n"
 				fi
 			else
 				hiecho >&2 "Error: File $po does not exist."
@@ -363,13 +390,13 @@ show_diff () {
 		fi
 		tmpfile=$(mktemp /tmp/git-po.XXXX)
 		old=$tmpfile
-		status=$(cd $PODIR; git status --porcelain -- ${new##*/})
+		status=$(cd po; git status --porcelain -- ${new##*/})
 		if test -z "$status"
 		then
 			echo >&2 "# Nothing changed. (run 'make pot' first)"
 			return 0
 		fi
-		(cd $PODIR; LANGUAGE=C git show HEAD:./${new##*/} >"$tmpfile")
+		(cd po; LANGUAGE=C git show HEAD:./${new##*/} >"$tmpfile")
 		# Remove tmpfile on exit
 		trap 'rm -f "$tmpfile"' 0
 		;;
