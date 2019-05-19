@@ -310,7 +310,7 @@ check_po () {
 				msgfmt -o "$mo" --check --statistics "$po"
 				if test -n "${GETTEXT14_PATH}" && test -x "${GETTEXT14_PATH}/msgfmt"
 				then
-					${GETTEXT14_PATH}/msgfmt -o "$mo" --check "$po"
+					"${GETTEXT14_PATH}/msgfmt" -o "$mo" --check "$po"
 					if test $? -eq 0
 					then
 						printf "[gettext 0.14] ok\n"
