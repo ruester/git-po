@@ -2841,7 +2841,6 @@ msgid "equivalent to --word-diff=color --word-diff-regex=<regex>"
 msgstr "Entsprechend wie --word-diff=color --word-diff-regex=<Regex>"
 
 #: diff.c:5458
-#, fuzzy
 msgid "moved lines of code are colored differently"
 msgstr "Verschobene Codezeilen sind andersfarbig"
 
@@ -2850,7 +2849,6 @@ msgid "how white spaces are ignored in --color-moved"
 msgstr "Wie Whitespaces in --color-moved ignoriert werden"
 
 #: diff.c:5464
-#, fuzzy
 msgid "Other diff options"
 msgstr "Andere Diff-Optionen"
 
@@ -4392,9 +4390,9 @@ msgid "-NUM"
 msgstr "-NUM"
 
 #: parse-options.c:968
-#, fuzzy, c-format
+#, c-format
 msgid "alias of --%s"
-msgstr "leerer Alias für %s"
+msgstr "Alias für --%s"
 
 #: parse-options-cb.c:20 parse-options-cb.c:24
 #, c-format
@@ -12427,14 +12425,12 @@ msgid "difftool requires worktree or --no-index"
 msgstr "difftool benötigt Arbeitsverzeichnis oder --no-index"
 
 #: builtin/difftool.c:731
-#, fuzzy
 msgid "--dir-diff is incompatible with --no-index"
-msgstr "Die Option --dirty kann nicht mit Commits verwendet werden."
+msgstr "--dir-diff kann nicht mit --no-index verwendet werden"
 
 #: builtin/difftool.c:734
-#, fuzzy
 msgid "--gui, --tool and --extcmd are mutually exclusive"
-msgstr "-b, -B und --detach schließen sich gegenseitig aus"
+msgstr "--gui, --tool und --extcmd schließen sich gegenseitig aus"
 
 #: builtin/difftool.c:742
 msgid "no <tool> given for --tool=<tool>"
@@ -20026,16 +20022,16 @@ msgid "unable to write tag file"
 msgstr "konnte Tag-Datei nicht schreiben"
 
 #: builtin/tag.c:210
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "You have created a nested tag. The object referred to by your new tag is\n"
 "already a tag. If you meant to tag the object that it points to, use:\n"
 "\n"
 "\tgit tag -f %s %s^{}"
 msgstr ""
-"Sie haben einen verschachtelten Tag erzeugt. Das Objekt, welches Sie\n"
-"angegeben haben, ist bereits ein Tag. Wenn Sie das Objekt taggen wollten,\n"
-"worauf dieses zeigt, nutzen Sie:\n"
+"Sie haben einen verschachtelten Tag erzeugt. Das Objekt, auf welches Ihr\n"
+"neues Tag referenziert, ist bereits ein Tag. Wenn Sie das Objekt taggen\n"
+"wollten, worauf dieses zeigt, nutzen Sie:\n"
 "\n"
 "\tgit tag -f %s %s^{}"
 
