@@ -1428,41 +1428,39 @@ msgstr ""
 "welches von ihrem Projekt verwendet wird.\n"
 
 #: commit-graph.c:105
-#, fuzzy
 msgid "commit-graph file is too small"
-msgstr "Graph-Datei %s ist zu klein."
+msgstr "Commit-Graph-Datei ist zu klein."
 
 #: commit-graph.c:170
-#, fuzzy, c-format
+#, c-format
 msgid "commit-graph signature %X does not match signature %X"
-msgstr "Graph-Signatur %X stimmt nicht mit Signatur %X überein."
+msgstr "Commit-Graph-Signatur %X stimmt nicht mit Signatur %X überein."
 
 #: commit-graph.c:177
-#, fuzzy, c-format
+#, c-format
 msgid "commit-graph version %X does not match version %X"
-msgstr "Graph-Version %X stimmt nicht mit Version %X überein."
+msgstr "Commit-Graph-Version %X stimmt nicht mit Version %X überein."
 
 #: commit-graph.c:184
-#, fuzzy, c-format
+#, c-format
 msgid "commit-graph hash version %X does not match version %X"
-msgstr "Graph-Version %X stimmt nicht mit Version %X überein."
+msgstr "Hash-Version des Commit-Graph %X stimmt nicht mit Version %X überein."
 
 #: commit-graph.c:207
-#, fuzzy
 msgid "commit-graph chunk lookup table entry missing; file may be incomplete"
 msgstr ""
-"fehlender Tabelleneintrag für Chunk-Lookup; Graph-Datei möglicherweise "
+"fehlender Tabelleneintrag für Commit-Graph Chunk-Lookup; Datei möglicherweise "
 "unvollständig"
 
 #: commit-graph.c:218
-#, fuzzy, c-format
+#, c-format
 msgid "commit-graph improper chunk offset %08x%08x"
-msgstr "Unzulässiger Chunk-Offset %08x%08x"
+msgstr "Unzulässiger Commit-Graph Chunk-Offset %08x%08x"
 
 #: commit-graph.c:255
-#, fuzzy, c-format
+#, c-format
 msgid "commit-graph chunk id %08x appears multiple times"
-msgstr "Chunk-Id %08x kommt mehrfach vor."
+msgstr "Commit-Graph Chunk-Id %08x kommt mehrfach vor."
 
 #: commit-graph.c:388
 #, c-format
@@ -1556,17 +1554,17 @@ msgstr ""
 #: commit-graph.c:1170
 #, c-format
 msgid "commit-graph has incorrect OID order: %s then %s"
-msgstr ""
+msgstr "Commit-Graph hat fehlerhafte OID-Reihenfolge: %s dann %s"
 
 #: commit-graph.c:1180 commit-graph.c:1195
 #, c-format
 msgid "commit-graph has incorrect fanout value: fanout[%d] = %u != %u"
-msgstr ""
+msgstr "Commit-Graph hat fehlerhaften Fanout-Wert: fanout[%d] = %u != %u"
 
 #: commit-graph.c:1187
-#, fuzzy, c-format
+#, c-format
 msgid "failed to parse commit %s from commit-graph"
-msgstr "Lösche Commit-Markierungen in Commit-Graph"
+msgstr "Konnte Commit %s von Commit-Graph nicht parsen."
 
 #: commit-graph.c:1204
 msgid "Verifying commits in commit graph"
@@ -1575,49 +1573,53 @@ msgstr "Commit in Commit-Graph überprüfen"
 #: commit-graph.c:1217
 #, c-format
 msgid "failed to parse commit %s from object database for commit-graph"
-msgstr ""
+msgstr "Fehler beim Parsen des Commits %s von Objekt-Datenbank für "
+"Commit-Graph"
 
 #: commit-graph.c:1224
 #, c-format
 msgid "root tree OID for commit %s in commit-graph is %s != %s"
-msgstr ""
+msgstr "OID des Wurzelverzeichnisses für Commit %s in Commit-Graph ist "
+"%s != %s"
 
 #: commit-graph.c:1234
 #, c-format
 msgid "commit-graph parent list for commit %s is too long"
-msgstr ""
+msgstr "Commit-Graph Vorgänger-Liste für Commit %s ist zu lang"
 
 #: commit-graph.c:1240
 #, c-format
 msgid "commit-graph parent for %s is %s != %s"
-msgstr ""
+msgstr "Commit-Graph-Vorgänger für %s ist %s != %s"
 
 #: commit-graph.c:1253
 #, c-format
 msgid "commit-graph parent list for commit %s terminates early"
-msgstr ""
+msgstr "Commit-Graph Vorgänger-Liste für Commit %s endet zu früh"
 
 #: commit-graph.c:1258
 #, c-format
 msgid ""
 "commit-graph has generation number zero for commit %s, but non-zero elsewhere"
-msgstr ""
+msgstr "Commit-Graph hat Generationsnummer null für Commit %s, aber sonst "
+"ungleich null"
 
 #: commit-graph.c:1262
 #, c-format
 msgid ""
 "commit-graph has non-zero generation number for commit %s, but zero elsewhere"
-msgstr ""
+msgstr "Commit-Graph hat Generationsnummer ungleich null für Commit %s, aber "
+"sonst null"
 
 #: commit-graph.c:1277
 #, c-format
 msgid "commit-graph generation for commit %s is %u != %u"
-msgstr ""
+msgstr "Commit-Graph Erstellung für Commit %s ist %u != %u"
 
 #: commit-graph.c:1283
-#, fuzzy, c-format
+#, c-format
 msgid "commit date for commit %s in commit-graph is %<PRIuMAX> != %<PRIuMAX>"
-msgstr "Versuche mmap %<PRIuMAX> über Limit %<PRIuMAX>."
+msgstr "Commit-Datum für Commit %s in Commit-Graph ist %<PRIuMAX> != %<PRIuMAX>"
 
 #: compat/obstack.c:406 compat/obstack.c:408
 msgid "memory exhausted"
@@ -2362,15 +2364,15 @@ msgid "Performing inexact rename detection"
 msgstr "Führe Erkennung für ungenaue Umbenennung aus"
 
 #: diff-no-index.c:238
-#, fuzzy
 msgid "git diff --no-index [<options>] <path> <path>"
-msgstr "git archive [<Optionen>] <Commit-Referenz> [<Pfad>...]"
+msgstr "git diff --no-index [<Optionen>] <Pfad> <Pfad>"
 
 #: diff-no-index.c:263
 msgid ""
 "Not a git repository. Use --no-index to compare two paths outside a working "
 "tree"
-msgstr ""
+msgstr "Kein Git-Repository. Nutzen Sie --no-index, um zwei Pfade außerhalb "
+"des Arbeitsverzeichnisses zu vergleichen."
 
 #: diff.c:155
 #, c-format
@@ -2441,9 +2443,9 @@ msgid "--follow requires exactly one pathspec"
 msgstr "--follow erfordert genau eine Pfadspezifikation"
 
 #: diff.c:4684
-#, fuzzy, c-format
+#, c-format
 msgid "invalid --stat value: %s"
-msgstr "Ungültiger \"sparse\"-Wert '%s'."
+msgstr "Ungültiger --stat Wert: %s"
 
 #: diff.c:4689 diff.c:4694 diff.c:4699 diff.c:4704 diff.c:5216
 #: parse-options.c:200
@@ -2463,67 +2465,67 @@ msgstr ""
 #: diff.c:4806
 #, c-format
 msgid "unknown change class '%c' in --diff-filter=%s"
-msgstr ""
+msgstr "Unbekannte Änderungsklasse '%c' in --diff-filter=%s"
 
 #: diff.c:4830
 #, c-format
 msgid "unknown value after ws-error-highlight=%.*s"
-msgstr ""
+msgstr "Unbekannter Wert nach ws-error-highlight=%.*s"
 
 #: diff.c:4844
-#, fuzzy, c-format
+#, c-format
 msgid "unable to resolve '%s'"
-msgstr "konnte '%s' nicht erstellen"
+msgstr "konnte '%s' nicht auflösen"
 
 #: diff.c:4894 diff.c:4900
 #, c-format
 msgid "%s expects <n>/<m> form"
-msgstr ""
+msgstr "%s erwartet die Form <n>/<m>"
 
 #: diff.c:4912
-#, fuzzy, c-format
+#, c-format
 msgid "%s expects a character, got '%s'"
-msgstr "wanted-ref erwartet, '%s' bekommen"
+msgstr "%s erwartet ein Zeichen, '%s' bekommen"
 
 #: diff.c:4933
-#, fuzzy, c-format
+#, c-format
 msgid "bad --color-moved argument: %s"
-msgstr "Ungültiges \"bisect_write\" Argument: %s"
+msgstr "Ungültiges --color-moved Argument: %s"
 
 #: diff.c:4952
-#, fuzzy, c-format
+#, c-format
 msgid "invalid mode '%s' in --color-moved-ws"
-msgstr "Ungültige Farbe '%s' in color.blame.repeatedLines."
+msgstr "Ungültiger Modus '%s' in --color-moved-ws"
 
 #: diff.c:4992
 msgid ""
 "option diff-algorithm accepts \"myers\", \"minimal\", \"patience\" and "
 "\"histogram\""
-msgstr ""
+msgstr "Option diff-algorithm akzeptiert: \"myers\", \"minimal\", \"patience\" and "
+"\"histogram\""
 
 #: diff.c:5028 diff.c:5048
-#, fuzzy, c-format
+#, c-format
 msgid "invalid argument to %s"
-msgstr "Ungültiger Wert für %s"
+msgstr "Ungültiges Argument für %s"
 
 #: diff.c:5186
-#, fuzzy, c-format
+#, c-format
 msgid "failed to parse --submodule option parameter: '%s'"
 msgstr "Fehler beim Parsen des --submodule Optionsparameters: '%s'"
 
 #: diff.c:5240
-#, fuzzy, c-format
+#, c-format
 msgid "bad --word-diff argument: %s"
-msgstr "Ungültiges \"bisect_write\" Argument: %s"
+msgstr "Ungültiges --word-diff Argument: %s"
 
 #: diff.c:5263
 msgid "Diff output format options"
-msgstr ""
+msgstr "Diff-Optionen zu Ausgabeformaten"
 
 #: diff.c:5265 diff.c:5271
-#, fuzzy
 msgid "generate patch"
-msgstr "Erzeuge Patches"
+msgstr "Erzeuge Patch"
 
 #: diff.c:5268 builtin/log.c:167
 msgid "suppress diff output"
@@ -2531,449 +2533,427 @@ msgstr "Ausgabe der Unterschiede unterdrücken"
 
 #: diff.c:5273 diff.c:5387 diff.c:5394
 msgid "<n>"
-msgstr ""
+msgstr "<n>"
 
 #: diff.c:5274 diff.c:5277
-#, fuzzy
 msgid "generate diffs with <n> lines context"
 msgstr ""
-"sicher stellen, dass mindestens <n> Zeilen des Kontextes übereinstimmen"
+"Erstelle Unterschiede mit <n> Zeilen des Kontextes"
 
 #: diff.c:5279
 msgid "generate the diff in raw format"
-msgstr ""
+msgstr "Erstelle Unterschiede im Rohformat"
 
 #: diff.c:5282
-#, fuzzy
 msgid "synonym for '-p --raw'"
-msgstr "(Synonym für --stat)"
+msgstr "Synonym für '-p --raw'"
 
 #: diff.c:5286
-#, fuzzy
 msgid "synonym for '-p --stat'"
-msgstr "(Synonym für --stat)"
+msgstr "Synonym für '-p --stat'"
 
 #: diff.c:5290
-#, fuzzy
 msgid "machine friendly --stat"
-msgstr "maschinenlesbare Ausgabe"
+msgstr "maschinenlesbare Ausgabe von --stat"
 
 #: diff.c:5293
-#, fuzzy
 msgid "output only the last line of --stat"
-msgstr "nur Anhänge ausgeben"
+msgstr "nur die letzte Zeile von --stat ausgeben"
 
 #: diff.c:5295 diff.c:5303
 msgid "<param1,param2>..."
-msgstr ""
+msgstr "<Parameter1,Parameter2>..."
 
 #: diff.c:5296
 msgid ""
 "output the distribution of relative amount of changes for each sub-directory"
-msgstr ""
+msgstr "Gebe die Verteilung des relativen Umfangs der Änderungen für jedes "
+"Unterverzeichnis aus"
 
 #: diff.c:5300
-#, fuzzy
 msgid "synonym for --dirstat=cumulative"
-msgstr "Synonym für --files-with-matches"
+msgstr "Synonym für --dirstat=cumulative"
 
 #: diff.c:5304
 msgid "synonym for --dirstat=files,param1,param2..."
-msgstr ""
+msgstr "Synonym für --dirstat=files,Parameter1,Parameter2..."
 
 #: diff.c:5308
 msgid "warn if changes introduce conflict markers or whitespace errors"
-msgstr ""
+msgstr "Warnen, wenn Änderungen Konfliktmarker oder Whitespace-Fehler einbringen"
 
 #: diff.c:5311
 msgid "condensed summary such as creations, renames and mode changes"
-msgstr ""
+msgstr "Gekürzte Zusammenfassung, wie z.B. Erstellungen, Umbenennungen und "
+"Änderungen der Datei-Rechte"
 
 #: diff.c:5314
-#, fuzzy
 msgid "show only names of changed files"
-msgstr "nur Dateinamen anzeigen anstatt übereinstimmende Zeilen"
+msgstr "nur Dateinamen der geänderten Dateien anzeigen"
 
 #: diff.c:5317
-#, fuzzy
 msgid "show only names and status of changed files"
-msgstr "nur Dateinamen anzeigen anstatt übereinstimmende Zeilen"
+msgstr "nur Dateinamen und Status der geänderten Dateien anzeigen"
 
 #: diff.c:5319
 msgid "<width>[,<name-width>[,<count>]]"
-msgstr ""
+msgstr "<Breite>[,<Namens-Breite>[,<Anzahl>]]"
 
 #: diff.c:5320
-#, fuzzy
 msgid "generate diffstat"
-msgstr "Fehler beim Generieren des Diffs."
+msgstr "Generiere Zusammenfassung der Unterschiede"
 
 #: diff.c:5322 diff.c:5325 diff.c:5328
 msgid "<width>"
-msgstr ""
+msgstr "<Breite>"
 
 #: diff.c:5323
 msgid "generate diffstat with a given width"
-msgstr ""
+msgstr "Erzeuge Zusammenfassung der Unterschiede mit gegebener Breite"
 
 #: diff.c:5326
 msgid "generate diffstat with a given name width"
-msgstr ""
+msgstr "Erzeuge Zusammenfassung der Unterschiede mit gegebener Namens-Breite"
 
 #: diff.c:5329
 msgid "generate diffstat with a given graph width"
-msgstr ""
+msgstr "Erzeuge Zusammenfassung der Unterschiede mit gegebener Graph-Breite"
 
 #: diff.c:5331
 msgid "<count>"
-msgstr ""
+msgstr "<Anzahl>"
 
 #: diff.c:5332
 msgid "generate diffstat with limited lines"
-msgstr ""
+msgstr "Erzeuge Zusammenfassung der Unterschiede mit begrenzten Zeilen"
 
 #: diff.c:5335
 msgid "generate compact summary in diffstat"
-msgstr ""
+msgstr "Erzeuge kompakte Zusammenstellung in Zusammenfassung der Unterschiede"
 
 #: diff.c:5338
 msgid "output a binary diff that can be applied"
-msgstr ""
+msgstr "Gebe eine binäre Differenz aus, dass angewendet werden kann"
 
 #: diff.c:5341
 msgid "show full pre- and post-image object names on the \"index\" lines"
-msgstr ""
+msgstr "Zeige vollständige Objekt-Namen in den \"index\"-Zeilen"
 
 #: diff.c:5343
 msgid "show colored diff"
-msgstr ""
+msgstr "Zeige farbige Unterschiede"
 
 #: diff.c:5344
 msgid "<kind>"
-msgstr ""
+msgstr "<Art>"
 
 #: diff.c:5345
 msgid ""
 "highlight whitespace errors in the 'context', 'old' or 'new' lines in the "
 "diff"
-msgstr ""
+msgstr "Hebe Whitespace-Fehler in den Zeilen 'context', 'old' oder 'new' bei "
+"den Unterschieden hervor"
 
 #: diff.c:5348
 msgid ""
 "do not munge pathnames and use NULs as output field terminators in --raw or "
 "--numstat"
-msgstr ""
+msgstr "Verschleiere nicht die Pfadnamen und nutze NUL-Zeichen als "
+"Schlusszeichen in Ausgabefeldern bei --raw oder --numstat"
 
 #: diff.c:5351 diff.c:5354 diff.c:5357 diff.c:5463
-#, fuzzy
 msgid "<prefix>"
-msgstr "<Präfix>/"
+msgstr "<Präfix>"
 
 #: diff.c:5352
 msgid "show the given source prefix instead of \"a/\""
-msgstr ""
+msgstr "Zeige den gegebenen Quell-Präfix statt \"a/\""
 
 #: diff.c:5355
 msgid "show the given source prefix instead of \"b/\""
-msgstr ""
+msgstr "Zeige den gegebenen Quell-Präfix statt \"b/\""
 
 #: diff.c:5358
 msgid "prepend an additional prefix to every line of output"
-msgstr ""
+msgstr "Stelle einen zusätzlichen Präfix bei jeder Ausgabezeile voran"
 
 #: diff.c:5361
 msgid "do not show any source or destination prefix"
-msgstr ""
+msgstr "Zeige keine Quell- oder Ziel-Präfixe an"
 
 #: diff.c:5364
-#, fuzzy
 msgid "show context between diff hunks up to the specified number of lines"
 msgstr ""
-"Erstellung eines Klons mit unvollständiger Historie (shallow), abgeschnitten "
-"bei\n"
-"der angegebenen Anzahl von Commits."
+"Zeige Kontext zwischen Unterschied-Blöcken bis zur angegebenen Anzahl von "
+"Zeilen."
 
 #: diff.c:5368 diff.c:5373 diff.c:5378
 msgid "<char>"
-msgstr ""
+msgstr "<Zeichen>"
 
 #: diff.c:5369
 msgid "specify the character to indicate a new line instead of '+'"
-msgstr ""
+msgstr "Das Zeichen festlegen, das eine neue Zeile kennzeichnet (statt '+')"
 
 #: diff.c:5374
 msgid "specify the character to indicate an old line instead of '-'"
-msgstr ""
+msgstr "Das Zeichen festlegen, das eine alte Zeile kennzeichnet (statt '-')"
 
 #: diff.c:5379
 msgid "specify the character to indicate a context instead of ' '"
-msgstr ""
+msgstr "Das Zeichen festlegen, das den Kontext kennzeichnet (statt ' ')"
 
 #: diff.c:5382
-#, fuzzy
 msgid "Diff rename options"
-msgstr "Allgemeine Optionen"
+msgstr "Diff-Optionen zur Umbenennung"
 
 #: diff.c:5383
-#, fuzzy
 msgid "<n>[/<m>]"
-msgstr "<n>[,<Basis>]"
+msgstr "<n>[/<m>]"
 
 #: diff.c:5384
 msgid "break complete rewrite changes into pairs of delete and create"
-msgstr ""
+msgstr "Teile komplette Rewrite-Änderungen in Änderungen mit \"löschen\" und "
+"\"erstellen\""
 
 #: diff.c:5388
-#, fuzzy
 msgid "detect renames"
-msgstr "keine Umbenennungen ermitteln"
+msgstr "Umbenennungen erkennen"
 
 #: diff.c:5392
-#, fuzzy
 msgid "omit the preimage for deletes"
-msgstr "Preimage für '%s' aktualisiert."
+msgstr "Preimage für Löschungen weglassen."
 
 #: diff.c:5395
 msgid "detect copies"
-msgstr ""
+msgstr "Kopien erkennen"
 
 #: diff.c:5399
 msgid "use unmodified files as source to find copies"
-msgstr ""
+msgstr "Nutze ungeänderte Dateien als Quelle zum Finden von Kopien"
 
 #: diff.c:5401
-#, fuzzy
 msgid "disable rename detection"
-msgstr "Führe Erkennung für ungenaue Umbenennung aus"
+msgstr "Erkennung von Umbenennungen deaktivieren"
 
 #: diff.c:5404
 msgid "use empty blobs as rename source"
-msgstr ""
+msgstr "Nutze leere Blobs als Quelle von Umbennungen"
 
 #: diff.c:5406
 msgid "continue listing the history of a file beyond renames"
-msgstr ""
+msgstr "Fortführen der Auflistung der Historie einer Datei nach Umbennung"
 
 #: diff.c:5409
 msgid ""
 "prevent rename/copy detection if the number of rename/copy targets exceeds "
 "given limit"
-msgstr ""
+msgstr "Verhindere die Erkennung von Umbennungen und Kopien, wenn die Anzahl "
+"der Ziele für Umbennungen und Kopien das gegebene Limit überschreitet"
 
 #: diff.c:5411
-#, fuzzy
 msgid "Diff algorithm options"
-msgstr "Ungültige Option: %s"
+msgstr "Diff Algorithmus-Optionen"
 
 #: diff.c:5413
 msgid "produce the smallest possible diff"
-msgstr ""
+msgstr "Erzeuge die kleinstmöglichen Änderungen"
 
 #: diff.c:5416
-#, fuzzy
 msgid "ignore whitespace when comparing lines"
-msgstr "Änderungen im Whitespace bei der Suche des Kontextes ignorieren"
+msgstr "Whitespace-Änderungen beim Vergleich von Zeilen ignorieren"
 
 #: diff.c:5419
-#, fuzzy
 msgid "ignore changes in amount of whitespace"
-msgstr "Änderungen im Whitespace bei der Suche des Kontextes ignorieren"
+msgstr "Änderungen bei der Anzahl von Whitespace ignorieren"
 
 #: diff.c:5422
-#, fuzzy
 msgid "ignore changes in whitespace at EOL"
-msgstr "Änderungen im Whitespace bei der Suche des Kontextes ignorieren"
+msgstr "Whitespace-Änderungen am Zeilenende ignorieren"
 
 #: diff.c:5425
 msgid "ignore carrier-return at the end of line"
-msgstr ""
+msgstr "Ignoriere den Zeilenumbruch am Ende der Zeile"
 
 #: diff.c:5428
 msgid "ignore changes whose lines are all blank"
-msgstr ""
+msgstr "Ignoriere Änderungen in leeren Zeilen"
 
 #: diff.c:5431
 msgid "heuristic to shift diff hunk boundaries for easy reading"
-msgstr ""
+msgstr "Heuristik, um Grenzen der Änderungsblöcke für bessere Lesbarkeit zu "
+"verschieben"
 
 #: diff.c:5434
 msgid "generate diff using the \"patience diff\" algorithm"
-msgstr ""
+msgstr "Erzeuge Änderungen durch Nutzung des Algorithmus \"Patience Diff\""
 
 #: diff.c:5438
 msgid "generate diff using the \"histogram diff\" algorithm"
-msgstr ""
+msgstr "Erzeuge Änderungen durch Nutzung des Algorithmus \"Histogram Diff\""
 
 #: diff.c:5440
 msgid "<algorithm>"
-msgstr ""
+msgstr "<Algorithmus>"
 
 #: diff.c:5441
 msgid "choose a diff algorithm"
-msgstr ""
+msgstr "Ein Algorithmus für Änderungen wählen"
 
 #: diff.c:5443
-#, fuzzy
 msgid "<text>"
-msgstr "Text"
+msgstr "<Text>"
 
 #: diff.c:5444
 msgid "generate diff using the \"anchored diff\" algorithm"
-msgstr ""
+msgstr "Erzeuge Änderungen durch Nutzung des Algorithmus \"Anchored Diff\""
 
 #: diff.c:5446 diff.c:5455 diff.c:5458
-#, fuzzy
 msgid "<mode>"
-msgstr "Modus"
+msgstr "<Modus>"
 
 #: diff.c:5447
 msgid "show word diff, using <mode> to delimit changed words"
-msgstr ""
+msgstr "Zeige Wort-Änderungen, nutze <Modus>, um Wörter abzugrenzen"
 
 #: diff.c:5449 diff.c:5452 diff.c:5497
 msgid "<regex>"
-msgstr ""
+msgstr "<Regex>"
 
 #: diff.c:5450
 msgid "use <regex> to decide what a word is"
-msgstr ""
+msgstr "Nutze <Regex>, um zu entscheiden, was ein Wort ist"
 
 #: diff.c:5453
 msgid "equivalent to --word-diff=color --word-diff-regex=<regex>"
-msgstr ""
+msgstr "Entsprechend wie --word-diff=color --word-diff-regex=<Regex>"
 
 #: diff.c:5456
 msgid "move lines of code are colored differently"
-msgstr ""
+msgstr "Verschobene Codezeilen sind andersfarbig"
 
 #: diff.c:5459
 msgid "how white spaces are ignored in --color-moved"
-msgstr ""
+msgstr "Wie Whitespaces in --color-moved ignoriert werden"
 
 #: diff.c:5462
-#, fuzzy
 msgid "Diff other options"
-msgstr "decorate-Optionen"
+msgstr "Andere Diff-Optionen"
 
 #: diff.c:5464
 msgid "when run from subdir, exclude changes outside and show relative paths"
-msgstr ""
+msgstr "Wenn vom Unterverzeichnis aufgerufen, schließe Änderungen außerhalb "
+"aus und zeige relative Pfade an"
 
 #: diff.c:5468
-#, fuzzy
 msgid "treat all files as text"
-msgstr "binäre Dateien als Text verarbeiten"
+msgstr "alle Dateien als Text behandeln"
 
 #: diff.c:5470
 msgid "swap two inputs, reverse the diff"
-msgstr ""
+msgstr "Vertausche die beiden Eingaben und drehe die Änderungen um"
 
 #: diff.c:5472
 msgid "exit with 1 if there were differences, 0 otherwise"
-msgstr ""
+msgstr "Beende mit Exit-Status 1, wenn Änderungen vorhanden sind, andernfalls "
+"mit 0"
 
 #: diff.c:5474
 msgid "disable all output of the program"
-msgstr ""
+msgstr "Keine Ausgaben vom Programm"
 
 #: diff.c:5476
 msgid "allow an external diff helper to be executed"
-msgstr ""
+msgstr "Erlaube die Ausführung eines externes Programms für Änderungen"
 
 #: diff.c:5478
 msgid "run external text conversion filters when comparing binary files"
-msgstr ""
+msgstr "Führe externe Text-Konvertierungsfilter aus, wenn binäre Dateien "
+"vergleicht werden"
 
 #: diff.c:5480
-#, fuzzy
 msgid "<when>"
-msgstr "wann"
+msgstr "<wann>"
 
 #: diff.c:5481
-#, fuzzy
 msgid "ignore changes to submodules in the diff generation"
 msgstr ""
-"Änderungen in Submodulen ignorieren, optional wenn: all, dirty, untracked. "
-"(Standard: all)"
+"Änderungen in Submodulen während der Erstellung der Unterschiede ignorieren"
 
 #: diff.c:5484
-#, fuzzy
 msgid "<format>"
-msgstr "Format"
+msgstr "<Format>"
 
 #: diff.c:5485
 msgid "specify how differences in submodules are shown"
-msgstr ""
+msgstr "Angeben, wie Unterschiede in Submodulen gezeigt werden"
 
 #: diff.c:5489
-#, fuzzy
 msgid "hide 'git add -N' entries from the index"
-msgstr "nur .gitattributes vom Index verwenden"
+msgstr "verstecke 'git add -N' Einträge vom Index"
 
 #: diff.c:5492
 msgid "treat 'git add -N' entries as real in the index"
-msgstr ""
+msgstr "Behandle 'git add -N' Einträge im Index als echt"
 
 #: diff.c:5494
-#, fuzzy
 msgid "<string>"
-msgstr "Zeichenkette"
+msgstr "<Zeichenkette>"
 
 #: diff.c:5495
 msgid ""
 "look for differences that change the number of occurrences of the specified "
 "string"
-msgstr ""
+msgstr "Suche nach Unterschieden, welche die Anzahl des Vorkommens der "
+"angegebenen Zeichenkette verändern"
 
 #: diff.c:5498
 msgid ""
 "look for differences that change the number of occurrences of the specified "
 "regex"
-msgstr ""
+msgstr "Suche nach Unterschieden, welche die Anzahl des Vorkommens des "
+"angegebenen regulären Ausdrucks verändern"
 
 #: diff.c:5501
-#, fuzzy
 msgid "show all changes in the changeset with -S or -G"
-msgstr "Dateien mit Übereinstimmungen im Anzeigeprogramm anzeigen"
+msgstr "zeige alle Änderungen im Changeset mit -S oder -G"
 
 #: diff.c:5504
-#, fuzzy
 msgid "treat <string> in -S as extended POSIX regular expression"
-msgstr "erweiterte reguläre Ausdrücke aus POSIX verwenden"
+msgstr "behandle <Zeichenkette> bei -S als erweiterten POSIX regulären "
+"Ausdruck"
 
 #: diff.c:5507
-#, fuzzy
 msgid "control the order in which files appear in the output"
-msgstr "sonstige Dateien in der Ausgabe anzeigen"
+msgstr "kontrolliere die Reihenfolge, in der die Dateien in der Ausgabe "
+"erscheinen"
 
 #: diff.c:5508
-#, fuzzy
 msgid "<object-id>"
-msgstr "Objekt"
+msgstr "<Objekt-ID>"
 
 #: diff.c:5509
 msgid ""
 "look for differences that change the number of occurrences of the specified "
 "object"
-msgstr ""
+msgstr "Suche nach Unterschieden, welche die Anzahl des Vorkommens des "
+"angegebenen Objektes verändern"
 
 #: diff.c:5511
 msgid "[(A|C|D|M|R|T|U|X|B)...[*]]"
-msgstr ""
+msgstr "[(A|C|D|M|R|T|U|X|B)...[*]]"
 
 #: diff.c:5512
 msgid "select files by diff type"
-msgstr ""
+msgstr "Wähle Dateien anhand der Art der Änderung"
 
 #: diff.c:5514
-#, fuzzy
 msgid "<file>"
-msgstr "Datei"
+msgstr "<Datei>"
 
 #: diff.c:5515
-#, fuzzy
 msgid "Output to a specific file"
-msgstr "nur die angegebenen Dateien committen"
+msgstr "Ausgabe zu einer bestimmten Datei"
 
 #: diff.c:6148
 msgid "inexact rename detection was skipped due to too many files."
@@ -3085,9 +3065,8 @@ msgid "git fetch-pack: expected ACK/NAK, got '%s'"
 msgstr "git fetch-pack: ACK/NAK erwartet, '%s' bekommen"
 
 #: fetch-pack.c:196
-#, fuzzy
 msgid "unable to write to remote"
-msgstr "konnte Tag-Datei nicht schreiben"
+msgstr "konnte nicht zum Remote schreiben"
 
 #: fetch-pack.c:258
 msgid "--stateless-rpc requires multi_ack_detailed"
@@ -3248,9 +3227,8 @@ msgid "Server does not support shallow requests"
 msgstr "Server unterstützt keine shallow-Anfragen."
 
 #: fetch-pack.c:1171
-#, fuzzy
 msgid "unable to write request to remote"
-msgstr "Konnte Rerere-Eintrag nicht schreiben."
+msgstr "konnte Anfrage nicht zum Remote schreiben"
 
 #: fetch-pack.c:1189
 #, c-format
@@ -3573,17 +3551,18 @@ msgstr "Ungültiges Datumsformat: %s"
 #: list-objects.c:129
 #, c-format
 msgid "entry '%s' in tree %s has tree mode, but is not a tree"
-msgstr ""
+msgstr "Eintrag '%s' im Tree-Objekt %s hat Tree-Modus, aber ist kein "
+"Tree-Objekt"
 
 #: list-objects.c:142
 #, c-format
 msgid "entry '%s' in tree %s has blob mode, but is not a blob"
-msgstr ""
+msgstr "Eintrag '%s' im Tree-Objekt %s hat Blob-Modus, aber ist kein Blob"
 
 #: list-objects.c:378
-#, fuzzy, c-format
+#, c-format
 msgid "unable to load root tree for commit %s"
-msgstr "Konnte Commit '%s' nicht parsen."
+msgstr "Konnte Root-Tree-Objekt für Commit %s nicht laden."
 
 #: list-objects-filter-options.c:36
 msgid "multiple filter-specs cannot be combined"
@@ -3978,28 +3957,34 @@ msgstr "Füge stattdessen als %s hinzu"
 msgid ""
 "Path updated: %s added in %s inside a directory that was renamed in %s; "
 "moving it to %s."
-msgstr ""
+msgstr "Pfad aktualisiert: %s hinzugefügt in %s innerhalb eines "
+"Verzeichnisses, das umbenannt wurde in %s; Verschiebe es nach %s."
 
 #: merge-recursive.c:3173
 #, c-format
 msgid ""
 "CONFLICT (file location): %s added in %s inside a directory that was renamed "
 "in %s, suggesting it should perhaps be moved to %s."
-msgstr ""
+msgstr "KONFLIKT (Speicherort): %s hinzugefügt in %s innerhalb eines "
+"Verzeichnisses, das umbenannt wurde in %s, es sollte vielleicht nach %s "
+"verschoben werden."
 
 #: merge-recursive.c:3177
 #, c-format
 msgid ""
 "Path updated: %s renamed to %s in %s, inside a directory that was renamed in "
 "%s; moving it to %s."
-msgstr ""
+msgstr "Pfad aktualisiert: %s umbenannt nach %s in %s, innerhalb eines "
+"Verzeichnisses, das umbenannt wurde in %s; Verschiebe es nach %s."
 
 #: merge-recursive.c:3180
 #, c-format
 msgid ""
 "CONFLICT (file location): %s renamed to %s in %s, inside a directory that "
 "was renamed in %s, suggesting it should perhaps be moved to %s."
-msgstr ""
+msgstr "KONFLIKT (Speicherort): %s umbenannt nach %s in %s, innerhalb eines "
+"Verzeichnisses, das umbenannt wurde in %s, es sollte vielleicht nach %s "
+"verschoben werden."
 
 #: merge-recursive.c:3294
 #, c-format
@@ -4160,7 +4145,7 @@ msgstr "Fehler beim Löschen des multi-pack-index bei %s"
 
 #: midx.c:1034
 msgid "Looking for referenced packfiles"
-msgstr ""
+msgstr "Suche nach referenzierten Pack-Dateien"
 
 #: midx.c:1049
 #, c-format
@@ -4172,7 +4157,7 @@ msgstr ""
 
 #: midx.c:1053
 msgid "Verifying OID order in MIDX"
-msgstr ""
+msgstr "Verifiziere OID-Reihenfolge in MIDX"
 
 #: midx.c:1062
 #, c-format
@@ -4180,9 +4165,8 @@ msgid "oid lookup out of order: oid[%d] = %s >= %s = oid[%d]"
 msgstr "Ungültige oid lookup Reihenfolge: oid[%d] = %s >= %s = oid[%d]"
 
 #: midx.c:1081
-#, fuzzy
 msgid "Sorting objects by packfile"
-msgstr "Bearbeiten von Objektdatei fehlgeschlagen."
+msgstr "Sortiere Objekte nach Pack-Datei"
 
 #: midx.c:1087
 msgid "Verifying object offsets"
@@ -4487,14 +4471,12 @@ msgid "pathspec '%s' is beyond a symbolic link"
 msgstr "Pfadspezifikation '%s' ist hinter einer symbolischen Verknüpfung"
 
 #: pkt-line.c:92
-#, fuzzy
 msgid "unable to write flush packet"
-msgstr "Konnte Datei %s nicht schreiben."
+msgstr "Konnte Flush-Paket nicht schreiben."
 
 #: pkt-line.c:99
-#, fuzzy
 msgid "unable to write delim packet"
-msgstr "Konnte Index-Datei nicht schreiben."
+msgstr "Konnte Delim-Paket nicht schreiben."
 
 #: pkt-line.c:106
 msgid "flush packet write failed"
@@ -4593,9 +4575,9 @@ msgstr ""
 "hinzufügen."
 
 #: read-cache.c:723
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' does not have a commit checked out"
-msgstr "'%s' zeigt auf keinen Commit"
+msgstr "'%s' hat keinen Commit ausgecheckt"
 
 #: read-cache.c:775
 #, c-format
@@ -5701,7 +5683,7 @@ msgstr "Die Optionen --first-parent und --bisect sind inkompatibel."
 
 #: revision.c:2683
 msgid "-L does not yet support diff formats besides -p and -s"
-msgstr ""
+msgstr "-L unterstützt noch keine anderen Diff-Formate außer -p und -s"
 
 #: run-command.c:763
 msgid "open /dev/null failed"
@@ -6181,9 +6163,9 @@ msgid "missing arguments for %s"
 msgstr "Fehlende Argumente für %s."
 
 #: sequencer.c:2164
-#, fuzzy, c-format
+#, c-format
 msgid "could not parse '%.*s'"
-msgstr "Konnte '%s' nicht parsen."
+msgstr "Konnte '%.*s' nicht parsen."
 
 #: sequencer.c:2226
 #, c-format
@@ -7283,13 +7265,12 @@ msgid "transport: invalid depth option '%s'"
 msgstr "transport: ungültige --depth Option '%s'"
 
 #: transport.c:259
-#, fuzzy
 msgid "see protocol.version in 'git help config' for more details"
-msgstr "'git help config' für weitere Informationen"
+msgstr "Siehe protocol.version in 'git help config' für weitere Informationen"
 
 #: transport.c:260
 msgid "server options require protocol version 2 or later"
-msgstr ""
+msgstr "Server-Optionen benötigen Protokoll-Version 2 oder höher"
 
 #: transport.c:625
 msgid "could not parse transport.color.* config"
@@ -8204,9 +8185,8 @@ msgstr ""
 "abgeschlossen sind)"
 
 #: wt-status.c:1392
-#, fuzzy
 msgid "Cherry-pick currently in progress."
-msgstr "kein \"cherry-pick\" oder \"revert\" im Gang"
+msgstr "Cherry-pick zurzeit im Gange."
 
 #: wt-status.c:1395
 #, c-format
@@ -8220,11 +8200,9 @@ msgstr ""
 "\" aus)"
 
 #: wt-status.c:1405
-#, fuzzy
 msgid "  (run \"git cherry-pick --continue\" to continue)"
 msgstr ""
-"  (beheben Sie die Konflikte und führen Sie dann \"git cherry-pick --continue"
-"\" aus)"
+"  (Führen Sie \"git cherry-pick --continue\" aus, um weiterzumachen)"
 
 #: wt-status.c:1408
 msgid "  (all conflicts fixed: run \"git cherry-pick --continue\")"
@@ -8238,9 +8216,8 @@ msgstr ""
 "abzubrechen)"
 
 #: wt-status.c:1420
-#, fuzzy
 msgid "Revert currently in progress."
-msgstr "den sich im Gange befindlichen Merge abbrechen"
+msgstr "Revert zurzeit im Gange."
 
 #: wt-status.c:1423
 #, c-format
@@ -8254,11 +8231,8 @@ msgstr ""
 "aus)"
 
 #: wt-status.c:1432
-#, fuzzy
 msgid "  (run \"git revert --continue\" to continue)"
-msgstr ""
-"  (beheben Sie die Konflikte und führen Sie dann \"git revert --continue\" "
-"aus)"
+msgstr "  (Führen Sie \"git revert --continue\", um weiterzumachen)"
 
 #: wt-status.c:1435
 msgid "  (all conflicts fixed: run \"git revert --continue\")"
@@ -9615,14 +9589,13 @@ msgid "unable to parse format string"
 msgstr "Konnte Formatierungsstring nicht parsen."
 
 #: builtin/branch.c:452
-#, fuzzy
 msgid "could not resolve HEAD"
 msgstr "Konnte HEAD-Commit nicht auflösen."
 
 #: builtin/branch.c:458
-#, fuzzy, c-format
+#, c-format
 msgid "HEAD (%s) points outside of refs/heads/"
-msgstr "HEAD wurde nicht unter \"refs/heads\" gefunden!"
+msgstr "HEAD (%s) wurde nicht unter \"refs/heads/\" gefunden!"
 
 #: builtin/branch.c:473
 #, c-format
@@ -9782,9 +9755,8 @@ msgid "list branch names"
 msgstr "Branchnamen auflisten"
 
 #: builtin/branch.c:639
-#, fuzzy
 msgid "show current branch name"
-msgstr "Sie befinden sich auf keinem Branch."
+msgstr "Zeige aktuellen Branch-Namen."
 
 #: builtin/branch.c:640
 msgid "create the branch's reflog"
@@ -10246,13 +10218,14 @@ msgid ""
 "cannot continue with staged changes in the following files:\n"
 "%s"
 msgstr ""
+"Kann nicht mit vorgemerkten Änderungen in folgenden Dateien fortsetzen:\n"
+"%s"
 
 #: builtin/checkout.c:751
-#, fuzzy, c-format
+#, c-format
 msgid "staged changes in the following files may be lost: %s"
-msgstr ""
-"Ihre lokalen Änderungen würden durch %s überschrieben werden.\n"
-"%%s"
+msgstr "Zum Commit vorgemerkte Änderungen in den folgenden Dateien gehen "
+"eventuell verloren: %s"
 
 #: builtin/checkout.c:848
 #, c-format
@@ -10487,18 +10460,16 @@ msgid "force progress reporting"
 msgstr "Fortschrittsanzeige erzwingen"
 
 #: builtin/checkout.c:1390
-#, fuzzy
 msgid "use overlay mode (default)"
-msgstr "lose Referenzen entfernen (Standard)"
+msgstr "benutze Overlay-Modus (Standard)"
 
 #: builtin/checkout.c:1422
 msgid "-b, -B and --orphan are mutually exclusive"
 msgstr "Die Optionen -b, -B und --orphan schließen sich gegenseitig aus."
 
 #: builtin/checkout.c:1425
-#, fuzzy
 msgid "-p and --overlay are mutually exclusive"
-msgstr "-n und -k schließen sich gegenseitig aus."
+msgstr "-p und --overlay schließen sich gegenseitig aus."
 
 #: builtin/checkout.c:1442
 msgid "--track needs a branch name"
@@ -11140,41 +11111,41 @@ msgid ""
 "git commit-tree [(-p <parent>)...] [-S[<keyid>]] [(-m <message>)...] [(-F "
 "<file>)...] <tree>"
 msgstr ""
+"git commit-tree [(-p <Eltern-Commit>)...] [-S[<Key-ID>]] [(-m <Nachricht>)...] [(-F "
+"<Datei>)...] <Tree-Objekt>"
 
 #: builtin/commit-tree.c:31
-#, fuzzy, c-format
+#, c-format
 msgid "duplicate parent %s ignored"
-msgstr "doppelte ersetzende Referenz: %s"
+msgstr "doppelter Vorgänger %s ignoriert"
 
 #: builtin/commit-tree.c:56 builtin/commit-tree.c:136 builtin/log.c:520
-#, fuzzy, c-format
+#, c-format
 msgid "not a valid object name %s"
 msgstr "Kein gültiger Objektname: %s"
 
 #: builtin/commit-tree.c:93
-#, fuzzy, c-format
+#, c-format
 msgid "git commit-tree: failed to open '%s'"
-msgstr "Fehler beim Öffnen von '%s'"
+msgstr "git commit-tree: Fehler beim Öffnen von '%s'"
 
 #: builtin/commit-tree.c:96
-#, fuzzy, c-format
+#, c-format
 msgid "git commit-tree: failed to read '%s'"
-msgstr "\"git write-tree\" schlug beim Schreiben eines \"Tree\"-Objektes fehl"
+msgstr "git commit-tree: Fehler beim Lesen von '%s'"
 
 #: builtin/commit-tree.c:98
-#, fuzzy, c-format
+#, c-format
 msgid "git commit-tree: failed to close '%s'"
-msgstr "\"git write-tree\" schlug beim Schreiben eines \"Tree\"-Objektes fehl"
+msgstr "git commit-tree: Fehler beim Schließen von '%s'"
 
 #: builtin/commit-tree.c:111
-#, fuzzy
 msgid "parent"
-msgstr "Nummer des Elternteils"
+msgstr "Eltern-Commit"
 
 #: builtin/commit-tree.c:112
-#, fuzzy
 msgid "id of a parent commit object"
-msgstr "Fehler beim Schreiben des Commit-Objektes."
+msgstr "ID eines Eltern-Commit-Objektes."
 
 #: builtin/commit-tree.c:114 builtin/commit.c:1480 builtin/merge.c:268
 #: builtin/notes.c:409 builtin/notes.c:575 builtin/stash.c:1473
@@ -11187,9 +11158,8 @@ msgid "commit message"
 msgstr "Commit-Beschreibung"
 
 #: builtin/commit-tree.c:118
-#, fuzzy
 msgid "read commit log message from file"
-msgstr "Beschreibung von Datei lesen"
+msgstr "Commit-Beschreibung von Datei lesen"
 
 #: builtin/commit-tree.c:121 builtin/commit.c:1492 builtin/merge.c:283
 #: builtin/pull.c:193 builtin/revert.c:117
@@ -11197,14 +11167,12 @@ msgid "GPG sign commit"
 msgstr "Commit mit GPG signieren"
 
 #: builtin/commit-tree.c:133
-#, fuzzy
 msgid "must give exactly one tree"
-msgstr "Brauche genau einen Commit-Bereich."
+msgstr "Brauche genau ein Tree-Objekt."
 
 #: builtin/commit-tree.c:140
-#, fuzzy
 msgid "git commit-tree: failed to read"
-msgstr "\"git write-tree\" schlug beim Schreiben eines \"Tree\"-Objektes fehl"
+msgstr "git commit-tree: Fehler beim Lesen"
 
 #: builtin/commit.c:41
 msgid "git commit [<options>] [--] <pathspec>..."
@@ -11261,7 +11229,7 @@ msgstr ""
 
 #: builtin/commit.c:312
 msgid "failed to unpack HEAD tree object"
-msgstr "Fehler beim Entpacken des \"Tree\"-Objektes von HEAD."
+msgstr "Fehler beim Entpacken des Tree-Objektes von HEAD."
 
 #: builtin/commit.c:353
 msgid "unable to create temporary index"
@@ -11505,9 +11473,9 @@ msgstr ""
 "verwendet werden."
 
 #: builtin/commit.c:1192
-#, fuzzy, c-format
+#, c-format
 msgid "paths '%s ...' with -a does not make sense"
-msgstr "Die Option -a kann nicht mit der Angabe von Pfaden verwendet werden."
+msgstr "Pfade '%s ...' mit -a sind nicht sinnvoll"
 
 #: builtin/commit.c:1319 builtin/commit.c:1503
 msgid "show status concisely"
@@ -11784,9 +11752,9 @@ msgid "The object directory to store the graph"
 msgstr "Das Objektverzeichnis zum Speichern des Graphen."
 
 #: builtin/commit-graph.c:68 builtin/commit-graph.c:105
-#, fuzzy, c-format
+#, c-format
 msgid "Could not open commit-graph '%s'"
-msgstr "Konnte Commit '%s' nicht parsen."
+msgstr "Konnte Commit-Graph '%s' nicht öffnen."
 
 #: builtin/commit-graph.c:150
 msgid "start walk at all refs"
@@ -12424,13 +12392,12 @@ msgid "specify a custom command for viewing diffs"
 msgstr "eigenen Befehl zur Anzeige von Unterschieden angeben"
 
 #: builtin/difftool.c:715
-#, fuzzy
 msgid "passed to `diff`"
-msgstr "an 'git am' übergeben"
+msgstr "an 'diff' übergeben"
 
 #: builtin/difftool.c:730
 msgid "difftool requires worktree or --no-index"
-msgstr ""
+msgstr "difftool benötigt Arbeitsverzeichnis oder --no-index"
 
 #: builtin/difftool.c:744
 msgid "no <tool> given for --tool=<tool>"
@@ -13162,9 +13129,9 @@ msgid "Failed to fstat %s: %s"
 msgstr "Konnte '%s' nicht lesen: %s"
 
 #: builtin/gc.c:126
-#, fuzzy, c-format
+#, c-format
 msgid "failed to parse '%s' value '%s'"
-msgstr "Fehler beim Verschieben von '%s' nach '%s'"
+msgstr "Fehler beim Parsen von '%s' mit dem Wert '%s'"
 
 #: builtin/gc.c:476 builtin/init-db.c:55
 #, c-format
@@ -14208,12 +14175,12 @@ msgid "git show %s: bad file"
 msgstr "git show %s: ungültige Datei"
 
 #: builtin/log.c:544 builtin/log.c:638
-#, fuzzy, c-format
+#, c-format
 msgid "could not read object %s"
-msgstr "Kann Objekt %s nicht lesen."
+msgstr "Konnte Objekt %s nicht lesen."
 
 #: builtin/log.c:663
-#, fuzzy, c-format
+#, c-format
 msgid "unknown type: %d"
 msgstr "Unbekannter Typ: %d"
 
@@ -14226,29 +14193,25 @@ msgid "name of output directory is too long"
 msgstr "Name des Ausgabeverzeichnisses ist zu lang."
 
 #: builtin/log.c:901
-#, fuzzy, c-format
+#, c-format
 msgid "cannot open patch file %s"
 msgstr "Kann Patch-Datei %s nicht öffnen"
 
 #: builtin/log.c:918
-#, fuzzy
 msgid "need exactly one range"
 msgstr "Brauche genau einen Commit-Bereich."
 
 #: builtin/log.c:928
-#, fuzzy
 msgid "not a range"
 msgstr "Kein Commit-Bereich."
 
 #: builtin/log.c:1051
-#, fuzzy
 msgid "cover letter needs email format"
 msgstr "Anschreiben benötigt E-Mail-Format"
 
 #: builtin/log.c:1057
-#, fuzzy
 msgid "failed to create cover-letter file"
-msgstr "Fehler beim Erstellen der Ausgabedateien."
+msgstr "Fehler beim Erstellen der Datei für das Anschreiben."
 
 #: builtin/log.c:1136
 #, c-format
@@ -14260,12 +14223,11 @@ msgid "git format-patch [<options>] [<since> | <revision-range>]"
 msgstr "git format-patch [<Optionen>] [<seit> | <Commitbereich>]"
 
 #: builtin/log.c:1221
-#, fuzzy
 msgid "two output directories?"
 msgstr "Zwei Ausgabeverzeichnisse?"
 
 #: builtin/log.c:1332 builtin/log.c:2076 builtin/log.c:2078 builtin/log.c:2090
-#, fuzzy, c-format
+#, c-format
 msgid "unknown commit %s"
 msgstr "Unbekannter Commit %s"
 
@@ -14276,12 +14238,10 @@ msgid "failed to resolve '%s' as a valid ref"
 msgstr "Konnte '%s' nicht als gültige Referenz auflösen."
 
 #: builtin/log.c:1347
-#, fuzzy
 msgid "could not find exact merge base"
 msgstr "Konnte keine exakte Merge-Basis finden."
 
 #: builtin/log.c:1351
-#, fuzzy
 msgid ""
 "failed to get upstream, if you want to record base commit automatically,\n"
 "please use git branch --set-upstream-to to track a remote branch.\n"
@@ -14293,7 +14253,6 @@ msgstr ""
 "Oder geben Sie den Basis-Commit mit '--base=<Basis-Commit-Id>' manuell an."
 
 #: builtin/log.c:1371
-#, fuzzy
 msgid "failed to find exact merge base"
 msgstr "Fehler beim Finden einer exakten Merge-Basis."
 
@@ -14555,7 +14514,6 @@ msgid "Generating patches"
 msgstr "Erzeuge Patches"
 
 #: builtin/log.c:1952
-#, fuzzy
 msgid "failed to create output files"
 msgstr "Fehler beim Erstellen der Ausgabedateien."
 
@@ -14955,7 +14913,6 @@ msgstr ""
 "abzuschließen.\n"
 
 #: builtin/merge.c:808
-#, fuzzy
 msgid ""
 "Please enter a commit message to explain why this merge is necessary,\n"
 "especially if it merges an updated upstream into a topic branch.\n"
@@ -14965,23 +14922,19 @@ msgstr ""
 "Merge erforderlich ist, insbesondere wenn es einen aktualisierten\n"
 "Upstream-Branch mit einem Thema-Branch zusammenführt.\n"
 "\n"
-"Zeilen beginnend mit '%c' werden ignoriert, und eine leere Beschreibung\n"
-"bricht den Commit ab.\n"
 
 #: builtin/merge.c:813
-#, fuzzy
 msgid "An empty message aborts the commit.\n"
-msgstr "Bearbeitung der Beschreibung vor dem Commit"
+msgstr "Eine leere Commit-Beschreibung bricht den Commit ab.\n"
 
 #: builtin/merge.c:816
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Lines starting with '%c' will be ignored, and an empty message aborts\n"
 "the commit.\n"
 msgstr ""
-"Bitte geben Sie eine Commit-Beschreibung für Ihre Änderungen ein. Zeilen,\n"
-"die mit '%c' beginnen, werden ignoriert, und eine leere Beschreibung\n"
-"bricht den Commit ab.\n"
+"Zeilen, die mit '%c' beginnen, werden ignoriert,\n"
+"und eine leere Beschreibung bricht den Commit ab.\n"
 
 #: builtin/merge.c:857
 msgid "Empty commit message."
@@ -16924,9 +16877,8 @@ msgid "debug unpack-trees"
 msgstr "unpack-trees protokollieren"
 
 #: builtin/read-tree.c:157
-#, fuzzy
 msgid "suppress feedback messages"
-msgstr "Informationsmeldungen unterdrücken"
+msgstr "Rückmeldungen unterdrücken"
 
 #: builtin/rebase.c:32
 msgid ""
@@ -16953,7 +16905,7 @@ msgid "unusable todo list: '%s'"
 msgstr "Unbenutzbare TODO-Liste: '%s'"
 
 #: builtin/rebase.c:167 builtin/rebase.c:193 builtin/rebase.c:217
-#, fuzzy, c-format
+#, c-format
 msgid "could not write '%s'."
 msgstr "Konnte '%s' nicht schreiben."
 
@@ -17300,9 +17252,8 @@ msgid "let the user edit the list of commits to rebase"
 msgstr "den Benutzer die Liste der Commits für den Rebase bearbeiten lassen"
 
 #: builtin/rebase.c:1445
-#, fuzzy
 msgid "(DEPRECATED) try to recreate merges instead of ignoring them"
-msgstr "versuchen, Merges wiederherzustellen anstatt sie zu ignorieren"
+msgstr "(VERALTET) Versuche, Merges wiederherzustellen anstatt sie zu ignorieren"
 
 #: builtin/rebase.c:1449
 msgid "preserve empty commits during rebase"
@@ -17354,18 +17305,19 @@ msgstr "Rebase auf alle erreichbaren Commits bis zum Root-Commit ausführen"
 msgid ""
 "the rebase.useBuiltin support has been removed!\n"
 "See its entry in 'git help config' for details."
-msgstr ""
+msgstr "Die Unterstützung für rebase.useBuiltin wurde entfernt!\n"
+"Siehe dessen Eintrag in 'git help config' für Details."
 
 #: builtin/rebase.c:1504
 msgid "It looks like 'git am' is in progress. Cannot rebase."
 msgstr "'git-am' scheint im Gange zu sein. Kann Rebase nicht durchführen."
 
 #: builtin/rebase.c:1545
-#, fuzzy
 msgid ""
 "git rebase --preserve-merges is deprecated. Use --rebase-merges instead."
 msgstr ""
-"'--preserve-merges' kann nicht mit '--rebase-merges' kombiniert werden."
+"'git rebase --preserve-merges' ist veraltet. Benutzen Sie stattdessen "
+"'--rebase-merges'."
 
 #: builtin/rebase.c:1549
 msgid "No rebase in progress?"
@@ -18506,9 +18458,9 @@ msgid "new object is the same as the old one: '%s'"
 msgstr "Neues Objekt ist dasselbe wie das alte: '%s'"
 
 #: builtin/replace.c:383
-#, fuzzy, c-format
+#, c-format
 msgid "could not parse %s as a commit"
-msgstr "Konnte Commit von HEAD nicht analysieren."
+msgstr "Konnte nicht %s als Commit parsen."
 
 #: builtin/replace.c:414
 #, c-format
@@ -19257,31 +19209,28 @@ msgstr ""
 "Repository befinden"
 
 #: builtin/stash.c:22 builtin/stash.c:37
-#, fuzzy
 msgid "git stash list [<options>]"
-msgstr "git worktree list [<Optionen>]"
+msgstr "git stash list [<Optionen>]"
 
 #: builtin/stash.c:23 builtin/stash.c:42
-#, fuzzy
 msgid "git stash show [<options>] [<stash>]"
-msgstr "git remote show [<Optionen>] <Name>"
+msgstr "git stash show [<Optionen>] [<Stash>]"
 
 #: builtin/stash.c:24 builtin/stash.c:47
 msgid "git stash drop [-q|--quiet] [<stash>]"
-msgstr ""
+msgstr "git stash drop [-q|--quiet] [<Stash>]"
 
 #: builtin/stash.c:25
 msgid "git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]"
-msgstr ""
+msgstr "git stash ( pop | apply ) [--index] [-q|--quiet] [<Stash>]"
 
 #: builtin/stash.c:26 builtin/stash.c:62
-#, fuzzy
 msgid "git stash branch <branchname> [<stash>]"
-msgstr "git branch [<Optionen>] [-l] [-f] <Branchname> [<Startpunkt>]"
+msgstr "git stash branch <Branch> [<Stash>]"
 
 #: builtin/stash.c:27 builtin/stash.c:67
 msgid "git stash clear"
-msgstr ""
+msgstr "git stash clear"
 
 #: builtin/stash.c:28 builtin/stash.c:77
 msgid ""
@@ -19289,41 +19238,46 @@ msgid ""
 "          [-u|--include-untracked] [-a|--all] [-m|--message <message>]\n"
 "          [--] [<pathspec>...]]"
 msgstr ""
+"git stash [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]\n"
+"          [-u|--include-untracked] [-a|--all] [-m|--message <Nachricht>]\n"
+"          [--] [<Pfadspezifikation>...]]"
 
 #: builtin/stash.c:31 builtin/stash.c:84
 msgid ""
 "git stash save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]\n"
 "          [-u|--include-untracked] [-a|--all] [<message>]"
 msgstr ""
+"git stash save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]\n"
+"          [-u|--include-untracked] [-a|--all] [<Nachricht>]"
 
 #: builtin/stash.c:52
 msgid "git stash pop [--index] [-q|--quiet] [<stash>]"
-msgstr ""
+msgstr "git stash pop [--index] [-q|--quiet] [<Stash>]"
 
 #: builtin/stash.c:57
 msgid "git stash apply [--index] [-q|--quiet] [<stash>]"
-msgstr ""
+msgstr "git stash apply [--index] [-q|--quiet] [<Stash>]"
 
 #: builtin/stash.c:72
 msgid "git stash store [-m|--message <message>] [-q|--quiet] <commit>"
-msgstr ""
+msgstr "git stash store [-m|--message <Nachricht>] [-q|--quiet] <Commit>"
 
 #: builtin/stash.c:127
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a stash-like commit"
-msgstr "'$args' ist kein \"stash\"-artiger Commit"
+msgstr "'%s' ist kein \"stash\"-artiger Commit"
 
 #: builtin/stash.c:147
-#, fuzzy, c-format
+#, c-format
 msgid "Too many revisions specified:%s"
-msgstr "Zu viele Commits angegeben: $REV"
+msgstr "Zu viele Commits angegeben:%s"
 
 #: builtin/stash.c:161 git-legacy-stash.sh:548
 msgid "No stash entries found."
 msgstr "Keine Stash-Einträge gefunden."
 
 #: builtin/stash.c:175
-#, fuzzy, c-format
+#, c-format
 msgid "%s is not a valid reference"
 msgstr "'%s' ist kein gültiger Referenzname."
 
@@ -19332,59 +19286,54 @@ msgid "git stash clear with parameters is unimplemented"
 msgstr "git stash clear mit Parametern ist nicht implementiert"
 
 #: builtin/stash.c:403
-#, fuzzy
 msgid "cannot apply a stash in the middle of a merge"
-msgstr "Kann \"stash\" nicht anwenden, solange ein Merge im Gange ist"
+msgstr "Kann Stash nicht anwenden, solange ein Merge im Gange ist"
 
 #: builtin/stash.c:414
-#, fuzzy, c-format
+#, c-format
 msgid "could not generate diff %s^!."
-msgstr "Konnte TODO-Liste nicht erzeugen."
+msgstr "Konnte keinen Diff erzeugen %s^!."
 
 #: builtin/stash.c:421
-#, fuzzy
 msgid "conflicts in index.Try without --index."
 msgstr "Konflikte im Index. Versuchen Sie es ohne --index."
 
 #: builtin/stash.c:427
-#, fuzzy
 msgid "could not save index tree"
 msgstr "Konnte Index-Verzeichnis nicht speichern"
 
 #: builtin/stash.c:434
-#, fuzzy
 msgid "could not restore untracked files from stash"
 msgstr ""
-"Konnte unversionierte Dateien vom Stash-Eintrag nicht wiederherstellen."
+"Konnte unversionierte Dateien vom Stash nicht wiederherstellen."
 
 #: builtin/stash.c:448
-#, fuzzy, c-format
+#, c-format
 msgid "Merging %s with %s"
-msgstr "Führe %s mit %s zusammen\n"
+msgstr "Führe %s mit %s zusammen"
 
 #: builtin/stash.c:458 git-legacy-stash.sh:680
 msgid "Index was not unstashed."
 msgstr "Index wurde nicht aus dem Stash zurückgeladen."
 
 #: builtin/stash.c:516 builtin/stash.c:615
-#, fuzzy
 msgid "attempt to recreate the index"
-msgstr "Fehler beim Lesen des Index"
+msgstr "Versuche Index wiederherzustellen."
 
 #: builtin/stash.c:549
-#, fuzzy, c-format
+#, c-format
 msgid "Dropped %s (%s)"
-msgstr "${REV} ($s) gelöscht"
+msgstr "%s (%s) gelöscht"
 
 #: builtin/stash.c:552
-#, fuzzy, c-format
+#, c-format
 msgid "%s: Could not drop stash entry"
-msgstr "${REV}: Konnte \"stash\"-Eintrag nicht löschen"
+msgstr "%s: Konnte Stash-Eintrag nicht löschen"
 
 #: builtin/stash.c:577
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a stash reference"
-msgstr "'$args' ist keine \"stash\"-Referenz"
+msgstr "'%s' ist keine Stash-Referenz"
 
 #: builtin/stash.c:627 git-legacy-stash.sh:694
 msgid "The stash entry is kept in case you need it again."
@@ -19397,19 +19346,17 @@ msgid "No branch name specified"
 msgstr "Kein Branchname spezifiziert"
 
 #: builtin/stash.c:789 builtin/stash.c:826
-#, fuzzy, c-format
+#, c-format
 msgid "Cannot update %s with %s"
-msgstr "Kann $ref_stash nicht mit $w_commit aktualisieren."
+msgstr "Kann nicht %s mit %s aktualisieren."
 
 #: builtin/stash.c:807 builtin/stash.c:1474 builtin/stash.c:1510
-#, fuzzy
 msgid "stash message"
-msgstr "Tag-Beschreibung"
+msgstr "Stash-Beschreibung"
 
 #: builtin/stash.c:817
-#, fuzzy
 msgid "\"git stash store\" requires one <commit> argument"
-msgstr "--bisect-clean-state erwartet keine Argumente."
+msgstr "\"git stash store\" erwartet ein Argument <Commit>"
 
 #: builtin/stash.c:1039 git-legacy-stash.sh:217
 msgid "No changes selected"
@@ -19442,9 +19389,8 @@ msgstr ""
 "Kann nicht gleichzeitig --patch und --include-untracked oder --all verwenden"
 
 #: builtin/stash.c:1284
-#, fuzzy
 msgid "Did you forget to 'git add'?"
-msgstr "Meinten Sie vielleicht 'git add .'?\n"
+msgstr "Haben Sie vielleicht 'git add' vergessen?"
 
 #: builtin/stash.c:1299 git-legacy-stash.sh:345
 msgid "No local changes to save"
@@ -19459,37 +19405,33 @@ msgid "Cannot save the current status"
 msgstr "Kann den aktuellen Status nicht speichern"
 
 #: builtin/stash.c:1326
-#, fuzzy, c-format
+#, c-format
 msgid "Saved working directory and index state %s"
-msgstr "Speicherte Arbeitsverzeichnis und Index-Status $stash_msg"
+msgstr "Arbeitsverzeichnis und Index-Status %s gespeichert."
 
 #: builtin/stash.c:1430 git-legacy-stash.sh:384
 msgid "Cannot remove worktree changes"
 msgstr "Kann Änderungen im Arbeitsverzeichnis nicht löschen"
 
 #: builtin/stash.c:1465 builtin/stash.c:1501
-#, fuzzy
 msgid "keep index"
-msgstr "Aktualisiere Index"
+msgstr "behalte Index"
 
 #: builtin/stash.c:1467 builtin/stash.c:1503
 msgid "stash in patch mode"
-msgstr ""
+msgstr "Stash in Patch-Modus"
 
 #: builtin/stash.c:1468 builtin/stash.c:1504
-#, fuzzy
 msgid "quiet mode"
 msgstr "weniger Ausgaben"
 
 #: builtin/stash.c:1470 builtin/stash.c:1506
-#, fuzzy
 msgid "include untracked files in stash"
-msgstr "unversionierte Dateien in Spalten auflisten"
+msgstr "unversionierte Dateien in Stash einbeziehen"
 
 #: builtin/stash.c:1472 builtin/stash.c:1508
-#, fuzzy
 msgid "include ignore files"
-msgstr "nur ignorierte Dateien löschen"
+msgstr "ignorierte Dateien einbeziehen"
 
 #: builtin/stash.c:1568
 #, c-format
@@ -19579,9 +19521,8 @@ msgid "Recurse into nested submodules"
 msgstr "Rekursion in verschachtelte Submodule durchführen"
 
 #: builtin/submodule--helper.c:569
-#, fuzzy
 msgid "git submodule--helper foreach [--quiet] [--recursive] [--] <command>"
-msgstr "git submodule--helper foreach [--quiet] [--recursive] <Befehl>"
+msgstr "git submodule--helper foreach [--quiet] [--recursive] [--] <Befehl>"
 
 #: builtin/submodule--helper.c:596
 #, c-format
@@ -19620,9 +19561,8 @@ msgid "Suppress output for initializing a submodule"
 msgstr "Ausgaben bei Initialisierung eines Submoduls unterdrücken"
 
 #: builtin/submodule--helper.c:712
-#, fuzzy
 msgid "git submodule--helper init [<options>] [<path>]"
-msgstr "git submodule--helper init [<Pfad>]"
+msgstr "git submodule--helper init [<Optionen>] [<Pfad>]"
 
 #: builtin/submodule--helper.c:784 builtin/submodule--helper.c:910
 #, c-format
@@ -19906,28 +19846,24 @@ msgid "recurse into submodules"
 msgstr "Rekursion in Submodule durchführen"
 
 #: builtin/submodule--helper.c:2099
-#, fuzzy
 msgid "git submodule--helper absorb-git-dirs [<options>] [<path>...]"
-msgstr "git submodule--helper embed-git-dir [<Pfad>...]"
+msgstr "git submodule--helper absorb-git-dirs [<Optionen>] [<Pfad>...]"
 
 #: builtin/submodule--helper.c:2156
 msgid "check if it is safe to write to the .gitmodules file"
 msgstr "prüfen, ob es sicher ist, in die Datei .gitmodules zu schreiben"
 
 #: builtin/submodule--helper.c:2159
-#, fuzzy
 msgid "unset the config in the .gitmodules file"
-msgstr "Konnte aktualisierte .gitmodules-Datei nicht zum Commit vormerken"
+msgstr "Konfiguration in der .gitmodules-Datei entfernen"
 
 #: builtin/submodule--helper.c:2164
-#, fuzzy
 msgid "git submodule--helper config <name> [<value>]"
-msgstr "git submodule--helper config name [Wert]"
+msgstr "git submodule--helper config <name> [<Wert>]"
 
 #: builtin/submodule--helper.c:2165
-#, fuzzy
 msgid "git submodule--helper config --unset <name>"
-msgstr "git submodule--helper config name [Wert]"
+msgstr "git submodule--helper config --unset <Name>"
 
 #: builtin/submodule--helper.c:2166
 msgid "git submodule--helper config --check-writeable"
@@ -19980,13 +19916,12 @@ msgid "reason of the update"
 msgstr "Grund für die Aktualisierung"
 
 #: builtin/tag.c:25
-#, fuzzy
 msgid ""
 "git tag [-a | -s | -u <key-id>] [-f] [-m <msg> | -F <file>]\n"
 "\t\t<tagname> [<head>]"
 msgstr ""
-"git tag [-a | -s | -u <Schlüssel-id>] [-f] [-m <Beschreibung> | -F <Datei>] "
-"<Tagname> [<Commit>]"
+"git tag [-a | -s | -u <Schlüssel-id>] [-f] [-m <Beschreibung> | -F <Datei>]\n"
+"\t\t<Tagname> [<Commit>]"
 
 #: builtin/tag.c:27
 msgid "git tag -d <tagname>..."
@@ -20059,7 +19994,11 @@ msgid ""
 "already a tag. If you meant to tag the object that it points to, use:\n"
 "\n"
 "\tgit tag -f %s %s^{}"
-msgstr ""
+msgstr "Sie haben einen verschachtelten Tag erzeugt. Das Objekt, welches Sie\n"
+"angegeben haben, ist bereits ein Tag. Wenn Sie das Objekt taggen wollten,\n"
+"worauf dieses zeigt, nutzen Sie:\n"
+"\n"
+"\tgit tag -f %s %s^{}"
 
 #: builtin/tag.c:226
 msgid "bad object type."
@@ -20876,7 +20815,7 @@ msgstr "<Präfix>/"
 
 #: builtin/write-tree.c:29
 msgid "write tree object for a subdirectory <prefix>"
-msgstr "das \"Tree\"-Objekt für ein Unterverzeichnis <Präfix> schreiben"
+msgstr "das Tree-Objekt für ein Unterverzeichnis <Präfix> schreiben"
 
 #: builtin/write-tree.c:31
 msgid "only useful for debugging"
@@ -20912,9 +20851,8 @@ msgid "too many commits marked reachable"
 msgstr "Zu viele Commits als erreichbar gekennzeichnet."
 
 #: t/helper/test-serve-v2.c:7
-#, fuzzy
 msgid "test-tool serve-v2 [<options>]"
-msgstr "git serve [<Optionen>]"
+msgstr "test-tool serve-v2 [<Optionen>]"
 
 #: t/helper/test-serve-v2.c:19
 msgid "exit immediately after advertising capabilities"
@@ -21098,39 +21036,38 @@ msgstr ""
 "    umgeleitet: %s"
 
 #: remote-curl.c:157
-#, fuzzy, c-format
+#, c-format
 msgid "invalid quoting in push-option value: '%s'"
-msgstr "Ungültiger \"sparse\"-Wert '%s'."
+msgstr "Ungültiges Quoting beim \"push-option\"-Wert: '%s'"
 
 #: remote-curl.c:254
-#, fuzzy, c-format
+#, c-format
 msgid "%sinfo/refs not valid: is this a git repository?"
-msgstr "'%s' nicht als Git-Repository erkannt"
+msgstr "%sinfo/refs nicht gültig: Ist das ein Git-Repository?"
 
 #: remote-curl.c:355
-#, fuzzy
 msgid "invalid server response; expected service, got flush packet"
-msgstr "git archive: ACK/NAK erwartet, Flush-Paket bekommen"
+msgstr "Ungültige Antwort des Servers. Service erwartet, Flush-Paket bekommen"
 
 #: remote-curl.c:386
-#, fuzzy, c-format
+#, c-format
 msgid "invalid server response; got '%s'"
-msgstr "Ungültige ls-refs Antwort: %s"
+msgstr "Ungültige Serverantwort; '%s' bekommen"
 
 #: remote-curl.c:446
-#, fuzzy, c-format
+#, c-format
 msgid "repository '%s' not found"
-msgstr "Ersetzende Referenz '%s' nicht gefunden."
+msgstr "Repository '%s' nicht gefunden."
 
 #: remote-curl.c:450
-#, fuzzy, c-format
+#, c-format
 msgid "Authentication failed for '%s'"
-msgstr "Fehlender Wert für '%s'"
+msgstr "Authentifizierung fehlgeschlagen für '%s'"
 
 #: remote-curl.c:454
-#, fuzzy, c-format
+#, c-format
 msgid "unable to access '%s': %s"
-msgstr "konnte nicht auf '%s' zugreifen"
+msgstr "konnte nicht auf '%s' zugreifen: %s"
 
 #: remote-curl.c:460
 #, c-format
@@ -21139,77 +21076,74 @@ msgstr "Leite nach %s um"
 
 #: remote-curl.c:584
 msgid "shouldn't have EOF when not gentle on EOF"
-msgstr ""
+msgstr "sollte kein EOF haben, wenn nicht behutsam mit EOF"
 
 #: remote-curl.c:664
 msgid "unable to rewind rpc post data - try increasing http.postBuffer"
-msgstr ""
+msgstr "Konnte nicht RPC-POST-Daten zurückspulen - Versuchen Sie "
+"http.postBuffer zu erhöhen"
 
 #: remote-curl.c:724
-#, fuzzy, c-format
+#, c-format
 msgid "RPC failed; %s"
-msgstr "STARTTLS fehlgeschlagen! %s"
+msgstr "RPC fehlgeschlagen; %s"
 
 #: remote-curl.c:764
-#, fuzzy
 msgid "cannot handle pushes this big"
-msgstr "Kann %s nicht als eingebauten Befehl behandeln."
+msgstr "Kann solche großen Übertragungen nicht verarbeiten."
 
 #: remote-curl.c:879
 #, c-format
 msgid "cannot deflate request; zlib deflate error %d"
-msgstr ""
+msgstr "Kann Request nicht komprimieren; \"zlib deflate\"-Fehler %d"
 
 #: remote-curl.c:883
 #, c-format
 msgid "cannot deflate request; zlib end error %d"
-msgstr ""
+msgstr "Kann Request nicht komprimieren; \"zlib end\"-Fehler %d"
 
 #: remote-curl.c:1014
-#, fuzzy
 msgid "dumb http transport does not support shallow capabilities"
-msgstr "Server unterstützt keine shallow-Clients"
+msgstr "Dumb HTTP-Transport unterstützt keine shallow-Funktionen"
 
 #: remote-curl.c:1028
-#, fuzzy
 msgid "fetch failed."
-msgstr "\"stash\" fehlgeschlagen"
+msgstr "\"fetch\" fehlgeschlagen."
 
 #: remote-curl.c:1076
 msgid "cannot fetch by sha1 over smart http"
-msgstr ""
+msgstr "Kann SHA-1 nicht über Smart-HTTP anfordern"
 
 #: remote-curl.c:1120 remote-curl.c:1126
-#, fuzzy, c-format
+#, c-format
 msgid "protocol error: expected sha/ref, got %s'"
-msgstr "Protokollfehler: shallow SHA-1 erwartet, '%s' bekommen"
+msgstr "Protokollfehler: SHA-1/Referenz erwartet, '%s' bekommen"
 
 #: remote-curl.c:1138 remote-curl.c:1252
-#, fuzzy, c-format
+#, c-format
 msgid "http transport does not support %s"
-msgstr "SSH-Variante 'simple' unterstützt kein -4."
+msgstr "HTTP-Transport unterstützt nicht %s"
 
 #: remote-curl.c:1174
-#, fuzzy
 msgid "git-http-push failed"
-msgstr "\"stash\" fehlgeschlagen"
+msgstr "\"git-http-push\" fehlgeschlagen"
 
 #: remote-curl.c:1360
 msgid "remote-curl: usage: git remote-curl <remote> [<url>]"
-msgstr ""
+msgstr "remote-curl: Verwendung: git remote-curl <Remote-Repository> [<URL>]"
 
 #: remote-curl.c:1392
 msgid "remote-curl: error reading command stream from git"
-msgstr ""
+msgstr "remote-curl: Fehler beim Lesen des Kommando-Streams von Git"
 
 #: remote-curl.c:1399
 msgid "remote-curl: fetch attempted without a local repo"
-msgstr ""
+msgstr "remote-curl: \"fetch\" ohne lokales Repository versucht"
 
 #: remote-curl.c:1439
 #, c-format
 msgid "remote-curl: unknown command '%s' from git"
-msgstr ""
+msgstr "remote-curl: Unbekannter Befehl '%s' von Git"
 
 #: list-objects-filter-options.h:63
 msgid "args"
@@ -21528,10 +21462,9 @@ msgid "Instantly browse your working repository in gitweb"
 msgstr "Ihr aktuelles Repository sofort in gitweb betrachten"
 
 #: command-list.h:113
-#, fuzzy
 msgid "Add or parse structured information in commit messages"
 msgstr ""
-"strukturierte Informationen in Commit-Beschreibungen hinzufügen oder parsen"
+"Strukturierte Informationen in Commit-Beschreibungen hinzufügen oder parsen"
 
 #: command-list.h:114
 msgid "The Git repository browser"
@@ -22156,9 +22089,9 @@ msgid "'$sm_path' already exists in the index and is not a submodule"
 msgstr "'$sm_path' ist bereits zum Commit vorgemerkt und ist kein Submodul"
 
 #: git-submodule.sh:239
-#, fuzzy, sh-format
+#, sh-format
 msgid "'$sm_path' does not have a commit checked out"
-msgstr "Pfad '%s' hat nicht deren Version."
+msgstr "'$sm_path' hat keinen Commit ausgecheckt"
 
 #: git-submodule.sh:245
 #, sh-format
@@ -22246,11 +22179,12 @@ msgstr ""
 "'$sm_path' nicht finden."
 
 #: git-submodule.sh:606
-#, fuzzy, sh-format
+#, sh-format
 msgid ""
 "Unable to fetch in submodule path '$displaypath'; trying to directly fetch "
 "$sha1:"
-msgstr "Konnte \"fetch\" in Submodul-Pfad '$displaypath' nicht ausführen"
+msgstr "Konnte \"fetch\" in Submodul-Pfad '$displaypath' nicht ausführen. "
+"Versuche $sha1 direkt anzufordern:"
 
 #: git-submodule.sh:612
 #, sh-format
