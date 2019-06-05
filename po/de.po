@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2019-05-31 14:35+0800\n"
+"POT-Creation-Date: 2019-06-04 08:24+0800\n"
 "PO-Revision-Date: 2016-11-28 18:10+0100\n"
 "Last-Translator: Ralf Thielow <ralf.thielow@gmail.com>\n"
 "Language-Team: German <>\n"
@@ -2679,8 +2679,8 @@ msgid "show the given source prefix instead of \"a/\""
 msgstr "Zeige den gegebenen Quell-Präfix statt \"a/\""
 
 #: diff.c:5357
-msgid "show the given source prefix instead of \"b/\""
-msgstr "Zeige den gegebenen Quell-Präfix statt \"b/\""
+msgid "show the given destination prefix instead of \"b/\""
+msgstr "Zeige den gegebenen Ziel-Präfix statt \"b/\""
 
 #: diff.c:5360
 msgid "prepend an additional prefix to every line of output"
@@ -3589,7 +3589,11 @@ msgstr "Mehrere filter-specs können nicht kombiniert werden."
 msgid "expected 'tree:<depth>'"
 msgstr "'tree:<Tiefe>' erwartet"
 
-#: list-objects-filter-options.c:156
+#: list-objects-filter-options.c:84
+msgid "sparse:path filters support has been dropped"
+msgstr "Keine Unterstützung für sparse:path Filter mehr"
+
+#: list-objects-filter-options.c:158
 msgid "cannot change partial clone promisor remote"
 msgstr "Kann Remote-Repository für partielles Klonen nicht ändern."
 
@@ -21152,7 +21156,7 @@ msgstr "Kann SHA-1 nicht über Smart-HTTP anfordern"
 
 #: remote-curl.c:1120 remote-curl.c:1126
 #, c-format
-msgid "protocol error: expected sha/ref, got %s'"
+msgid "protocol error: expected sha/ref, got '%s'"
 msgstr "Protokollfehler: SHA-1/Referenz erwartet, '%s' bekommen"
 
 #: remote-curl.c:1138 remote-curl.c:1252
@@ -21181,11 +21185,11 @@ msgstr "remote-curl: \"fetch\" ohne lokales Repository versucht"
 msgid "remote-curl: unknown command '%s' from git"
 msgstr "remote-curl: Unbekannter Befehl '%s' von Git"
 
-#: list-objects-filter-options.h:63
+#: list-objects-filter-options.h:61
 msgid "args"
 msgstr "Argumente"
 
-#: list-objects-filter-options.h:64
+#: list-objects-filter-options.h:62
 msgid "object filtering"
 msgstr "Filtern nach Objekten"
 
