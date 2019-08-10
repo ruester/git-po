@@ -10882,9 +10882,8 @@ msgid "throw away local modifications"
 msgstr "lokale Änderungen verwerfen"
 
 #: builtin/checkout.c:1772
-#, fuzzy
 msgid "which tree-ish to checkout from"
-msgstr "von wo ausgecheckt werden soll"
+msgstr "Von welcher Commit-Referenz ausgecheckt werden soll"
 
 #: builtin/checkout.c:1774
 msgid "restore the index"
@@ -13106,25 +13105,28 @@ msgid "non-fast-forward"
 msgstr "kein Vorspulen"
 
 #: builtin/fetch.c:854
-#, fuzzy
 msgid ""
 "Fetch normally indicates which branches had a forced update,\n"
 "but that check has been disabled. To re-enable, use '--show-forced-updates'\n"
 "flag or run 'git config fetch.showForcedUpdates true'."
 msgstr ""
-"Um es wieder zu aktivieren, nutzen Sie '--show-forced-updated' oder führen "
+"Normalerweise zeigt 'fetch' welche Branches eine erzwungene Aktualisierung\n"
+"hatten, aber diese Überprüfung wurde deaktiviert. Um es wieder zu\n"
+"aktivieren, nutzen Sie die Option '--show-forced-updated' oder führen\n"
 "Sie 'git config fetch.showForcedUpdates true' aus."
 
 #: builtin/fetch.c:858
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "It took %.2f seconds to check forced updates. You can use\n"
 "'--no-show-forced-updates' or run 'git config fetch.showForcedUpdates "
 "false'\n"
 " to avoid this check.\n"
 msgstr ""
-"Es brauchte %.2f Sekunden, um auf erzwungene Aktualisierungen zu prüfen. Sie "
-"können '--no-show-forced-updates' benutzen\n"
+"Es brauchte %.2f Sekunden, um auf erzwungene Aktualisierungen zu prüfen.\n"
+"Sie können die Option '--no-show-forced-updates' benutzen oder\n"
+"'git config fetch.showForcedUpdates false' ausführen, um diese Überprüfung\n"
+"zu umgehen.\n"
 
 #: builtin/fetch.c:888
 #, c-format
@@ -16657,9 +16659,8 @@ msgid "write a bitmap index together with the pack index"
 msgstr "Bitmap-Index zusammen mit Pack-Index schreiben"
 
 #: builtin/pack-objects.c:3327
-#, fuzzy
 msgid "write a bitmap index if possible"
-msgstr "Bitmap-Index schreiben"
+msgstr "Bitmap-Index schreiben, wenn möglich"
 
 #: builtin/pack-objects.c:3331
 msgid "handling for missing objects"
