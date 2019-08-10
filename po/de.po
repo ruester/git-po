@@ -106,7 +106,7 @@ msgstr ""
 "Sie befinden sich im Zustand eines 'losgelösten HEAD'. Sie können sich\n"
 "umschauen, experimentelle Änderungen vornehmen und diese committen, und\n"
 "Sie können alle möglichen Commits, die Sie in diesem Zustand machen,\n"
-"ohne Auswirkungen auf irgendeinen Branch verwerfen, indem Sie zu einer\n"
+"ohne Auswirkungen auf irgendeinen Branch verwerfen, indem Sie zu einem\n"
 "anderen Branch wechseln.\n"
 "\n"
 "Wenn Sie einen neuen Branch erstellen möchten, um Ihre erstellten Commits\n"
@@ -1315,7 +1315,7 @@ msgstr "Dem Repository fehlen folgende vorausgesetzte Commits:"
 
 #: bundle.c:146
 msgid "need a repository to verify a bundle"
-msgstr "Um ein Paket zu verifizieren wird ein Repository benötigt."
+msgstr "Um ein Paket zu überprüfen wird ein Repository benötigt."
 
 #: bundle.c:197
 #, c-format
@@ -3644,7 +3644,7 @@ msgstr "Keine Unterstützung für sparse:path Filter mehr"
 #: list-objects-filter-options.c:94
 #, c-format
 msgid "invalid filter-spec '%s'"
-msgstr "Ungültiges filter-spec '%s'"
+msgstr "Ungültige filter-spec '%s'"
 
 #: list-objects-filter-options.c:158
 msgid "cannot change partial clone promisor remote"
@@ -6327,16 +6327,16 @@ msgstr "\"revert\" ist bereits im Gange"
 #: sequencer.c:2670
 #, c-format
 msgid "try \"git revert (--continue | %s--abort | --quit)\""
-msgstr "versuchen Sie \"git revert (--continue | %s--abort | --quit)\""
+msgstr "Versuchen Sie \"git revert (--continue | %s--abort | --quit)\""
 
 #: sequencer.c:2673
 msgid "cherry-pick is already in progress"
-msgstr "\"cherry-pick\" ist bereits im Gange"
+msgstr "\"cherry-pick\" wird bereits durchgeführt"
 
 #: sequencer.c:2675
 #, c-format
 msgid "try \"git cherry-pick (--continue | %s--abort | --quit)\""
-msgstr "versuchen Sie \"git cherry-pick (--continue | %s--abort | --quit)\""
+msgstr "Versuchen Sie \"git cherry-pick (--continue | %s--abort | --quit)\""
 
 #: sequencer.c:2689
 #, c-format
@@ -6405,7 +6405,7 @@ msgid ""
 "have you committed already?\n"
 "try \"git %s --continue\""
 msgstr ""
-"Wurde bereits committet?\n"
+"Haben Sie bereits committet?\n"
 "Versuchen Sie \"git %s --continue\""
 
 #: sequencer.c:3011 sequencer.c:4015
@@ -7235,7 +7235,7 @@ msgstr "%u.%2.2u KiB/s"
 #, c-format
 msgid "%u byte"
 msgid_plural "%u bytes"
-msgstr[0] "%u Bytes"
+msgstr[0] "%u Byte"
 msgstr[1] "%u Bytes"
 
 #. TRANSLATORS: IEC 80000-13:2008 byte/second
@@ -7243,7 +7243,7 @@ msgstr[1] "%u Bytes"
 #, c-format
 msgid "%u byte/s"
 msgid_plural "%u bytes/s"
-msgstr[0] "%u Bytes/s"
+msgstr[0] "%u Byte/s"
 msgstr[1] "%u Bytes/s"
 
 #: submodule.c:114 submodule.c:143
@@ -8233,8 +8233,8 @@ msgid ""
 "You can use '--no-ahead-behind' to avoid this.\n"
 msgstr ""
 "\n"
-"Es wurden %.2f Sekunden benötigt, um die voraus/hinterher-Werte der Branch\n"
-"zu berechnen.\n"
+"Es wurden %.2f Sekunden benötigt, um die voraus/hinterher-Werte zu "
+"berechnen.\n"
 "Sie können '--no-ahead-behind' benutzen, um das zu verhindern.\n"
 
 #: wt-status.c:1144
@@ -9188,7 +9188,7 @@ msgstr "Es ist keine Auflösung im Gange, es wird nicht fortgesetzt."
 
 #: builtin/am.c:2336
 msgid "interactive mode requires patches on the command line"
-msgstr "Interaktiver Modus benötigt Patch-Dateien in der Kommandozeile"
+msgstr "Interaktiver Modus benötigt Patches über die Kommandozeile"
 
 #: builtin/apply.c:8
 msgid "git apply [<options>] [<patch>...]"
@@ -10605,29 +10605,29 @@ msgstr "Referenz ist kein \"Tree\"-Objekt: %s"
 #: builtin/checkout.c:1303
 #, c-format
 msgid "a branch is expected, got tag '%s'"
-msgstr "Eine Branch wird erwartet, Tag '%s' bekommen"
+msgstr "Ein Branch wird erwartet, Tag '%s' bekommen"
 
 #: builtin/checkout.c:1305
 #, c-format
 msgid "a branch is expected, got remote branch '%s'"
-msgstr "Eine Branch wird erwartet, Remote-Branch '%s' bekommen"
+msgstr "Ein Branch wird erwartet, Remote-Branch '%s' bekommen"
 
 #: builtin/checkout.c:1306 builtin/checkout.c:1314
 #, c-format
 msgid "a branch is expected, got '%s'"
-msgstr "Eine Branch wird erwartet, '%s' bekommen"
+msgstr "Ein Branch wird erwartet, '%s' bekommen"
 
 #: builtin/checkout.c:1309
 #, c-format
 msgid "a branch is expected, got commit '%s'"
-msgstr "Eine Branch wird erwartet, Commit '%s' bekommen"
+msgstr "Ein Branch wird erwartet, Commit '%s' bekommen"
 
 #: builtin/checkout.c:1325
 msgid ""
 "cannot switch branch while merging\n"
 "Consider \"git merge --quit\" or \"git worktree add\"."
 msgstr ""
-"Die Branch kann nicht während eines Merges gewechselt werden.\n"
+"Der Branch kann nicht während eines Merges gewechselt werden.\n"
 "Ziehen Sie \"git merge --quit\" oder \"git worktree add\" in Betracht."
 
 #: builtin/checkout.c:1329
@@ -10635,7 +10635,7 @@ msgid ""
 "cannot switch branch in the middle of an am session\n"
 "Consider \"git am --quit\" or \"git worktree add\"."
 msgstr ""
-"Die Branch kann nicht während eines laufenden 'am'-Befehls gewechselt "
+"Der Branch kann nicht während eines laufenden 'am'-Befehls gewechselt "
 "werden.\n"
 "Ziehen Sie \"git am --quit\" oder \"git worktree add\" in Betracht."
 
@@ -10644,7 +10644,7 @@ msgid ""
 "cannot switch branch while rebasing\n"
 "Consider \"git rebase --quit\" or \"git worktree add\"."
 msgstr ""
-"Die Branch kann nicht während eines laufenden 'revert'-Befehls gewechselt "
+"Der Branch kann nicht während eines laufenden 'revert'-Befehls gewechselt "
 "werden.\n"
 "Ziehen Sie \"git rebase --quit\" oder \"git worktree add\" in Betracht."
 
@@ -10653,7 +10653,7 @@ msgid ""
 "cannot switch branch while cherry-picking\n"
 "Consider \"git cherry-pick --quit\" or \"git worktree add\"."
 msgstr ""
-"Die Branch kann nicht während eines laufenden 'cherry-pick'-Befehls "
+"Der Branch kann nicht während eines laufenden 'cherry-pick'-Befehls "
 "gewechselt werden.\n"
 "Ziehen Sie \"git cherry-pick --quit\" oder \"git worktree add\" in Betracht."
 
@@ -10662,13 +10662,13 @@ msgid ""
 "cannot switch branch while reverting\n"
 "Consider \"git revert --quit\" or \"git worktree add\"."
 msgstr ""
-"Die Branch kann nicht während eines laufenden 'revert'-Befehls gewechselt "
+"Der Branch kann nicht während eines laufenden 'revert'-Befehls gewechselt "
 "werden.\n"
 "Ziehen Sie \"git revert --quit\" oder \"git worktree add\" in Betracht."
 
 #: builtin/checkout.c:1345
 msgid "you are switching branch while bisecting"
-msgstr "Sie wechseln die Branch während einer binären Suche"
+msgstr "Sie wechseln den Branch während einer binären Suche"
 
 #: builtin/checkout.c:1352
 msgid "paths cannot be used with switching branches"
@@ -10782,7 +10782,7 @@ msgstr "Konnte %s nicht auflösen."
 
 #: builtin/checkout.c:1623
 msgid "you must specify path(s) to restore"
-msgstr "Sie müssen ein Pfad zum Wiederherstellen angeben."
+msgstr "Sie müssen Pfad(e) zur Wiederherstellung angeben."
 
 #: builtin/checkout.c:1631
 msgid "invalid path specification"
@@ -10860,7 +10860,7 @@ msgstr "das Reflog für den neuen Branch erzeugen"
 #: builtin/checkout.c:1697
 msgid "second guess 'git checkout <no-such-branch>' (default)"
 msgstr ""
-"kein zweites Erraten bei 'git checkout <kein-solcher-Branch>' (Standard)"
+"Zweite Vermutung 'git checkout <kein-solcher-Branch>' (Standard)"
 
 #: builtin/checkout.c:1698
 msgid "use overlay mode (default)"
@@ -10876,7 +10876,7 @@ msgstr "einen Branch erstellen/umsetzen und dahin wechseln"
 
 #: builtin/checkout.c:1738
 msgid "second guess 'git switch <no-such-branch>'"
-msgstr "kein zweites Erraten bei 'git switch <kein-solcher-Branch>'"
+msgstr "Zweite Vermutung 'git switch <kein-solcher-Branch>'"
 
 #: builtin/checkout.c:1740
 msgid "throw away local modifications"
@@ -11251,7 +11251,7 @@ msgstr "nur IPv6-Adressen benutzen"
 
 #: builtin/clone.c:149
 msgid "any cloned submodules will use their remote-tracking branch"
-msgstr "jedes geklonte Submodul nutzt seine Remote-Tracking-Branch"
+msgstr "jedes geklonte Submodul nutzt seinen Remote-Tracking-Branch"
 
 #: builtin/clone.c:285
 msgid ""
@@ -12121,7 +12121,7 @@ msgid ""
 "reachable|--stdin-packs|--stdin-commits] <split options>"
 msgstr ""
 "git commit-graph write [--object-dir <Objektverzeichnis>] [--append|split] "
-"[--reachable|--stdin-packs|--stdin-commits] <Split Optionen>"
+"[--reachable|--stdin-packs|--stdin-commits] <Split-Optionen>"
 
 #: builtin/commit-graph.c:54 builtin/commit-graph.c:100
 #: builtin/commit-graph.c:161 builtin/commit-graph.c:237 builtin/fetch.c:163
@@ -12819,7 +12819,7 @@ msgstr "kein <Programm> für --extcmd=<Programm> angegeben"
 
 #: builtin/env--helper.c:6
 msgid "git env--helper --type=[bool|ulong] <options> <env-var>"
-msgstr "git env--helper --type=[bool|ulong] <Optionen> <Umgebungsvariablen>"
+msgstr "git env--helper --type=[bool|ulong] <Optionen> <Umgebungsvariable>"
 
 #: builtin/env--helper.c:37 builtin/hash-object.c:98
 msgid "type"
@@ -12827,7 +12827,7 @@ msgstr "Art"
 
 #: builtin/env--helper.c:41
 msgid "default for git_env_*(...) to fall back on"
-msgstr "Standard für git_env_*(...) um darauf zurückzugreifen"
+msgstr "Standard für git_env_*(...), um darauf zurückzugreifen"
 
 #: builtin/env--helper.c:43
 msgid "be quiet only use git_env_*() value as exit code"
@@ -12868,7 +12868,7 @@ msgstr "Behandlung von Tags wählen, die gefilterte Objekte markieren"
 #: builtin/fast-export.c:1132
 msgid "select handling of commit messages in an alternate encoding"
 msgstr ""
-"Auswählen der Behandlung von Commit-Beschreibungen in wechselndem Encoding"
+"Auswählen der Behandlung von Commit-Beschreibungen bei wechselndem Encoding"
 
 #: builtin/fast-export.c:1135
 msgid "Dump marks to this file"
@@ -13044,7 +13044,7 @@ msgstr "Führe 'gc --auto' nach \"fetch\" aus"
 
 #: builtin/fetch.c:185 builtin/pull.c:245
 msgid "check for forced-updates on all updated branches"
-msgstr "Prüfe auf erzwungene Aktualisierungen in allen aktualisieren Branches"
+msgstr "Prüfe auf erzwungene Aktualisierungen in allen aktualisierten Branches"
 
 #: builtin/fetch.c:491
 msgid "Couldn't find remote ref HEAD"
@@ -13112,7 +13112,7 @@ msgid ""
 "flag or run 'git config fetch.showForcedUpdates true'."
 msgstr ""
 "Normalerweise zeigt 'fetch' welche Branches eine erzwungene Aktualisierung\n"
-"hatten, aber diese Überprüfung wurde deaktiviert. Um es wieder zu\n"
+"hatten, aber diese Überprüfung wurde deaktiviert. Um diese wieder zu\n"
 "aktivieren, nutzen Sie die Option '--show-forced-updated' oder führen\n"
 "Sie 'git config fetch.showForcedUpdates true' aus."
 
@@ -13124,7 +13124,7 @@ msgid ""
 "false'\n"
 " to avoid this check.\n"
 msgstr ""
-"Es brauchte %.2f Sekunden, um auf erzwungene Aktualisierungen zu prüfen.\n"
+"Es brauchte %.2f Sekunden, um erzwungene Aktualisierungen zu überprüfen.\n"
 "Sie können die Option '--no-show-forced-updates' benutzen oder\n"
 "'git config fetch.showForcedUpdates false' ausführen, um diese Überprüfung\n"
 "zu umgehen.\n"
@@ -15301,7 +15301,7 @@ msgstr "den sich im Gange befindlichen Merge abbrechen"
 
 #: builtin/merge.c:280
 msgid "--abort but leave index and working tree alone"
-msgstr "--abort, aber Index und Arbeitsverzeichnis bleibt unverändert"
+msgstr "--abort, aber Index und Arbeitsverzeichnis unverändert lassen"
 
 #: builtin/merge.c:282
 msgid "continue the current in-progress merge"
