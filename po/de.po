@@ -12672,18 +12672,18 @@ msgstr "gekürztes Commit-Objekt anzeigen, wenn sonst nichts zutrifft"
 
 #: builtin/describe.c:554 builtin/describe.c:557
 msgid "mark"
-msgstr "Kennzeichen"
+msgstr "Markierung"
 
 #: builtin/describe.c:555
 msgid "append <mark> on dirty working tree (default: \"-dirty\")"
 msgstr ""
-"<Kennzeichen> bei geändertem Arbeitsverzeichnis anhängen (Standard: \"-dirty"
+"<Markierung> bei geändertem Arbeitsverzeichnis anhängen (Standard: \"-dirty"
 "\")"
 
 #: builtin/describe.c:558
 msgid "append <mark> on broken working tree (default: \"-broken\")"
 msgstr ""
-"<Kennzeichen> bei defektem Arbeitsverzeichnis anhängen (Standard: \"-broken"
+"<Markierung> bei defektem Arbeitsverzeichnis anhängen (Standard: \"-broken"
 "\")"
 
 #: builtin/describe.c:576
@@ -12907,15 +12907,15 @@ msgstr ""
 
 #: builtin/fast-export.c:1163
 msgid "Dump marks to this file"
-msgstr "Kennzeichen in diese Datei schreiben"
+msgstr "Markierungen in diese Datei schreiben"
 
 #: builtin/fast-export.c:1165
 msgid "Import marks from this file"
-msgstr "Kennzeichen von dieser Datei importieren"
+msgstr "Markierungen von dieser Datei importieren"
 
 #: builtin/fast-export.c:1169
 msgid "Import marks from this file if it exists"
-msgstr "Kennzeichen von dieser Datei importieren, wenn diese existiert"
+msgstr "Markierungen von dieser Datei importieren, wenn diese existiert"
 
 #: builtin/fast-export.c:1171
 msgid "Fake a tagger when tags lack one"
