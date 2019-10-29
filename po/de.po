@@ -7652,9 +7652,9 @@ msgid "helper %s does not support --signed=if-asked"
 msgstr "Remote-Helper %s unterstützt kein --signed=if-asked."
 
 #: transport-helper.c:859
-#, fuzzy, c-format
+#, c-format
 msgid "helper %s does not support --atomic"
-msgstr "Remote-Helper %s unterstützt kein --signed."
+msgstr "Remote-Helper %s unterstützt kein --atomic."
 
 #: transport-helper.c:865
 #, c-format
