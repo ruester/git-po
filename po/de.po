@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2019-10-21 19:55+0800\n"
+"POT-Creation-Date: 2019-10-28 13:19+0800\n"
 "PO-Revision-Date: 2016-11-28 18:10+0100\n"
 "Last-Translator: Matthias Rüster <matthias.ruester@gmail.com>\n"
 "Language-Team: Matthias Rüster <matthias.ruester@gmail.com>\n"
@@ -3385,26 +3385,26 @@ msgstr "Fehler beim Schreiben der losgelösten Signatur nach '%s'"
 msgid "ignore invalid color '%.*s' in log.graphColors"
 msgstr "Ignoriere ungültige Farbe '%.*s' in log.graphColors"
 
-#: grep.c:627
+#: grep.c:668
 msgid ""
 "given pattern contains NULL byte (via -f <file>). This is only supported "
 "with -P under PCRE v2"
 msgstr ""
-"Angegebenes Muster enthält NULL Byte (durch -f <file>). Das ist nur mit -P"
-"unter PCRE v2 unterstützt."
+"Angegebenes Muster enthält NULL Byte (durch -f <file>). Das ist nur mit -"
+"Punter PCRE v2 unterstützt."
 
-#: grep.c:2083
+#: grep.c:2124
 #, c-format
 msgid "'%s': unable to read %s"
 msgstr "'%s': konnte %s nicht lesen"
 
-#: grep.c:2100 setup.c:165 builtin/clone.c:408 builtin/diff.c:82
+#: grep.c:2141 setup.c:165 builtin/clone.c:408 builtin/diff.c:82
 #: builtin/rm.c:135
 #, c-format
 msgid "failed to stat '%s'"
 msgstr "Konnte '%s' nicht lesen"
 
-#: grep.c:2111
+#: grep.c:2152
 #, c-format
 msgid "'%s': short read"
 msgstr "'%s': read() zu kurz"
@@ -7602,7 +7602,7 @@ msgstr "Konnte \"fast-import\" nicht ausführen."
 msgid "error while running fast-import"
 msgstr "Fehler beim Ausführen von 'fast-import'."
 
-#: transport-helper.c:543 transport-helper.c:1128
+#: transport-helper.c:543 transport-helper.c:1132
 #, c-format
 msgid "could not read ref %s"
 msgstr "Konnte Referenz %s nicht lesen."
@@ -7651,29 +7651,34 @@ msgstr "Remote-Helper %s unterstützt kein --signed."
 msgid "helper %s does not support --signed=if-asked"
 msgstr "Remote-Helper %s unterstützt kein --signed=if-asked."
 
-#: transport-helper.c:861
+#: transport-helper.c:859
+#, fuzzy, c-format
+msgid "helper %s does not support --atomic"
+msgstr "Remote-Helper %s unterstützt kein --signed."
+
+#: transport-helper.c:865
 #, c-format
 msgid "helper %s does not support 'push-option'"
 msgstr "Remote-Helper %s unterstützt nicht 'push-option'."
 
-#: transport-helper.c:959
+#: transport-helper.c:963
 msgid "remote-helper doesn't support push; refspec needed"
 msgstr "Remote-Helper unterstützt kein Push; Refspec benötigt"
 
-#: transport-helper.c:964
+#: transport-helper.c:968
 #, c-format
 msgid "helper %s does not support 'force'"
 msgstr "Remote-Helper %s unterstützt kein 'force'."
 
-#: transport-helper.c:1011
+#: transport-helper.c:1015
 msgid "couldn't run fast-export"
 msgstr "Konnte \"fast-export\" nicht ausführen."
 
-#: transport-helper.c:1016
+#: transport-helper.c:1020
 msgid "error while running fast-export"
 msgstr "Fehler beim Ausführen von \"fast-export\"."
 
-#: transport-helper.c:1041
+#: transport-helper.c:1045
 #, c-format
 msgid ""
 "No refs in common and none specified; doing nothing.\n"
@@ -7682,47 +7687,47 @@ msgstr ""
 "Keine gemeinsamen Referenzen und nichts spezifiziert; keine Ausführung.\n"
 "Vielleicht sollten Sie einen Branch wie 'master' angeben.\n"
 
-#: transport-helper.c:1114
+#: transport-helper.c:1118
 #, c-format
 msgid "malformed response in ref list: %s"
 msgstr "Ungültige Antwort in Referenzliste: %s"
 
-#: transport-helper.c:1266
+#: transport-helper.c:1270
 #, c-format
 msgid "read(%s) failed"
 msgstr "Lesen von %s fehlgeschlagen."
 
-#: transport-helper.c:1293
+#: transport-helper.c:1297
 #, c-format
 msgid "write(%s) failed"
 msgstr "Schreiben von %s fehlgeschlagen."
 
-#: transport-helper.c:1342
+#: transport-helper.c:1346
 #, c-format
 msgid "%s thread failed"
 msgstr "Thread %s fehlgeschlagen."
 
-#: transport-helper.c:1346
+#: transport-helper.c:1350
 #, c-format
 msgid "%s thread failed to join: %s"
 msgstr "Fehler beim Beitreten zu Thread %s: %s"
 
-#: transport-helper.c:1365 transport-helper.c:1369
+#: transport-helper.c:1369 transport-helper.c:1373
 #, c-format
 msgid "can't start thread for copying data: %s"
 msgstr "Kann Thread zum Kopieren von Daten nicht starten: %s"
 
-#: transport-helper.c:1406
+#: transport-helper.c:1410
 #, c-format
 msgid "%s process failed to wait"
 msgstr "Fehler beim Warten von Prozess %s."
 
-#: transport-helper.c:1410
+#: transport-helper.c:1414
 #, c-format
 msgid "%s process failed"
 msgstr "Prozess %s fehlgeschlagen"
 
-#: transport-helper.c:1428 transport-helper.c:1437
+#: transport-helper.c:1432 transport-helper.c:1441
 msgid "can't start thread for copying data"
 msgstr "Kann Thread zum Kopieren von Daten nicht starten."
 
@@ -8437,8 +8442,8 @@ msgstr ""
 
 #: wt-status.c:1437
 msgid "  (use \"git cherry-pick --skip\" to skip this patch)"
-msgstr "  (benutzen Sie \"git cherry-pick --skip\", um diesen Patch "
-"auszulassen)"
+msgstr ""
+"  (benutzen Sie \"git cherry-pick --skip\", um diesen Patch auszulassen)"
 
 #: wt-status.c:1439
 msgid "  (use \"git cherry-pick --abort\" to cancel the cherry-pick operation)"
@@ -12141,8 +12146,8 @@ msgstr "git commit-graph read [--object-dir <Objektverzeichnis>]"
 msgid ""
 "git commit-graph verify [--object-dir <objdir>] [--shallow] [--[no-]progress]"
 msgstr ""
-"git commit-graph verify [--object-dir <Objektverzeichnis>] [--shallow] "
-"[--[no-]progress]"
+"git commit-graph verify [--object-dir <Objektverzeichnis>] [--shallow] [--"
+"[no-]progress]"
 
 #: builtin/commit-graph.c:14 builtin/commit-graph.c:29
 msgid ""
@@ -12150,8 +12155,8 @@ msgid ""
 "reachable|--stdin-packs|--stdin-commits] [--[no-]progress] <split options>"
 msgstr ""
 "git commit-graph write [--object-dir <Objektverzeichnis>] [--append|split] "
-"[--reachable|--stdin-packs|--stdin-commits] [--[no-]progress] "
-"<Split-Optionen>"
+"[--reachable|--stdin-packs|--stdin-commits] [--[no-]progress] <Split-"
+"Optionen>"
 
 #: builtin/commit-graph.c:55 builtin/commit-graph.c:107
 #: builtin/commit-graph.c:170 builtin/commit-graph.c:254 builtin/fetch.c:178
@@ -12683,8 +12688,7 @@ msgstr ""
 #: builtin/describe.c:558
 msgid "append <mark> on broken working tree (default: \"-broken\")"
 msgstr ""
-"<Markierung> bei defektem Arbeitsverzeichnis anhängen (Standard: \"-broken"
-"\")"
+"<Markierung> bei defektem Arbeitsverzeichnis anhängen (Standard: \"-broken\")"
 
 #: builtin/describe.c:576
 msgid "--long is incompatible with --abbrev=0"
@@ -12885,8 +12889,9 @@ msgstr "git fast-export [rev-list-opts]"
 
 #: builtin/fast-export.c:852
 msgid "Error: Cannot export nested tags unless --mark-tags is specified."
-msgstr "Fehler: Verschachtelte Tags können nicht exportiert werden, außer "
-"--mark-tags wurde angegeben."
+msgstr ""
+"Fehler: Verschachtelte Tags können nicht exportiert werden, außer --mark-"
+"tags wurde angegeben."
 
 #: builtin/fast-export.c:1152
 msgid "show progress after <n> objects"
@@ -17461,8 +17466,8 @@ msgid ""
 "git rebase [-i] [options] [--exec <cmd>] [--onto <newbase> | --keep-base] "
 "[<upstream> [<branch>]]"
 msgstr ""
-"git rebase [-i] [<Optionen>] [--exec <Programm>] [--onto <neue-Basis> "
-"| --keep-base] [<Upstream> [<Branch>]]"
+"git rebase [-i] [<Optionen>] [--exec <Programm>] [--onto <neue-Basis> | --"
+"keep-base] [<Upstream> [<Branch>]]"
 
 #: builtin/rebase.c:34
 msgid ""
@@ -17767,8 +17772,7 @@ msgstr "Rebase auf angegebenen Branch anstelle des Upstream-Branches ausführen"
 
 #: builtin/rebase.c:1420
 msgid "use the merge-base of upstream and branch as the current base"
-msgstr ""
-"Nutze die Merge-Basis von Upstream und Branch als die aktuelle Basis"
+msgstr "Nutze die Merge-Basis von Upstream und Branch als die aktuelle Basis"
 
 #: builtin/rebase.c:1422
 msgid "allow pre-rebase hook to run"
@@ -21353,8 +21357,9 @@ msgstr "Fehler beim Ausführen von 'git status' auf '%s'"
 #: builtin/worktree.c:882
 #, c-format
 msgid "'%s' contains modified or untracked files, use --force to delete it"
-msgstr "'%s' enthält geänderte oder nicht versionierte Dateien, benutzen Sie "
-"--force zum Löschen"
+msgstr ""
+"'%s' enthält geänderte oder nicht versionierte Dateien, benutzen Sie --force "
+"zum Löschen"
 
 #: builtin/worktree.c:887
 #, c-format
@@ -21633,113 +21638,113 @@ msgstr ""
 "  gefragt nach: %s\n"
 "    umgeleitet: %s"
 
-#: remote-curl.c:157
+#: remote-curl.c:166
 #, c-format
 msgid "invalid quoting in push-option value: '%s'"
 msgstr "Ungültiges Quoting beim \"push-option\"-Wert: '%s'"
 
-#: remote-curl.c:254
+#: remote-curl.c:263
 #, c-format
 msgid "%sinfo/refs not valid: is this a git repository?"
 msgstr "%sinfo/refs nicht gültig: Ist das ein Git-Repository?"
 
-#: remote-curl.c:355
+#: remote-curl.c:364
 msgid "invalid server response; expected service, got flush packet"
 msgstr "Ungültige Antwort des Servers. Service erwartet, Flush-Paket bekommen"
 
-#: remote-curl.c:386
+#: remote-curl.c:395
 #, c-format
 msgid "invalid server response; got '%s'"
 msgstr "Ungültige Serverantwort; '%s' bekommen"
 
-#: remote-curl.c:446
+#: remote-curl.c:455
 #, c-format
 msgid "repository '%s' not found"
 msgstr "Repository '%s' nicht gefunden."
 
-#: remote-curl.c:450
+#: remote-curl.c:459
 #, c-format
 msgid "Authentication failed for '%s'"
 msgstr "Authentifizierung fehlgeschlagen für '%s'"
 
-#: remote-curl.c:454
+#: remote-curl.c:463
 #, c-format
 msgid "unable to access '%s': %s"
 msgstr "konnte nicht auf '%s' zugreifen: %s"
 
-#: remote-curl.c:460
+#: remote-curl.c:469
 #, c-format
 msgid "redirecting to %s"
 msgstr "Leite nach %s um"
 
-#: remote-curl.c:584
+#: remote-curl.c:593
 msgid "shouldn't have EOF when not gentle on EOF"
 msgstr "sollte kein EOF haben, wenn nicht behutsam mit EOF"
 
-#: remote-curl.c:664
+#: remote-curl.c:673
 msgid "unable to rewind rpc post data - try increasing http.postBuffer"
 msgstr ""
 "Konnte nicht RPC-POST-Daten zurückspulen - Versuchen Sie http.postBuffer zu "
 "erhöhen"
 
-#: remote-curl.c:724
+#: remote-curl.c:733
 #, c-format
 msgid "RPC failed; %s"
 msgstr "RPC fehlgeschlagen; %s"
 
-#: remote-curl.c:764
+#: remote-curl.c:773
 msgid "cannot handle pushes this big"
 msgstr "Kann solche großen Übertragungen nicht verarbeiten."
 
-#: remote-curl.c:879
+#: remote-curl.c:888
 #, c-format
 msgid "cannot deflate request; zlib deflate error %d"
 msgstr "Kann Request nicht komprimieren; \"zlib deflate\"-Fehler %d"
 
-#: remote-curl.c:883
+#: remote-curl.c:892
 #, c-format
 msgid "cannot deflate request; zlib end error %d"
 msgstr "Kann Request nicht komprimieren; \"zlib end\"-Fehler %d"
 
-#: remote-curl.c:1014
+#: remote-curl.c:1023
 msgid "dumb http transport does not support shallow capabilities"
 msgstr "Dumb HTTP-Transport unterstützt keine shallow-Funktionen"
 
-#: remote-curl.c:1028
+#: remote-curl.c:1037
 msgid "fetch failed."
 msgstr "\"fetch\" fehlgeschlagen."
 
-#: remote-curl.c:1076
+#: remote-curl.c:1085
 msgid "cannot fetch by sha1 over smart http"
 msgstr "Kann SHA-1 nicht über Smart-HTTP anfordern"
 
-#: remote-curl.c:1120 remote-curl.c:1126
+#: remote-curl.c:1129 remote-curl.c:1135
 #, c-format
 msgid "protocol error: expected sha/ref, got '%s'"
 msgstr "Protokollfehler: SHA-1/Referenz erwartet, '%s' bekommen"
 
-#: remote-curl.c:1138 remote-curl.c:1250
+#: remote-curl.c:1147 remote-curl.c:1261
 #, c-format
 msgid "http transport does not support %s"
 msgstr "HTTP-Transport unterstützt nicht %s"
 
-#: remote-curl.c:1174
+#: remote-curl.c:1183
 msgid "git-http-push failed"
 msgstr "\"git-http-push\" fehlgeschlagen"
 
-#: remote-curl.c:1356
+#: remote-curl.c:1367
 msgid "remote-curl: usage: git remote-curl <remote> [<url>]"
 msgstr "remote-curl: Verwendung: git remote-curl <Remote-Repository> [<URL>]"
 
-#: remote-curl.c:1388
+#: remote-curl.c:1399
 msgid "remote-curl: error reading command stream from git"
 msgstr "remote-curl: Fehler beim Lesen des Kommando-Streams von Git"
 
-#: remote-curl.c:1395
+#: remote-curl.c:1406
 msgid "remote-curl: fetch attempted without a local repo"
 msgstr "remote-curl: \"fetch\" ohne lokales Repository versucht"
 
-#: remote-curl.c:1435
+#: remote-curl.c:1446
 #, c-format
 msgid "remote-curl: unknown command '%s' from git"
 msgstr "remote-curl: Unbekannter Befehl '%s' von Git"
