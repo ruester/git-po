@@ -3390,8 +3390,8 @@ msgid ""
 "given pattern contains NULL byte (via -f <file>). This is only supported "
 "with -P under PCRE v2"
 msgstr ""
-"Angegebenes Muster enthält NULL Byte (durch -f <file>). Das ist nur mit -"
-"Punter PCRE v2 unterstützt."
+"Angegebenes Muster enthält NULL Byte (über -f <Datei>). Das wird nur mit -P"
+"unter PCRE v2 unterstützt."
 
 #: grep.c:2124
 #, c-format
@@ -3651,7 +3651,7 @@ msgstr "konnte nicht auf partiellen Blob '%s' zugreifen"
 #: list-objects-filter.c:495
 #, c-format
 msgid "unable to parse sparse filter data in %s"
-msgstr "konnte partiellen Daten-Filter von %s nicht parsen"
+msgstr "Konnte partielle Filter-Daten in %s nicht parsen."
 
 #: list-objects-filter-options.c:58
 msgid "expected 'tree:<depth>'"
@@ -8935,7 +8935,7 @@ msgstr "Patch ist leer."
 #: builtin/am.c:1262
 #, c-format
 msgid "missing author line in commit %s"
-msgstr "Autor-Zeile fehlt im Commit %s"
+msgstr "Autor-Zeile fehlt in Commit %s"
 
 #: builtin/am.c:1265
 #, c-format
@@ -13255,15 +13255,15 @@ msgstr "Option \"%s\" wird ignoriert für %s\n"
 
 #: builtin/fetch.c:1414
 msgid "multiple branch detected, incompatible with --set-upstream"
-msgstr "mehrfache Branch erkannt, inkompatibel mit --set-upstream"
+msgstr "mehrere Branches erkannt, inkompatibel mit --set-upstream"
 
 #: builtin/fetch.c:1429
 msgid "not setting upstream for a remote remote-tracking branch"
-msgstr "Upstream wird nicht als entfernte Remote-Tracking-Branch gesetzt"
+msgstr "Setze keinen Upstream für einen entfernten Remote-Tracking-Branch."
 
 #: builtin/fetch.c:1431
 msgid "not setting upstream for a remote tag"
-msgstr "Upstream wird nicht für ein Remote-Tag gesetzt"
+msgstr "Setze keinen Upstream für einen Tag eines Remote-Repositories."
 
 #: builtin/fetch.c:1433
 msgid "unknown branch type"
@@ -13274,8 +13274,8 @@ msgid ""
 "no source branch found.\n"
 "you need to specify exactly one branch with the --set-upstream option."
 msgstr ""
-"Keinen ursprünglichen Branch gefunden.\n"
-"Sie müssen genau einen Branch mit der Option --set-upstream setzen."
+"Keinen Quell-Branch gefunden.\n"
+"Sie müssen bei der Option --set-upstream genau einen Branch angeben."
 
 #: builtin/fetch.c:1561 builtin/fetch.c:1623
 #, c-format
@@ -18013,7 +18013,7 @@ msgstr "Konnte neuen Root-Commit nicht erstellen."
 #: builtin/rebase.c:1919
 #, c-format
 msgid "'%s': need exactly one merge base with branch"
-msgstr "'%s': benötige genau eine Merge-Basis mit der Branch"
+msgstr "'%s': benötige genau eine Merge-Basis mit dem Branch"
 
 #: builtin/rebase.c:1922
 #, c-format
