@@ -19,9 +19,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #: add-interactive.c:347
-#, fuzzy, c-format
+#, c-format
 msgid "Huh (%s)?"
-msgstr "Wie bitte (%s)?\n"
+msgstr "Wie bitte (%s)?"
 
 #: add-interactive.c:500 add-interactive.c:801 sequencer.c:3216
 #: sequencer.c:3656 builtin/rebase.c:871 builtin/rebase.c:1643
@@ -49,9 +49,9 @@ msgid "Update"
 msgstr "Aktualisieren"
 
 #: add-interactive.c:668 add-interactive.c:856
-#, fuzzy, c-format
+#, c-format
 msgid "could not stage '%s'"
-msgstr "Konnte '%s' nicht lesen."
+msgstr "Konnte '%s' nicht zum Commit vormerken."
 
 #: add-interactive.c:674 add-interactive.c:863 sequencer.c:3409
 #: builtin/rebase.c:895
@@ -81,9 +81,8 @@ msgid "Revert"
 msgstr "Revert"
 
 #: add-interactive.c:746
-#, fuzzy
 msgid "Could not parse HEAD^{tree}"
-msgstr "Konnte HEAD nicht parsen."
+msgstr "Konnte HEAD^{tree} nicht parsen."
 
 #: add-interactive.c:784 git-add--interactive.perl:631
 #, c-format, perl-format
@@ -109,9 +108,9 @@ msgstr[0] "%d Pfad hinzugefügt\n"
 msgstr[1] "%d Pfade hinzugefügt\n"
 
 #: add-interactive.c:896
-#, fuzzy, c-format
+#, c-format
 msgid "ignoring unmerged: %s"
-msgstr "ignoriere nicht zusammengeführte Datei: %s\n"
+msgstr "Ignoriere nicht zusammengeführte Datei: %s"
 
 #: add-interactive.c:908 add-patch.c:1331 git-add--interactive.perl:1366
 #, c-format
@@ -132,78 +131,68 @@ msgid "Review diff"
 msgstr "Diff überprüfen"
 
 #: add-interactive.c:981
-#, fuzzy
 msgid "show paths with changes"
-msgstr "Dateien mit Übereinstimmungen im Anzeigeprogramm anzeigen"
+msgstr "Zeige Pfade mit Änderungen"
 
 #: add-interactive.c:983
 msgid "add working tree state to the staged set of changes"
-msgstr ""
+msgstr "Zustand des Arbeitsverzeichnisses zum Commit vormerken"
 
 #: add-interactive.c:985
 msgid "revert staged set of changes back to the HEAD version"
-msgstr ""
+msgstr "Zum Commit vorgemerkte Änderungen auf HEAD-Version zurücksetzen"
 
 #: add-interactive.c:987
-#, fuzzy
 msgid "pick hunks and update selectively"
-msgstr "Blöcke interaktiv auswählen"
+msgstr "Blöcke und Änderung gezielt auswählen"
 
 #: add-interactive.c:989
-#, fuzzy
 msgid "view diff between HEAD and index"
-msgstr "HEAD und Index umsetzen"
+msgstr "Differenz zwischen HEAD und Index ansehen"
 
 #: add-interactive.c:991
 msgid "add contents of untracked files to the staged set of changes"
-msgstr ""
+msgstr "Inhalte von unversionierten Dateien zum Commit vormerken"
 
 #: add-interactive.c:999 add-interactive.c:1048
 msgid "Prompt help:"
-msgstr ""
+msgstr "Hilfe für Eingaben:"
 
 #: add-interactive.c:1001
-#, fuzzy
 msgid "select a single item"
-msgstr "Elternteil der Hauptlinie auswählen"
+msgstr "Ein einzelnes Element auswählen"
 
 #: add-interactive.c:1003
-#, fuzzy
 msgid "select a range of items"
-msgstr "Behandlung von signierten Tags wählen"
+msgstr "Eine Reihe von Elementen auswählen"
 
 #: add-interactive.c:1005
-#, fuzzy
 msgid "select multiple ranges"
-msgstr "%s hat mehrere Werte"
+msgstr "Mehrere Reihen auswählen"
 
 #: add-interactive.c:1007 add-interactive.c:1052
 msgid "select item based on unique prefix"
-msgstr ""
+msgstr "Element basierend auf eindeutigen Präfix auswählen"
 
 #: add-interactive.c:1009
-#, fuzzy
 msgid "unselect specified items"
-msgstr "angegebene Vorlagendatei verwenden"
+msgstr "Angegebene Elemente abwählen"
 
 #: add-interactive.c:1011
-#, fuzzy
 msgid "choose all items"
-msgstr "Ein Algorithmus für Änderungen wählen"
+msgstr "Alle Elemente auswählen"
 
 #: add-interactive.c:1013
 msgid "(empty) finish selecting"
-msgstr ""
+msgstr "(leer) Auswählen beenden"
 
 #: add-interactive.c:1050
-#, fuzzy
 msgid "select a numbered item"
-msgstr "%s erwartet einen numerischen Wert."
+msgstr "Ein nummeriertes Element auswählen"
 
 #: add-interactive.c:1054
-#, fuzzy
 msgid "(empty) select nothing"
-msgstr "Leerer \"exec\"-Befehl."
+msgstr "(leer) nichts auswählen"
 
 #: add-interactive.c:1062 builtin/clean.c:822 git-add--interactive.perl:1851
 msgid "*** Commands ***"
@@ -231,9 +220,8 @@ msgid "path"
 msgstr "Pfad"
 
 #: add-interactive.c:1122
-#, fuzzy
 msgid "could not refresh index"
-msgstr "Konnte den Index nicht lesen."
+msgstr "Konnte den Index nicht aktualisieren."
 
 #: add-interactive.c:1136 builtin/clean.c:787 git-add--interactive.perl:1765
 #, c-format
@@ -241,46 +229,45 @@ msgid "Bye.\n"
 msgstr "Tschüss.\n"
 
 #: add-patch.c:15
-#, fuzzy, c-format
+#, c-format
 msgid "Stage mode change [y,n,a,q,d%s,?]? "
-msgstr "Modusänderung der Staging-Area hinzufügen [y,n,q,a,d%s,?]? "
+msgstr "Modusänderung der Staging-Area hinzufügen [y,n,a,q,d%s,?]? "
 
 #: add-patch.c:16
-#, fuzzy, c-format
+#, c-format
 msgid "Stage deletion [y,n,a,q,d%s,?]? "
-msgstr "Löschung der Staging-Area hinzufügen [y,n,q,a,d%s,?]? "
+msgstr "Löschung der Staging-Area hinzufügen [y,n,a,q,d%s,?]? "
 
 #: add-patch.c:17
-#, fuzzy, c-format
+#, c-format
 msgid "Stage this hunk [y,n,a,q,d%s,?]? "
-msgstr "Diesen Patch-Block der Staging-Area hinzufügen [y,n,q,a,d%s,?]? "
+msgstr "Diesen Patch-Block der Staging-Area hinzufügen [y,n,a,q,d%s,?]? "
 
 #: add-patch.c:111
-#, fuzzy, c-format
+#, c-format
 msgid "could not parse hunk header '%.*s'"
-msgstr "Konnte Git-Header '%.*s' nicht parsen."
+msgstr "Konnte Block-Header '%.*s' nicht parsen."
 
 #: add-patch.c:130 add-patch.c:134
-#, fuzzy, c-format
+#, c-format
 msgid "could not parse colored hunk header '%.*s'"
-msgstr "Konnte Git-Header '%.*s' nicht parsen."
+msgstr "Konnte farbigen Block-Header '%.*s' nicht parsen."
 
 #: add-patch.c:176
-#, fuzzy
 msgid "could not parse diff"
-msgstr "konnte %s nicht parsen"
+msgstr "Konnte Differenz nicht parsen."
 
 #: add-patch.c:194
-#, fuzzy
 msgid "could not parse colored diff"
-msgstr "Konnte Commit %s nicht parsen."
+msgstr "Konnte farbige Differenz nicht parsen."
 
 #: add-patch.c:508
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "expected context line #%d in\n"
 "%.*s"
-msgstr "Ungültige Konfigurationszeile %d in %s"
+msgstr "Erwartete Kontextzeile #%d in\n"
+"%.*s"
 
 #: add-patch.c:523
 #, c-format
@@ -290,6 +277,10 @@ msgid ""
 "\tdoes not end with:\n"
 "%.*s"
 msgstr ""
+"Patch-Blöcke überlappen sich nicht:\n"
+"%.*s\n"
+"\tendet nicht mit:\n"
+"%.*s"
 
 #: add-patch.c:799 git-add--interactive.perl:1112
 msgid "Manual hunk edit mode -- see bottom for a quick guide.\n"
@@ -298,7 +289,7 @@ msgstr ""
 "Kurzanleitung.\n"
 
 #: add-patch.c:803
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "---\n"
 "To remove '%c' lines, make them ' ' lines (context).\n"
@@ -306,19 +297,18 @@ msgid ""
 "Lines starting with %c will be removed.\n"
 msgstr ""
 "---\n"
-"Um '%s' Zeilen zu entfernen, machen Sie aus diesen ' ' Zeilen (Kontext).\n"
-"Um '%s' Zeilen zu entfernen, löschen Sie diese.\n"
-"Zeilen, die mit %s beginnen, werden entfernt.\n"
+"Um '%c' Zeilen zu entfernen, machen Sie aus diesen ' ' Zeilen (Kontext).\n"
+"Um '%c' Zeilen zu entfernen, löschen Sie diese.\n"
+"Zeilen, die mit %c beginnen, werden entfernt.\n"
 
 #: add-patch.c:810
-#, fuzzy
 msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be\n"
 "marked for staging.\n"
 msgstr ""
 "Wenn der Patch sauber angewendet werden kann, wird der bearbeitete Patch-"
 "Block\n"
-"direkt als zum Hinzufügen zur Staging-Area markiert."
+"direkt als zum Hinzufügen zur Staging-Area markiert.\n"
 
 #. TRANSLATORS: 'it' refers to the patch mentioned in the previous messages.
 #: add-patch.c:818 git-add--interactive.perl:1126
@@ -333,13 +323,12 @@ msgstr ""
 "wird die Bearbeitung abgebrochen und der Patch-Block bleibt unverändert.\n"
 
 #: add-patch.c:851
-#, fuzzy
 msgid "could not parse hunk header"
-msgstr "Konnte Git-Header '%.*s' nicht parsen."
+msgstr "Konnte Block-Header nicht parsen."
 
 #: add-patch.c:895 add-patch.c:1294
 msgid "'git apply --cached' failed"
-msgstr ""
+msgstr "'git apply --cached' schlug fehl."
 
 #. TRANSLATORS: do not translate [y/n]
 #. The program will only accept that input at this point.
@@ -361,7 +350,6 @@ msgstr ""
 "Erneut bearbeiten? (\"n\" verwirft Bearbeitung!) [y/n]?"
 
 #: add-patch.c:1009
-#, fuzzy
 msgid ""
 "y - stage this hunk\n"
 "n - do not stage this hunk\n"
@@ -373,12 +361,10 @@ msgstr ""
 "n - diesen Patch-Block nicht zum Commit vormerken\n"
 "q - Beenden; diesen oder alle verbleibenden Patch-Blöcke nicht zum Commit "
 "vormerken\n"
-"a - diesen und alle weiteren Patch-Blöcke dieser Datei zum Commit vormerken\n"
-"d - diesen oder alle weiteren Patch-Blöcke in dieser Datei nicht zum Commit "
-"vormerken"
+"a - diesen und alle weiteren Patch-Blöcke zum Commit vormerken\n"
+"d - diesen und alle weiteren Patch-Blöcke nicht zum Commit vormerken\n"
 
 #: add-patch.c:1016
-#, fuzzy
 msgid ""
 "j - leave this hunk undecided, see next undecided hunk\n"
 "J - leave this hunk undecided, see next hunk\n"
@@ -390,32 +376,29 @@ msgid ""
 "e - manually edit the current hunk\n"
 "? - print help\n"
 msgstr ""
-"g - Patch-Block zum Hinspringen auswählen\n"
-"/ - nach Patch-Block suchen, der gegebenem regulärem Ausdruck entspricht\n"
 "j - diesen Patch-Block unbestimmt lassen, nächsten unbestimmten Patch-Block "
 "anzeigen\n"
 "J - diesen Patch-Block unbestimmt lassen, nächsten Patch-Block anzeigen\n"
 "k - diesen Patch-Block unbestimmt lassen, vorherigen unbestimmten Patch-"
 "Block anzeigen\n"
 "K - diesen Patch-Block unbestimmt lassen, vorherigen Patch-Block anzeigen\n"
+"g - Patch-Block zum Hinspringen auswählen\n"
+"/ - nach Patch-Block suchen, der gegebenem regulärem Ausdruck entspricht\n"
 "s - aktuellen Patch-Block in kleinere Patch-Blöcke aufteilen\n"
 "e - aktuellen Patch-Block manuell editieren\n"
 "? - Hilfe anzeigen\n"
 
 #: add-patch.c:1137 add-patch.c:1147
-#, fuzzy
 msgid "No previous hunk"
-msgstr "Kein vorheriger Patch-Block\n"
+msgstr "Kein vorheriger Patch-Block"
 
 #: add-patch.c:1142 add-patch.c:1152
-#, fuzzy
 msgid "No next hunk"
-msgstr "Kein folgender Patch-Block\n"
+msgstr "Kein folgender Patch-Block"
 
 #: add-patch.c:1158
-#, fuzzy
 msgid "No other hunks to goto"
-msgstr "Keine anderen Patch-Blöcke verbleibend\n"
+msgstr "Keine anderen Patch-Blöcke verbleibend"
 
 #: add-patch.c:1169 git-add--interactive.perl:1577
 msgid "go to which hunk (<ret> to see more)? "
@@ -426,50 +409,46 @@ msgid "go to which hunk? "
 msgstr "zu welchem Patch-Block springen? "
 
 #: add-patch.c:1181
-#, fuzzy, c-format
+#, c-format
 msgid "Invalid number: '%s'"
-msgstr "Ungültige Nummer: '%s'\n"
+msgstr "Ungültige Nummer: '%s'"
 
 #: add-patch.c:1186
-#, fuzzy, c-format
+#, c-format
 msgid "Sorry, only %d hunk available."
 msgid_plural "Sorry, only %d hunks available."
-msgstr[0] "Entschuldigung, nur %d Patch-Block verfügbar.\n"
-msgstr[1] "Entschuldigung, nur %d Patch-Blöcke verfügbar.\n"
+msgstr[0] "Entschuldigung, nur %d Patch-Block verfügbar."
+msgstr[1] "Entschuldigung, nur %d Patch-Blöcke verfügbar."
 
 #: add-patch.c:1195
-#, fuzzy
 msgid "No other hunks to search"
-msgstr "Keine anderen Patch-Blöcke zum Durchsuchen\n"
+msgstr "Keine anderen Patch-Blöcke zum Durchsuchen"
 
 #: add-patch.c:1201 git-add--interactive.perl:1623
 msgid "search for regex? "
 msgstr "Suche nach regulärem Ausdruck? "
 
 #: add-patch.c:1216
-#, fuzzy, c-format
+#, c-format
 msgid "Malformed search regexp %s: %s"
-msgstr "Fehlerhafter regulärer Ausdruck für Suche %s: %s\n"
+msgstr "Fehlerhafter regulärer Ausdruck für Suche %s: %s"
 
 #: add-patch.c:1233
-#, fuzzy
 msgid "No hunk matches the given pattern"
-msgstr "Kein Patch-Block entspricht dem angegebenen Muster\n"
+msgstr "Kein Patch-Block entspricht dem angegebenen Muster"
 
 #: add-patch.c:1240
-#, fuzzy
 msgid "Sorry, cannot split this hunk"
-msgstr "Entschuldigung, kann diesen Patch-Block nicht aufteilen.\n"
+msgstr "Entschuldigung, kann diesen Patch-Block nicht aufteilen"
 
 #: add-patch.c:1244
-#, fuzzy, c-format
+#, c-format
 msgid "Split into %d hunks."
-msgstr "In %d Patch-Block aufgeteilt.\n"
+msgstr "In %d Patch-Block aufgeteilt."
 
 #: add-patch.c:1248
-#, fuzzy
 msgid "Sorry, cannot edit this hunk"
-msgstr "Entschuldigung, kann diesen Patch-Block nicht bearbeiten.\n"
+msgstr "Entschuldigung, kann diesen Patch-Block nicht bearbeiten"
 
 #: advice.c:111
 #, c-format
@@ -2690,13 +2669,13 @@ msgid "BOM is prohibited in '%s' if encoded as %s"
 msgstr "BOM ist in '%s' unzulässig, wenn als %s codiert."
 
 #: convert.c:291
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "The file '%s' contains a byte order mark (BOM). Please use UTF-%.*s as "
 "working-tree-encoding."
 msgstr ""
-"Die Datei '%s' enthält ein Byte-Order-Mark (BOM). Bitte benutzen Sie UTF-%s\n"
-"als Codierung im Arbeitsverzeichnis."
+"Die Datei '%s' enthält ein Byte-Order-Mark (BOM). Bitte benutzen Sie\n"
+"UTF-%.*s als Codierung im Arbeitsverzeichnis."
 
 #: convert.c:304
 #, c-format
@@ -3513,23 +3492,25 @@ msgstr ""
 "Pfadspezifikation '%s' stimmt mit keinen git-bekannten Dateien überein."
 
 #: dir.c:664
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized pattern: '%s'"
-msgstr "Nicht erkannte Position: '%s'"
+msgstr "Unbekanntes Muster: '%s'"
 
 #: dir.c:682 dir.c:696
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized negative pattern: '%s'"
-msgstr "Nicht erkannte Position: '%s'"
+msgstr "Unbekanntes verneinendes Muster: '%s'"
 
 #: dir.c:714
 #, c-format
 msgid "your sparse-checkout file may have issues: pattern '%s' is repeated"
 msgstr ""
+"Ihre Datei für den partiellen Checkout hat eventuell Probleme:\n"
+"Muster '%s' wiederholt sich."
 
 #: dir.c:724
 msgid "disabling cone pattern matching"
-msgstr ""
+msgstr "Deaktiviere Cone-Muster-Übereinstimmung"
 
 #: dir.c:1101
 #, c-format
@@ -3907,7 +3888,6 @@ msgid "Low-level Commands / Interrogators"
 msgstr "Systembefehle / Abfragen"
 
 #: help.c:37
-#, fuzzy
 msgid "Low-level Commands / Syncing Repositories"
 msgstr "Systembefehle / Repositories synchronisieren"
 
@@ -4695,9 +4675,8 @@ msgid "failed to locate object %d in packfile"
 msgstr "Fehler beim Lokalisieren von Objekt %d in Packdatei."
 
 #: midx.c:842
-#, fuzzy
 msgid "Adding packfiles to multi-pack-index"
-msgstr "Fehler bei Vorbereitung der Packdatei aus multi-pack-index."
+msgstr "Packdateien zum multi-pack-index hinzufügen"
 
 #: midx.c:875
 #, c-format
@@ -4705,9 +4684,8 @@ msgid "did not see pack-file %s to drop"
 msgstr "Pack-Datei %s zum Weglassen nicht gefunden"
 
 #: midx.c:973
-#, fuzzy
 msgid "Writing chunks to multi-pack-index"
-msgstr "multi-pack-indexes schreiben und überprüfen"
+msgstr "Chunks zum multi-pack-index schreiben"
 
 #: midx.c:1052
 #, c-format
@@ -4727,9 +4705,8 @@ msgstr ""
 "fanout[%d]"
 
 #: midx.c:1128
-#, fuzzy
 msgid "Verifying OID order in multi-pack-index"
-msgstr "Verifiziere OID-Reihenfolge in MIDX"
+msgstr "Verifiziere OID-Reihenfolge im multi-pack-index"
 
 #: midx.c:1137
 #, c-format
@@ -4760,14 +4737,12 @@ msgid "incorrect object offset for oid[%d] = %s: %<PRIx64> != %<PRIx64>"
 msgstr "Falscher Objekt-Offset für oid[%d] = %s: %<PRIx64> != %<PRIx64>"
 
 #: midx.c:1220
-#, fuzzy
 msgid "Counting referenced objects"
-msgstr "unreferenzierte Objekte entfernen"
+msgstr "Referenzierte Objekte zählen"
 
 #: midx.c:1230
-#, fuzzy
 msgid "Finding and deleting unreferenced packfiles"
-msgstr "Suche nach referenzierten Pack-Dateien"
+msgstr "Suchen und Löschen von unreferenzierten Pack-Dateien"
 
 #: midx.c:1388
 msgid "could not start pack-objects"
@@ -5068,7 +5043,7 @@ msgstr "Pfadspezifikation '%s' ist hinter einer symbolischen Verknüpfung"
 #: pathspec.c:638
 #, c-format
 msgid "line is badly quoted: %s"
-msgstr ""
+msgstr "Zeile enthält falsche Anführungszeichen: %s"
 
 #: pkt-line.c:92
 msgid "unable to write flush packet"
@@ -6497,9 +6472,8 @@ msgid "missing 'GIT_AUTHOR_DATE'"
 msgstr "'GIT_AUTHOR_DATE' fehlt."
 
 #: sequencer.c:902 sequencer.c:1427
-#, fuzzy
 msgid "malformed ident line"
-msgstr "Fehlerhafte Eingabezeile: '%s'."
+msgstr "Fehlerhafte Identifikationszeile."
 
 #: sequencer.c:925
 #, c-format
@@ -6628,9 +6602,8 @@ msgid "unable to parse commit author"
 msgstr "Konnte Commit-Autor nicht parsen."
 
 #: sequencer.c:1431
-#, fuzzy
 msgid "corrupted author without date information"
-msgstr "Dateiinformationen aktualisieren"
+msgstr "Fehlerhafter Autor ohne Datumsinformationen."
 
 #: sequencer.c:1447 builtin/am.c:1561 builtin/merge.c:684
 msgid "git write-tree failed to write a tree"
@@ -7754,9 +7727,9 @@ msgstr[0] "%u Byte/s"
 msgstr[1] "%u Bytes/s"
 
 #: strbuf.c:1149
-#, fuzzy, c-format
+#, c-format
 msgid "could not edit '%s'"
-msgstr "Konnte '%s' nicht lesen"
+msgstr "Konnte '%s' nicht editieren."
 
 #: submodule.c:114 submodule.c:143
 msgid "Cannot change unmerged .gitmodules, resolve merge conflicts first"
@@ -7836,6 +7809,7 @@ msgstr "Submodule '%s' konnte nicht aktualisiert werden."
 #, c-format
 msgid "submodule git dir '%s' is inside git dir '%.*s'"
 msgstr ""
+"Git-Verzeichnis des Submoduls '%s' ist im Git-Verzeichnis '%.*s' enthalten."
 
 #: submodule.c:2048
 #, c-format
@@ -7848,12 +7822,12 @@ msgstr ""
 #: submodule.c:2060 submodule.c:2119
 #, c-format
 msgid "could not lookup name for submodule '%s'"
-msgstr "konnte Name für Submodul '%s' nicht nachschlagen"
+msgstr "Konnte Name für Submodul '%s' nicht nachschlagen."
 
 #: submodule.c:2064
 #, c-format
 msgid "refusing to move '%s' into an existing git dir"
-msgstr ""
+msgstr "Verschieben von '%s' in ein existierendes Git-Verzeichnis verweigert."
 
 #: submodule.c:2071
 #, c-format
@@ -8243,7 +8217,7 @@ msgstr "leerer Dateiname in Tree-Eintrag"
 #: tree-walk.c:48
 #, c-format
 msgid "filename in tree entry contains backslash: '%s'"
-msgstr ""
+msgstr "Dateiname im Tree-Eintrag enthält Backslash: '%s'"
 
 #: tree-walk.c:124
 msgid "too-short tree file"
@@ -8511,9 +8485,8 @@ msgstr ""
 "selben Kollissionsgruppe ist im Arbeitsverzeichnis:\n"
 
 #: unpack-trees.c:1441
-#, fuzzy
 msgid "Updating index flags"
-msgstr "Aktualisiere Dateien"
+msgstr "Aktualisiere Index-Markierungen"
 
 #: urlmatch.c:163
 msgid "invalid URL scheme name or missing '://' suffix"
@@ -9329,14 +9302,14 @@ msgid "adding files failed"
 msgstr "Hinzufügen von Dateien fehlgeschlagen"
 
 #: builtin/add.c:428 builtin/commit.c:348
-#, fuzzy
 msgid "--pathspec-from-file is incompatible with --interactive/--patch"
-msgstr "Die Optionen --first-parent und --bisect sind inkompatibel."
+msgstr ""
+"Die Optionen --pathspec-from-file und --interactive/--patch sind "
+"inkompatibel."
 
 #: builtin/add.c:434
-#, fuzzy
 msgid "--pathspec-from-file is incompatible with --edit"
-msgstr "Die Optionen --first-parent und --bisect sind inkompatibel."
+msgstr "Die Optionen --pathspec-from-file und --edit sind inkompatibel."
 
 #: builtin/add.c:446
 msgid "-A and -u are mutually incompatible"
@@ -9354,14 +9327,15 @@ msgstr "--chmod Parameter '%s' muss entweder -x oder +x sein"
 
 #: builtin/add.c:471 builtin/checkout.c:1648 builtin/commit.c:354
 #: builtin/reset.c:327
-#, fuzzy
 msgid "--pathspec-from-file is incompatible with pathspec arguments"
-msgstr "--patch ist inkompatibel mit --{hard,mixed,soft}"
+msgstr ""
+"Die Option --pathspec-from-file ist inkompatibel mit\n"
+"Pfadspezifikation-Argumenten."
 
 #: builtin/add.c:478 builtin/checkout.c:1660 builtin/commit.c:360
 #: builtin/reset.c:333
 msgid "--pathspec-file-nul requires --pathspec-from-file"
-msgstr ""
+msgstr "Die Option --pathspec-file-nul benötigt --pathspec-from-file"
 
 #: builtin/add.c:482
 #, c-format
@@ -10478,7 +10452,6 @@ msgid "change the upstream info"
 msgstr "Informationen zum Upstream-Branch ändern"
 
 #: builtin/branch.c:627
-#, fuzzy
 msgid "unset the upstream info"
 msgstr "Informationen zum Upstream-Branch entfernen"
 
@@ -10677,22 +10650,20 @@ msgstr ""
 "Bitte benutzen Sie stattdessen '--track' oder '--set-upstream-to'."
 
 #: builtin/bundle.c:15 builtin/bundle.c:23
-#, fuzzy
 msgid "git bundle create [<options>] <file> <git-rev-list args>"
-msgstr "git remote add [<Optionen>] <Name> <URL>"
+msgstr "git bundle create [<Optionen>] <Datei> <git-rev-list Argumente>"
 
 #: builtin/bundle.c:16 builtin/bundle.c:28
-#, fuzzy
 msgid "git bundle verify [<options>] <file>"
-msgstr "git rm [<Optionen>] [--] <Datei>..."
+msgstr "git bundle verify [<Optionen>] <Datei>"
 
 #: builtin/bundle.c:17 builtin/bundle.c:33
 msgid "git bundle list-heads <file> [<refname>...]"
-msgstr ""
+msgstr "git bundle list-heads <Datei> [<Referenzname>...]"
 
 #: builtin/bundle.c:18 builtin/bundle.c:38
 msgid "git bundle unbundle <file> [<refname>...]"
-msgstr ""
+msgstr "git bundle unbundle <Datei> [<Referenzname>...]"
 
 #: builtin/bundle.c:66 builtin/pack-objects.c:3228
 msgid "do not show progress meter"
@@ -10715,9 +10686,8 @@ msgid "Need a repository to create a bundle."
 msgstr "Um ein Paket zu erstellen wird ein Repository benötigt."
 
 #: builtin/bundle.c:104
-#, fuzzy
 msgid "do not show bundle details"
-msgstr "keine Tags anzeigen, die andere Tags enthalten"
+msgstr "Keine Bundle-Details anzeigen"
 
 #: builtin/bundle.c:119
 #, c-format
@@ -11405,14 +11375,12 @@ msgid "git checkout: --detach does not take a path argument '%s'"
 msgstr "git checkout: --detach nimmt kein Pfad-Argument '%s'"
 
 #: builtin/checkout.c:1651
-#, fuzzy
 msgid "--pathspec-from-file is incompatible with --detach"
-msgstr "Die Optionen --first-parent und --bisect sind inkompatibel."
+msgstr "Die Optionen --pathspec-from-file und --detach sind inkompatibel."
 
 #: builtin/checkout.c:1654 builtin/reset.c:324
-#, fuzzy
 msgid "--pathspec-from-file is incompatible with --patch"
-msgstr "Die Optionen --first-parent und --bisect sind inkompatibel."
+msgstr "Die Optionen --pathspec-from-file und --patch sind inkompatibel."
 
 #: builtin/checkout.c:1665
 msgid ""
@@ -11861,6 +11829,8 @@ msgstr "jedes geklonte Submodul nutzt seinen Remote-Tracking-Branch"
 #: builtin/clone.c:151
 msgid "initialize sparse-checkout file to include only files at root"
 msgstr ""
+"Initialisiere Datei für partiellen Checkout, um nur Dateien im\n"
+"Root-Verzeichnis einzubeziehen"
 
 #: builtin/clone.c:287
 msgid ""
@@ -11926,9 +11896,8 @@ msgid "unable to update %s"
 msgstr "kann %s nicht aktualisieren"
 
 #: builtin/clone.c:752
-#, fuzzy
 msgid "failed to initialize sparse-checkout"
-msgstr "Fehler beim Fertigstellen von '%s'."
+msgstr "Fehler beim Initialisieren vom partiellen Checkout."
 
 #: builtin/clone.c:775
 msgid "remote HEAD refers to nonexistent ref, unable to checkout.\n"
@@ -12224,15 +12193,12 @@ msgid "failed to unpack HEAD tree object"
 msgstr "Fehler beim Entpacken des Tree-Objektes von HEAD."
 
 #: builtin/commit.c:351
-#, fuzzy
 msgid "--pathspec-from-file with -a does not make sense"
-msgstr "Pfade '%s ...' mit -a sind nicht sinnvoll"
+msgstr "Option --pathspec-from-file mit -a ist nicht sinnvoll."
 
 #: builtin/commit.c:364
 msgid "No paths with --include/--only does not make sense."
-msgstr ""
-"Die Optionen --include und --only können nur mit der Angabe von Pfaden "
-"verwendet werden."
+msgstr "Keine Pfade mit der Option --include/--only ist nicht sinnvoll."
 
 #: builtin/commit.c:376
 msgid "unable to create temporary index"
@@ -13683,9 +13649,8 @@ msgid "check for forced-updates on all updated branches"
 msgstr "Prüfe auf erzwungene Aktualisierungen in allen aktualisierten Branches"
 
 #: builtin/fetch.c:203
-#, fuzzy
 msgid "write the commit-graph after fetching"
-msgstr "entferne veraltete Branches im Remote-Repository nach \"fetch\""
+msgstr "Schreibe den Commit-Graph nach \"fetch\""
 
 #: builtin/fetch.c:513
 msgid "Couldn't find remote ref HEAD"
@@ -13833,9 +13798,8 @@ msgid "Option \"%s\" is ignored for %s\n"
 msgstr "Option \"%s\" wird ignoriert für %s\n"
 
 #: builtin/fetch.c:1412
-#, fuzzy
 msgid "multiple branches detected, incompatible with --set-upstream"
-msgstr "mehrere Branches erkannt, inkompatibel mit --set-upstream"
+msgstr "Mehrere Branches erkannt, inkompatibel mit --set-upstream"
 
 #: builtin/fetch.c:1427
 msgid "not setting upstream for a remote remote-tracking branch"
@@ -15321,6 +15285,7 @@ msgstr "Unbekannter Typ: %d"
 #, c-format
 msgid "%s: invalid cover from description mode"
 msgstr ""
+"%s: Ungültiger Modus für Erstellung des Deckblattes aus der Beschreibung"
 
 #: builtin/log.c:821
 msgid "format.headers without value"
@@ -15452,15 +15417,16 @@ msgstr "[RFC PATCH] anstatt [PATCH] verwenden"
 
 #: builtin/log.c:1651
 msgid "cover-from-description-mode"
-msgstr ""
+msgstr "Modus für Erstellung des Deckblattes aus der Beschreibung"
 
 #: builtin/log.c:1652
 msgid "generate parts of a cover letter based on a branch's description"
 msgstr ""
+"Erzeuge Teile des Deckblattes basierend auf der Beschreibung des Branches"
 
 #: builtin/log.c:1654
 msgid "Use [<prefix>] instead of [PATCH]"
-msgstr "[<Präfix>] anstatt [PATCH] verwenden"
+msgstr "Nutze [<Präfix>] statt [PATCH]"
 
 #: builtin/log.c:1657
 msgid "store resulting files in <dir>"
@@ -16393,13 +16359,12 @@ msgid "allow creation of more than one tree"
 msgstr "die Erstellung von mehr als einem \"Tree\"-Objekt erlauben"
 
 #: builtin/multi-pack-index.c:9
-#, fuzzy
 msgid ""
 "git multi-pack-index [<options>] (write|verify|expire|repack --batch-"
 "size=<size>)"
 msgstr ""
-"git multi-pack-index [--object-dir=<Verzeichnis>] (write|verify|expire|"
-"repack --batch-size=<Größe>)"
+"git multi-pack-index [<Optionen>] (write|verify|expire|repack --batch-"
+"size=<Größe>)"
 
 #: builtin/multi-pack-index.c:26
 msgid "object directory containing set of packfile and pack-index pairs"
@@ -17948,14 +17913,12 @@ msgid "use simple diff colors"
 msgstr "einfache Diff-Farben benutzen"
 
 #: builtin/range-diff.c:26
-#, fuzzy
 msgid "notes"
-msgstr "Notiz-Referenz"
+msgstr "Notizen"
 
 #: builtin/range-diff.c:26
-#, fuzzy
 msgid "passed to 'git log'"
-msgstr "an 'git am' übergeben"
+msgstr "an 'git log' übergeben"
 
 #: builtin/range-diff.c:50 builtin/range-diff.c:54
 #, c-format
@@ -18050,7 +18013,6 @@ msgid "suppress feedback messages"
 msgstr "Rückmeldungen unterdrücken"
 
 #: builtin/read-tree.c:188
-#, fuzzy
 msgid "You need to resolve your current index first"
 msgstr "Sie müssen zuerst die Konflikte in Ihrem aktuellen Index auflösen."
 
@@ -18385,27 +18347,24 @@ msgid "add a Signed-off-by: line to each commit"
 msgstr "eine \"Signed-off-by:\"-Zeile zu jedem Commit hinzufügen"
 
 #: builtin/rebase.c:1464
-#, fuzzy
 msgid "make committer date match author date"
-msgstr "über Commit-Ersteller anstatt Autor gruppieren"
+msgstr "Commit-Datum und Autor-Datum sollen übereinstimmen"
 
 #: builtin/rebase.c:1466
 msgid "ignore author date and use current date"
-msgstr ""
+msgstr "Autor-Datum ignorieren und aktuelles Datum nutzen"
 
 #: builtin/rebase.c:1468
-#, fuzzy
 msgid "synonym of --reset-author-date"
-msgstr "Synonym für --files-with-matches"
+msgstr "Synonym für --reset-author-date"
 
 #: builtin/rebase.c:1470 builtin/rebase.c:1474
 msgid "passed to 'git apply'"
 msgstr "an 'git apply' übergeben"
 
 #: builtin/rebase.c:1472
-#, fuzzy
 msgid "ignore changes in whitespace"
-msgstr "Whitespace-Änderungen am Zeilenende ignorieren"
+msgstr "Whitespace-Änderungen ignorieren"
 
 #: builtin/rebase.c:1476 builtin/rebase.c:1479
 msgid "cherry-pick all commits, even if unchanged"
@@ -19790,19 +19749,19 @@ msgstr ""
 "git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<Commit>]"
 
 #: builtin/reset.c:33
-#, fuzzy
 msgid "git reset [-q] [<tree-ish>] [--] <pathspec>..."
-msgstr "git reset [-q] [<Commit-Referenz>] [--] <Pfade>..."
+msgstr "git reset [-q] [<Commit-Referenz>] [--] <Pfadspezifikation>..."
 
 #: builtin/reset.c:34
 msgid ""
 "git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]"
 msgstr ""
+"git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] "
+"[<Commit-Referenz>]"
 
 #: builtin/reset.c:35
-#, fuzzy
 msgid "git reset --patch [<tree-ish>] [--] [<pathspec>...]"
-msgstr "git reset --patch [<Commit-Referenz>] [--] [<Pfade>...]"
+msgstr "git reset --patch [<Commit-Referenz>] [--] [<Pfadspezifikation>...]"
 
 #: builtin/reset.c:41
 msgid "mixed"
@@ -20405,28 +20364,29 @@ msgstr ""
 
 #: builtin/sparse-checkout.c:20
 msgid "git sparse-checkout (init|list|set|disable) <options>"
-msgstr ""
+msgstr "git sparse-checkout (init|list|set|disable) <Optionen>"
 
 #: builtin/sparse-checkout.c:61
 msgid "this worktree is not sparse (sparse-checkout file may not exist)"
 msgstr ""
+"Dieses Arbeitsverzeichnis ist nicht partiell (Datei für partieller Checkout "
+"existiert eventuell nicht)."
 
 #: builtin/sparse-checkout.c:220
 msgid "failed to set extensions.worktreeConfig setting"
-msgstr ""
+msgstr "Einstellung für extensions.worktreeConfig konnte nicht gesetzt werden"
 
 #: builtin/sparse-checkout.c:237
 msgid "git sparse-checkout init [--cone]"
-msgstr ""
+msgstr "git sparse-checkout init [--cone]"
 
 #: builtin/sparse-checkout.c:256
 msgid "initialize the sparse-checkout in cone mode"
-msgstr ""
+msgstr "Initialisiere den partiellen Checkout im Cone-Modus"
 
 #: builtin/sparse-checkout.c:262
-#, fuzzy
 msgid "initialize sparse-checkout"
-msgstr "Anwendung des Filters für partielles Auschecken überspringen"
+msgstr "Partiellen Checkout initialisieren"
 
 #: builtin/sparse-checkout.c:295
 #, c-format
@@ -20434,29 +20394,24 @@ msgid "failed to open '%s'"
 msgstr "Fehler beim Öffnen von '%s'"
 
 #: builtin/sparse-checkout.c:361
-#, fuzzy
 msgid "git sparse-checkout set (--stdin | <patterns>)"
-msgstr "git hash-object  --stdin-paths"
+msgstr "git sparse-checkout set (--stdin | <Muster>)"
 
 #: builtin/sparse-checkout.c:378
-#, fuzzy
 msgid "read patterns from standard in"
-msgstr "Aktualisierungen von der Standard-Eingabe lesen"
+msgstr "Muster von der Standard-Eingabe lesen"
 
 #: builtin/sparse-checkout.c:384
-#, fuzzy
 msgid "set sparse-checkout patterns"
-msgstr "Anwendung des Filters für partielles Auschecken überspringen"
+msgstr "Setze Muster für partielles Auschecken"
 
 #: builtin/sparse-checkout.c:447
-#, fuzzy
 msgid "disable sparse-checkout"
-msgstr "Anwendung des Filters für partielles Auschecken überspringen"
+msgstr "Partiellen Checkout deaktivieren"
 
 #: builtin/sparse-checkout.c:459
-#, fuzzy
 msgid "error while refreshing working directory"
-msgstr "Konnte aktuelles Arbeitsverzeichnis nicht bekommen."
+msgstr "Fehler während der Aktualisierung des Arbeitsverzeichnisses."
 
 #: builtin/stash.c:22 builtin/stash.c:37
 msgid "git stash list [<options>]"
@@ -20947,6 +20902,11 @@ msgid ""
 "submodule.alternateErrorStrategy to 'info' or, equivalently, clone with\n"
 "'--reference-if-able' instead of '--reference'."
 msgstr ""
+"Eine Alternative, die von einer übergeordneten Projekt-Alternative\n"
+"berechnet wurde, ist ungültig.\n"
+"Um Git das Klonen ohne Alternative in solch einem Fall zu erlauben, setze\n"
+"submodule.alternateErrorStrategy auf 'info' oder klone mit der Option\n"
+"'--reference-if-able' statt '--reference'."
 
 #: builtin/submodule--helper.c:1314 builtin/submodule--helper.c:1317
 #, c-format
@@ -20984,9 +20944,8 @@ msgid "force cloning progress"
 msgstr "Fortschrittsanzeige beim Klonen erzwingen"
 
 #: builtin/submodule--helper.c:1402 builtin/submodule--helper.c:1899
-#, fuzzy
 msgid "disallow cloning into non-empty directory"
-msgstr "auf leere Historie anwenden"
+msgstr "Klonen in ein nicht leeres Verzeichnis verbieten"
 
 #: builtin/submodule--helper.c:1407
 msgid ""
@@ -21001,16 +20960,18 @@ msgstr ""
 #, c-format
 msgid "refusing to create/use '%s' in another submodule's git dir"
 msgstr ""
+"Erstellung/Benutzung von '%s' in einem anderen Submodul-Git-Verzeichnis\n"
+"verweigert."
 
 #: builtin/submodule--helper.c:1442
 #, c-format
 msgid "clone of '%s' into submodule path '%s' failed"
-msgstr "Klonen von '%s' in Submodul-Pfad '%s' fehlgeschlagen"
+msgstr "Klonen von '%s' in Submodul-Pfad '%s' fehlgeschlagen."
 
 #: builtin/submodule--helper.c:1446
-#, fuzzy, c-format
+#, c-format
 msgid "directory not empty: '%s'"
-msgstr "Quellverzeichnis ist leer"
+msgstr "Verzeichnis ist nicht leer: '%s'"
 
 #: builtin/submodule--helper.c:1458
 #, c-format
@@ -21541,7 +21502,7 @@ msgstr "\"skip-worktree\"-Bit löschen"
 
 #: builtin/update-index.c:1020
 msgid "do not touch index-only entries"
-msgstr ""
+msgstr "\"index-only\" Einträge überspringen"
 
 #: builtin/update-index.c:1022
 msgid "add to index only; do not add content to object database"
@@ -22113,7 +22074,7 @@ msgstr "'to' Befehl erwartet, '%s' bekommen"
 #: fast-import.c:3254
 #, c-format
 msgid "feature '%s' forbidden in input without --allow-unsafe-features"
-msgstr ""
+msgstr "Feature '%s' verboten in Eingabe ohne Option --allow-unsafe-features"
 
 #: credential-cache--daemon.c:223
 #, c-format
@@ -22476,15 +22437,14 @@ msgstr ""
 "wie Leerzeichen und #Kommentare von der Beschreibung getrennt werden sollen"
 
 #: parse-options.h:337
-#, fuzzy
 msgid "read pathspec from file"
-msgstr "Muster von einer Datei lesen"
+msgstr "Pfadspezifikation aus einer Datei lesen"
 
 #: parse-options.h:338
-#, fuzzy
 msgid ""
 "with --pathspec-from-file, pathspec elements are separated with NUL character"
-msgstr "Pfade sind getrennt durch NUL Zeichen"
+msgstr ""
+"Mit der Option --pathspec-from-file sind Pfade durch NUL-Zeichen getrennt"
 
 #: ref-filter.h:101
 msgid "key"
@@ -23021,7 +22981,7 @@ msgstr "allgemeiner Git Shell-Skript Konfigurationscode"
 
 #: command-list.h:171
 msgid "Initialize and modify the sparse-checkout"
-msgstr ""
+msgstr "Initialisiere und verändere den partiellen Checkout"
 
 #: command-list.h:172
 msgid "Stash the changes in a dirty working directory away"
@@ -23178,7 +23138,7 @@ msgstr "Spezifikation von Commits und Bereichen für Git"
 
 #: command-list.h:209
 msgid "Mounting one repository inside another"
-msgstr ""
+msgstr "Einbinden eines Repositories in ein anderes"
 
 #: command-list.h:210
 msgid "A tutorial introduction to Git: part two"
