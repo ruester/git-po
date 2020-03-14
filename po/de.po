@@ -1,7 +1,7 @@
 # German translations for Git.
 # Copyright (C) 2019 Matthias Rüster <matthias.ruester@gmail.com>
 # This file is distributed under the same license as the Git package.
-# Matthias Rüster <matthias.ruester@gmail.com>, 2019.
+# Matthias Rüster <matthias.ruester@gmail.com>, 2019-2020.
 # Ralf Thielow <ralf.thielow@gmail.com>, 2010-2019.
 #
 msgid ""
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2020-03-11 15:26+0800\n"
-"PO-Revision-Date: 2016-11-28 18:10+0100\n"
+"PO-Revision-Date: 2020-03-14 22:34+0100\n"
 "Last-Translator: Matthias Rüster <matthias.ruester@gmail.com>\n"
 "Language-Team: Matthias Rüster <matthias.ruester@gmail.com>\n"
 "Language: de\n"
@@ -27,7 +27,7 @@ msgstr "Wie bitte (%s)?"
 #: sequencer.c:3562 builtin/rebase.c:875 builtin/rebase.c:1687
 #: builtin/rebase.c:2086 builtin/rebase.c:2130
 msgid "could not read index"
-msgstr "Konnte den Index nicht lesen."
+msgstr "Index konnte nicht gelesen werden"
 
 #: add-interactive.c:576 git-add--interactive.perl:269
 #: git-add--interactive.perl:294
@@ -221,7 +221,7 @@ msgstr "Pfad"
 
 #: add-interactive.c:1143
 msgid "could not refresh index"
-msgstr "Konnte den Index nicht aktualisieren."
+msgstr "Index konnte nicht aktualisiert werden"
 
 #: add-interactive.c:1157 builtin/clean.c:787 git-add--interactive.perl:1765
 #, c-format
@@ -244,17 +244,14 @@ msgid "Stage this hunk [y,n,q,a,d%s,?]? "
 msgstr "Diesen Patch-Block der Staging-Area hinzufügen [y,n,q,a,d%s,?]? "
 
 #: add-patch.c:37
-#, fuzzy
 msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be marked for "
 "staging."
 msgstr ""
-"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete Patch-"
-"Block\n"
-"direkt als zum Hinzufügen zur Staging-Area markiert."
+"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete "
+"Patch-Block direkt für die Staging-Area markiert."
 
 #: add-patch.c:40
-#, fuzzy
 msgid ""
 "y - stage this hunk\n"
 "n - do not stage this hunk\n"
@@ -268,7 +265,7 @@ msgstr ""
 "vormerken\n"
 "a - diesen und alle weiteren Patch-Blöcke dieser Datei zum Commit vormerken\n"
 "d - diesen oder alle weiteren Patch-Blöcke in dieser Datei nicht zum Commit "
-"vormerken"
+"vormerken\n"
 
 #: add-patch.c:54 git-add--interactive.perl:1433
 #, c-format, perl-format
@@ -286,17 +283,14 @@ msgid "Stash this hunk [y,n,q,a,d%s,?]? "
 msgstr "Diesen Patch-Block stashen [y,n,q,a,d%s,?]? "
 
 #: add-patch.c:58
-#, fuzzy
 msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be marked for "
 "stashing."
 msgstr ""
-"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete Patch-"
-"Block\n"
-"direkt als zum Hinzufügen zum Stash markiert."
+"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete "
+"Patch-Block direkt zum Stashen markiert."
 
 #: add-patch.c:61
-#, fuzzy
 msgid ""
 "y - stash this hunk\n"
 "n - do not stash this hunk\n"
@@ -308,7 +302,7 @@ msgstr ""
 "n - diesen Patch-Block nicht stashen\n"
 "q - Beenden; diesen oder alle verbleibenden Patch-Blöcke nicht stashen\n"
 "a - diesen und alle weiteren Patch-Blöcke dieser Datei stashen\n"
-"d - diesen oder alle weiteren Patch-Blöcke dieser Datei nicht stashen"
+"d - diesen oder alle weiteren Patch-Blöcke dieser Datei nicht stashen\n"
 
 #: add-patch.c:77 git-add--interactive.perl:1438
 #, c-format, perl-format
@@ -326,17 +320,14 @@ msgid "Unstage this hunk [y,n,q,a,d%s,?]? "
 msgstr "Diesen Patch-Block aus der Staging-Area entfernen [y,n,q,a,d%s,?]? "
 
 #: add-patch.c:81
-#, fuzzy
 msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be marked for "
 "unstaging."
 msgstr ""
-"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete Patch-"
-"Block\n"
-"direkt als zum Entfernen aus der Staging-Area markiert."
+"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete "
+"Patch-Block direkt zum Entfernen aus der Staging-Area markiert."
 
 #: add-patch.c:84
-#, fuzzy
 msgid ""
 "y - unstage this hunk\n"
 "n - do not unstage this hunk\n"
@@ -344,11 +335,14 @@ msgid ""
 "a - unstage this hunk and all later hunks in the file\n"
 "d - do not unstage this hunk or any of the later hunks in the file\n"
 msgstr ""
-"y - diesen Patch-Block unstashen\n"
-"n - diesen Patch-Block nicht unstashen\n"
-"q - Beenden; diesen oder alle verbleibenden Patch-Blöcke nicht unstashen\n"
-"a - diesen und alle weiteren Patch-Blöcke dieser Datei unstashen\n"
-"d - diesen oder alle weiteren Patch-Blöcke dieser Datei nicht unstashen"
+"y - diesen Patch-Block aus Staging-Area entfernen\n"
+"n - diesen Patch-Block nicht aus Staging-Area entfernen\n"
+"q - Beenden; diesen oder alle verbleibenden Patch-Blöcke nicht aus Staging-"
+"Area entfernen\n"
+"a - diesen und alle weiteren Patch-Blöcke dieser Datei aus Staging-Area "
+"entfernen\n"
+"d - diesen oder alle weiteren Patch-Blöcke dieser Datei nicht aus Staging-"
+"Area entfernen\n"
 
 #: add-patch.c:99 git-add--interactive.perl:1443
 #, c-format, perl-format
@@ -366,17 +360,13 @@ msgid "Apply this hunk to index [y,n,q,a,d%s,?]? "
 msgstr "Diesen Patch-Block auf Index anwenden [y,n,q,a,d%s,?]? "
 
 #: add-patch.c:103 add-patch.c:168 add-patch.c:211
-#, fuzzy
 msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be marked for "
 "applying."
-msgstr ""
-"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete Patch-"
-"Block\n"
-"direkt als zum Anwenden markiert."
+msgstr "Wenn der Patch sauber angewendet werden kann, wird der bearbeitete "
+"Patch-Block direkt zum Anwenden markiert."
 
 #: add-patch.c:106
-#, fuzzy
 msgid ""
 "y - apply this hunk to index\n"
 "n - do not apply this hunk to index\n"
@@ -391,7 +381,7 @@ msgstr ""
 "a - diesen und alle weiteren Patch-Blöcke dieser Datei auf den Index "
 "anwenden\n"
 "d - diesen oder alle weiteren Patch-Blöcke dieser Datei nicht auf den Index "
-"anwenden"
+"anwenden\n"
 
 #: add-patch.c:121 git-add--interactive.perl:1448
 #: git-add--interactive.perl:1463
@@ -412,17 +402,14 @@ msgid "Discard this hunk from worktree [y,n,q,a,d%s,?]? "
 msgstr "Diesen Patch-Block im Arbeitsverzeichnis verwerfen [y,n,q,a,d%s,?]? "
 
 #: add-patch.c:125 add-patch.c:147 add-patch.c:190
-#, fuzzy
 msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be marked for "
 "discarding."
 msgstr ""
-"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete Patch-"
-"Block\n"
-"direkt als zum Verwerfen markiert."
+"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete "
+"Patch-Block direkt zum Verwerfen markiert."
 
 #: add-patch.c:128 add-patch.c:193
-#, fuzzy
 msgid ""
 "y - discard this hunk from worktree\n"
 "n - do not discard this hunk from worktree\n"
@@ -437,7 +424,7 @@ msgstr ""
 "a - diesen und alle weiteren Patch-Blöcke dieser Datei im Arbeitsverzeichnis "
 "verwerfen\n"
 "d - diesen oder alle weiteren Patch-Blöcke dieser Datei nicht im "
-"Arbeitsverzeichnis verwerfen"
+"Arbeitsverzeichnis verwerfen\n"
 
 #: add-patch.c:143 add-patch.c:186 git-add--interactive.perl:1453
 #, c-format, perl-format
@@ -458,7 +445,6 @@ msgstr ""
 "%s,?]? "
 
 #: add-patch.c:150
-#, fuzzy
 msgid ""
 "y - discard this hunk from index and worktree\n"
 "n - do not discard this hunk from index and worktree\n"
@@ -468,10 +454,9 @@ msgid ""
 msgstr ""
 "y - diesen Patch-Block im Index und Arbeitsverzeichnis verwerfen\n"
 "n - diesen Patch-Block nicht im Index und Arbeitsverzeichnis verwerfen\n"
-"q - Beenden; diesen oder alle verbleibenden Patch-Blöcke nicht im Index und "
-"Arbeitsverzeichnis verwerfen\n"
+"q - Beenden; diesen oder alle verbleibenden Patch-Blöcke nicht verwerfen\n"
 "a - diesen und alle weiteren Patch-Blöcke in der Datei verwerfen\n"
-"d - diesen oder alle weiteren Patch-Blöcke in der Datei nicht verwerfen"
+"d - diesen oder alle weiteren Patch-Blöcke in der Datei nicht verwerfen\n"
 
 #: add-patch.c:164 add-patch.c:207 git-add--interactive.perl:1458
 #, c-format, perl-format
@@ -492,7 +477,6 @@ msgstr ""
 "%s,?]? "
 
 #: add-patch.c:171
-#, fuzzy
 msgid ""
 "y - apply this hunk to index and worktree\n"
 "n - do not apply this hunk to index and worktree\n"
@@ -500,14 +484,14 @@ msgid ""
 "a - apply this hunk and all later hunks in the file\n"
 "d - do not apply this hunk or any of the later hunks in the file\n"
 msgstr ""
-"y - diesen Patch-Block im Index und auf Arbeitsverzeichnis anwenden\n"
-"n - diesen Patch-Block nicht im Index und auf Arbeitsverzeichnis anwenden\n"
+"y - diesen Patch-Block im Index und auf das Arbeitsverzeichnis anwenden\n"
+"n - diesen Patch-Block nicht im Index und auf das Arbeitsverzeichnis "
+"anwenden\n"
 "q - Beenden; diesen oder alle verbleibenden Patch-Blöcke nicht anwenden\n"
 "a - diesen und alle weiteren Patch-Blöcke in der Datei anwenden\n"
-"d - diesen oder alle weiteren Patch-Blöcke in der Datei nicht anwenden"
+"d - diesen oder alle weiteren Patch-Blöcke in der Datei nicht anwenden\n"
 
 #: add-patch.c:214
-#, fuzzy
 msgid ""
 "y - apply this hunk to worktree\n"
 "n - do not apply this hunk to worktree\n"
@@ -519,7 +503,7 @@ msgstr ""
 "n - diesen Patch-Block nicht auf das Arbeitsverzeichnis anwenden\n"
 "q - Beenden; diesen und alle verbleibenden Patch-Blöcke nicht anwenden\n"
 "a - diesen und alle weiteren Patch-Blöcke in der Datei anwenden\n"
-"d - diesen und alle weiteren Patch-Blöcke in der Datei nicht anwenden"
+"d - diesen und alle weiteren Patch-Blöcke in der Datei nicht anwenden\n"
 
 #: add-patch.c:318
 #, c-format
@@ -540,19 +524,21 @@ msgid "could not parse colored diff"
 msgstr "Konnte farbige Differenz nicht parsen."
 
 #: add-patch.c:428
-#, fuzzy, c-format
+#, c-format
 msgid "failed to run '%s'"
-msgstr "Konnte '%s' nicht entfernen."
+msgstr "'%s' konnte nicht ausgeführt werden"
 
 #: add-patch.c:587
 msgid "mismatched output from interactive.diffFilter"
-msgstr ""
+msgstr "nicht übereinstimmende Ausgabe von interactive.diffFilter"
 
 #: add-patch.c:588
 msgid ""
 "Your filter must maintain a one-to-one correspondence\n"
 "between its input and output lines."
 msgstr ""
+"Der Filter muss eine Eins-zu-Eins-Beziehung\n"
+"zwischen den Ein- und Ausgabe-Zeilen einhalten."
 
 #: add-patch.c:761
 #, c-format
@@ -635,10 +621,9 @@ msgstr ""
 "Erneut bearbeiten? (\"n\" verwirft Bearbeitung!) [y/n]?"
 
 #: add-patch.c:1261
-#, fuzzy
 msgid "The selected hunks do not apply to the index!"
 msgstr ""
-"Die ausgewählten Patch-Blöcke können nicht auf den Index angewendet werden!\n"
+"Die ausgewählten Patch-Blöcke können nicht auf den Index angewendet werden!"
 
 #: add-patch.c:1262 git-add--interactive.perl:1343
 msgid "Apply them to the worktree anyway? "
@@ -735,9 +720,8 @@ msgid "Sorry, cannot edit this hunk"
 msgstr "Entschuldigung, kann diesen Patch-Block nicht bearbeiten"
 
 #: add-patch.c:1609
-#, fuzzy
 msgid "'git apply' failed"
-msgstr "'git apply --cached' schlug fehl."
+msgstr "'git apply' schlug fehl"
 
 #: advice.c:115
 #, c-format
@@ -5183,9 +5167,9 @@ msgid "ambiguous option: %s (could be --%s%s or --%s%s)"
 msgstr "Mehrdeutige Option: %s (kann --%s%s oder --%s%s sein)"
 
 #: parse-options.c:420 parse-options.c:428
-#, fuzzy, c-format
+#, c-format
 msgid "did you mean `--%s` (with two dashes)?"
-msgstr "Meinten Sie `--%s` (mit zwei Strichen?)"
+msgstr "Meinten Sie `--%s` (mit zwei Strichen)?"
 
 #: parse-options.c:857
 #, c-format
@@ -5314,9 +5298,9 @@ msgid "%s: 'literal' and 'glob' are incompatible"
 msgstr "%s: 'literal' und 'glob' sind inkompatibel"
 
 #: pathspec.c:442
-#, fuzzy, c-format
+#, c-format
 msgid "%s: '%s' is outside repository at '%s'"
-msgstr "%s: '%s' liegt außerhalb des Repositories"
+msgstr "%s: '%s' liegt außerhalb des Repositories von '%s'"
 
 #: pathspec.c:517
 #, c-format
@@ -6650,9 +6634,8 @@ msgid "cherry-pick"
 msgstr "Cherry-Pick"
 
 #: sequencer.c:329
-#, fuzzy
 msgid "rebase"
-msgstr "interaktives Rebase"
+msgstr "Rebase"
 
 #: sequencer.c:331
 #, c-format
@@ -7025,7 +7008,7 @@ msgstr "Konnte %s... (%s) nicht anwenden"
 #: sequencer.c:1961
 #, c-format
 msgid "dropping %s %s -- patch contents already upstream\n"
-msgstr ""
+msgstr "Weglassen von %s %s -- Patch-Inhalte sind bereits im Upstream-Branch\n"
 
 #: sequencer.c:2018
 #, c-format
@@ -7504,9 +7487,9 @@ msgid "the script was already rearranged."
 msgstr "Das Script wurde bereits umgeordnet."
 
 #: setup.c:124
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is outside repository at '%s'"
-msgstr "'%s' liegt außerhalb des Repositories."
+msgstr "'%s' liegt außerhalb des Repositories von '%s'"
 
 #: setup.c:175
 #, c-format
@@ -7963,17 +7946,17 @@ msgstr ""
 #: sha1-name.c:916
 #, c-format
 msgid "log for '%.*s' only goes back to %s"
-msgstr ""
+msgstr "Log für '%.*s' geht nur bis %s zurück"
 
 #: sha1-name.c:924
 #, c-format
 msgid "log for '%.*s' only has %d entries"
-msgstr ""
+msgstr "Log für '%.*s' hat nur %d Einträge"
 
 #: sha1-name.c:1689
-#, fuzzy, c-format
+#, c-format
 msgid "path '%s' exists on disk, but not in '%.*s'"
-msgstr "Pfadspezifikation '%s' befindet sich in Submodul '%.*s'"
+msgstr "Pfad '%s' befindet sich im Dateisystem, aber nicht in '%.*s'"
 
 #: sha1-name.c:1695
 #, c-format
@@ -7981,11 +7964,13 @@ msgid ""
 "path '%s' exists, but not '%s'\n"
 "hint: Did you mean '%.*s:%s' aka '%.*s:./%s'?"
 msgstr ""
+"Pfad '%s' existiert, aber nicht '%s'\n"
+"Hinweis: Meinten Sie '%.*s:%s' auch bekannt als '%.*s:./%s'?"
 
 #: sha1-name.c:1704
-#, fuzzy, c-format
+#, c-format
 msgid "path '%s' does not exist in '%.*s'"
-msgstr "Pfad '%s' existiert nicht"
+msgstr "Pfad '%s' existiert nicht in '%.*s'"
 
 #: sha1-name.c:1732
 #, c-format
@@ -7993,6 +7978,8 @@ msgid ""
 "path '%s' is in the index, but not at stage %d\n"
 "hint: Did you mean ':%d:%s'?"
 msgstr ""
+"Pfad '%s' ist im Index, aber nicht in Stufe %d\n"
+"Hinweis: Meinten Sie ':%d:%s'?"
 
 #: sha1-name.c:1748
 #, c-format
@@ -8000,28 +7987,29 @@ msgid ""
 "path '%s' is in the index, but not '%s'\n"
 "hint: Did you mean ':%d:%s' aka ':%d:./%s'?"
 msgstr ""
+"Pfad '%s' ist im Index, aber nicht '%s'\n"
+"Hinweis: Meinten Sie ':%d:%s' auch bekannt als ':%d:./%s'?"
 
 #: sha1-name.c:1756
 #, c-format
 msgid "path '%s' exists on disk, but not in the index"
-msgstr ""
+msgstr "Pfad '%s' existiert im Dateisystem, aber nicht im Index"
 
 #: sha1-name.c:1758
-#, fuzzy, c-format
+#, c-format
 msgid "path '%s' does not exist (neither on disk nor in the index)"
-msgstr "Pfad '%s' hat nicht deren Version."
+msgstr "Pfad '%s' existiert nicht (weder im Dateisystem noch im Index)"
 
 #: sha1-name.c:1771
-#, fuzzy
 msgid "relative path syntax can't be used outside working tree"
 msgstr ""
-"Relative Pfade können nur von der obersten Ebene des Arbeitsverzeichnisses "
+"Die Syntax für relative Pfade kann nicht außerhalb des Arbeitsverzeichnisses "
 "benutzt werden."
 
 #: sha1-name.c:1909
-#, fuzzy, c-format
+#, c-format
 msgid "invalid object name '%.*s'."
-msgstr "Kein gültiger Objektname: '%s'"
+msgstr "ungültiger Objektname '%.*s'."
 
 #. TRANSLATORS: IEC 80000-13:2008 gibibyte
 #: strbuf.c:837
@@ -8111,9 +8099,9 @@ msgid "Pathspec '%s' is in submodule '%.*s'"
 msgstr "Pfadspezifikation '%s' befindet sich in Submodul '%.*s'"
 
 #: submodule.c:434
-#, fuzzy, c-format
+#, c-format
 msgid "bad --ignore-submodules argument: %s"
-msgstr "Ungültiges --color-moved Argument: %s"
+msgstr "ungültiges --ignore-submodules Argument: %s"
 
 #: submodule.c:815
 #, c-format
@@ -8121,6 +8109,8 @@ msgid ""
 "Submodule in commit %s at path: '%s' collides with a submodule named the "
 "same. Skipping it."
 msgstr ""
+"Submodul in Commit %s beim Pfad: '%s' hat den gleichen Namen wie ein "
+"Submodul. Wird übersprungen."
 
 #: submodule.c:910
 #, c-format
@@ -8128,47 +8118,51 @@ msgid "submodule entry '%s' (%s) is a %s, not a commit"
 msgstr "Submodul-Eintrag '%s' (%s) ist ein %s, kein Commit."
 
 #: submodule.c:995
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Could not run 'git rev-list <commits> --not --remotes -n 1' command in "
 "submodule %s"
-msgstr "Konnte 'git status' in Submodul '%s' nicht ausführen."
+msgstr ""
+"Konnte 'git rev-list <Commits> --not --remotes -n 1' nicht in Submodul '%s' "
+"ausführen."
 
 #: submodule.c:1118
-#, fuzzy, c-format
+#, c-format
 msgid "process for submodule '%s' failed"
-msgstr "Klonen von '%s' in Submodul-Pfad '%s' fehlgeschlagen."
+msgstr "Prozess für Submodul '%s' fehlgeschlagen"
 
 #: submodule.c:1147 builtin/branch.c:680 builtin/submodule--helper.c:2045
 msgid "Failed to resolve HEAD as a valid ref."
 msgstr "Konnte HEAD nicht als gültige Referenz auflösen."
 
 #: submodule.c:1158
-#, fuzzy, c-format
+#, c-format
 msgid "Pushing submodule '%s'\n"
-msgstr "Überspringe Submodul '%s'"
+msgstr "Pushe Submodul '%s'\n"
 
 #: submodule.c:1161
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to push submodule '%s'\n"
-msgstr "Kann Submodul '$sm_path' nicht auschecken"
+msgstr "Kann Push für Submodul '%s' nicht ausführen\n"
 
 #: submodule.c:1453
-#, fuzzy, c-format
+#, c-format
 msgid "Fetching submodule %s%s\n"
-msgstr "Spule Submodul %s vor"
+msgstr "Anfordern des Submoduls %s%s\n"
 
 #: submodule.c:1483
-#, fuzzy, c-format
+#, c-format
 msgid "Could not access submodule '%s'\n"
-msgstr "Konnte nicht auf Submodul '%s' zugreifen."
+msgstr "Konnte nicht auf Submodul '%s' zugreifen\n"
 
 #: submodule.c:1637
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Errors during submodule fetch:\n"
 "%s"
-msgstr "Spule Submodul %s vor"
+msgstr ""
+"Fehler während des Anforderns der Submodule:\n"
+"%s"
 
 #: submodule.c:1662
 #, c-format
@@ -8176,14 +8170,14 @@ msgid "'%s' not recognized as a git repository"
 msgstr "'%s' nicht als Git-Repository erkannt"
 
 #: submodule.c:1679
-#, fuzzy, c-format
+#, c-format
 msgid "Could not run 'git status --porcelain=2' in submodule %s"
-msgstr "Konnte 'git status' in Submodul '%s' nicht ausführen."
+msgstr "Konnte 'git status --porcelain=2' nicht in Submodul %s ausführen"
 
 #: submodule.c:1720
-#, fuzzy, c-format
+#, c-format
 msgid "'git status --porcelain=2' failed in submodule %s"
-msgstr "Konnte 'git status' in Submodul '%s' nicht ausführen."
+msgstr "'git status --porcelain=2' ist in Submodul %s fehlgeschlagen"
 
 #: submodule.c:1800
 #, c-format
@@ -8206,9 +8200,8 @@ msgid "could not recurse into submodule '%s'"
 msgstr "Fehler bei Rekursion in Submodul-Pfad '%s'"
 
 #: submodule.c:1876
-#, fuzzy
 msgid "could not reset submodule index"
-msgstr "Fehler bei Rekursion in Submodul-Pfad '%s'"
+msgstr "konnte Index des Submoduls nicht zurücksetzen"
 
 #: submodule.c:1918
 #, c-format
@@ -8923,9 +8916,8 @@ msgid "invalid '..' path segment"
 msgstr "ungültiges '..' Pfadsegment"
 
 #: walker.c:170
-#, fuzzy
 msgid "Fetching objects"
-msgstr "Prüfe Objekte"
+msgstr "Anfordern der Objekte"
 
 #: worktree.c:259 builtin/am.c:2099
 #, c-format
@@ -9665,7 +9657,7 @@ msgstr "warnen wenn eingebettetes Repository hinzugefügt wird"
 
 #: builtin/add.c:345
 msgid "backend for `git stash -p`"
-msgstr ""
+msgstr "Backend für `git stash -p`"
 
 #: builtin/add.c:363
 #, c-format
@@ -9712,6 +9704,9 @@ msgid ""
 "Turn this message off by running\n"
 "\"git config advice.addIgnoredFile false\""
 msgstr ""
+"Nutzen Sie die Option -f, wenn sie wirklich hinzugefügt werden sollen.\n"
+"Um diese Meldung abzuschalten, führen Sie folgenden Befehl aus:\n"
+"\"git config advice.addIgnoredFile false\""
 
 #: builtin/add.c:419
 msgid "adding files failed"
@@ -9764,6 +9759,9 @@ msgid ""
 "Turn this message off by running\n"
 "\"git config advice.addEmptyPathspec false\""
 msgstr ""
+"Eventuell meinten Sie 'git add .'?\n"
+"Um diese Meldung abzuschalten, führen Sie folgenden Befehl aus:\n"
+"\"git config advice.addEmptyPathspec false\""
 
 #: builtin/am.c:352
 msgid "could not parse author script"
@@ -9936,11 +9934,10 @@ msgid "Patch failed at %s %.*s"
 msgstr "Anwendung des Patches fehlgeschlagen bei %s %.*s"
 
 #: builtin/am.c:1771
-#, fuzzy
 msgid "Use 'git am --show-current-patch=diff' to see the failed patch"
 msgstr ""
-"Benutzen Sie 'git am --show-current-patch', um den\n"
-"fehlgeschlagenen Patch zu sehen."
+"Benutzen Sie 'git am --show-current-patch=diff', um den\n"
+"fehlgeschlagenen Patch zu sehen"
 
 #: builtin/am.c:1815
 msgid ""
@@ -9990,14 +9987,15 @@ msgid "Invalid value for --patch-format: %s"
 msgstr "Ungültiger Wert für --patch-format: %s"
 
 #: builtin/am.c:2172
-#, fuzzy, c-format
+#, c-format
 msgid "Invalid value for --show-current-patch: %s"
-msgstr "Ungültiger Wert für --patch-format: %s"
+msgstr "Ungültiger Wert für --show-current-patch: %s"
 
 #: builtin/am.c:2176
-#, fuzzy, c-format
+#, c-format
 msgid "--show-current-patch=%s is incompatible with --show-current-patch=%s"
-msgstr "Die Optionen --first-parent und --bisect sind inkompatibel."
+msgstr ""
+"--show-current-patch=%s ist inkombatibel mit --show-current-patch=%s"
 
 #: builtin/am.c:2207
 msgid "git am [<options>] [(<mbox> | <Maildir>)...]"
@@ -10106,7 +10104,6 @@ msgid "abort the patching operation but keep HEAD where it is."
 msgstr "Patch-Operation abbrechen, aber HEAD an aktueller Stelle belassen"
 
 #: builtin/am.c:2288
-#, fuzzy
 msgid "show the patch being applied"
 msgstr "den Patch, der gerade angewendet wird, anzeigen"
 
@@ -11592,7 +11589,6 @@ msgstr ""
 "eindeutig voneinander zu unterscheiden."
 
 #: builtin/checkout.c:1135
-#, fuzzy
 msgid ""
 "If you meant to check out a remote tracking branch on, e.g. 'origin',\n"
 "you can do so by fully qualifying the name with the --track option:\n"
@@ -11603,10 +11599,6 @@ msgid ""
 "one remote, e.g. the 'origin' remote, consider setting\n"
 "checkout.defaultRemote=origin in your config."
 msgstr ""
-"'%s' entspricht mehr als einem Remote-Tracking-Branch.\n"
-"Wir fanden %d Remote-Repositories mit einer entsprechenden Referenz, also\n"
-"haben wir versucht, das Argument als Pfad aufzulösen, was auch schief ging!\n"
-"\n"
 "Falls Sie einen Remote-Tracking-Branch, z.B. von 'origin', auschecken "
 "wollten,\n"
 "können Sie das tun, indem Sie den vollständig qualifizierten Namen mit der\n"
@@ -11616,13 +11608,13 @@ msgstr ""
 "\n"
 "Falls Sie beim Auschecken mit mehrdeutigen <Namen> immer ein Remote-"
 "Repository\n"
-"bevorzugen möchten, z.B. 'origin', könnten Sie die Einstellung\n"
+"bevorzugen möchten, z.B. 'origin', können Sie die Einstellung\n"
 "checkout.defaultRemote=origin in Ihrer Konfiguration setzen."
 
 #: builtin/checkout.c:1145
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' matched multiple (%d) remote tracking branches"
-msgstr "auf Remote-Tracking-Branches wirken"
+msgstr "'%s' entspricht mehreren (%d) Remote-Tracking-Branches"
 
 #: builtin/checkout.c:1211
 msgid "only one reference expected"
@@ -13132,9 +13124,9 @@ msgstr ""
 "Optionen>"
 
 #: builtin/commit-graph.c:52
-#, fuzzy, c-format
+#, c-format
 msgid "could not find object directory matching %s"
-msgstr "Konnte Verzeichnis '%s' nicht öffnen."
+msgstr "konnte Objekt-Verzeichnis nicht finden, dass '%s' entsprechen soll"
 
 #: builtin/commit-graph.c:68 builtin/commit-graph.c:125
 #: builtin/commit-graph.c:210 builtin/fetch.c:179 builtin/log.c:1657
@@ -13352,6 +13344,8 @@ msgstr ""
 #: builtin/config.c:159
 msgid "show scope of config (worktree, local, global, system, command)"
 msgstr ""
+"Zeige Geltungsbereich der Konfiguration (Arbeitsverzeichnis, lokal, global, "
+"systemweit, Befehl)"
 
 #: builtin/config.c:160 builtin/env--helper.c:40
 msgid "value"
@@ -15017,9 +15011,8 @@ msgid "unable to resolve revision: %s"
 msgstr "Konnte Commit nicht auflösen: %s"
 
 #: builtin/grep.c:1057
-#, fuzzy
 msgid "--untracked not supported with --recurse-submodules"
-msgstr "Die Option wird mit --recurse-submodules nicht unterstützt."
+msgstr "--untracked zusammen mit --recurse-submodules wird nicht unterstützt"
 
 #: builtin/grep.c:1061
 msgid "invalid option combination, ignoring --threads"
@@ -17761,13 +17754,13 @@ msgid "Enumerating objects"
 msgstr "Objekte aufzählen"
 
 #: builtin/pack-objects.c:3657
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Total %<PRIu32> (delta %<PRIu32>), reused %<PRIu32> (delta %<PRIu32>), pack-"
 "reused %<PRIu32>"
 msgstr ""
 "Gesamt %<PRIu32> (Delta %<PRIu32>), Wiederverwendet %<PRIu32> (Delta "
-"%<PRIu32>)"
+"%<PRIu32>), Pack wiederverwendet %<PRIu32>"
 
 #: builtin/pack-refs.c:8
 msgid "git pack-refs [<options>]"
@@ -18176,7 +18169,7 @@ msgstr ""
 #: builtin/push.c:360
 #, c-format
 msgid "Pushing to %s\n"
-msgstr "Versende nach %s\n"
+msgstr "Push nach %s\n"
 
 #: builtin/push.c:367
 #, c-format
@@ -18483,9 +18476,8 @@ msgid "git rebase--interactive [<options>]"
 msgstr "git rebase--interactive [<Optionen>]"
 
 #: builtin/rebase.c:474 builtin/rebase.c:1550
-#, fuzzy
 msgid "(DEPRECATED) keep empty commits"
-msgstr "leere Commits behalten"
+msgstr "(VERALTET) leere Commits behalten"
 
 #: builtin/rebase.c:478 builtin/revert.c:128
 msgid "allow commits with empty messages"
@@ -18700,6 +18692,8 @@ msgid ""
 "unrecognized empty type '%s'; valid values are \"drop\", \"keep\", and \"ask"
 "\"."
 msgstr ""
+"nicht erkannter leerer Typ '%s'; Gültige Werte sind \"drop\", \"keep\", und "
+"\"ask\"."
 
 #: builtin/rebase.c:1401
 #, c-format
@@ -18767,9 +18761,8 @@ msgid "add a Signed-off-by: line to each commit"
 msgstr "eine \"Signed-off-by:\"-Zeile zu jedem Commit hinzufügen"
 
 #: builtin/rebase.c:1498 builtin/rebase.c:1502 builtin/rebase.c:1504
-#, fuzzy
 msgid "passed to 'git am'"
-msgstr "an 'git apply' übergeben"
+msgstr "an 'git am' übergeben"
 
 #: builtin/rebase.c:1506 builtin/rebase.c:1508
 msgid "passed to 'git apply'"
@@ -18805,9 +18798,8 @@ msgid "show the patch file being applied or merged"
 msgstr "den Patch, der gerade angewendet oder zusammengeführt wird, anzeigen"
 
 #: builtin/rebase.c:1530
-#, fuzzy
 msgid "use apply strategies to rebase"
-msgstr "Merge-Strategien beim Rebase verwenden"
+msgstr "Strategien von 'git am' bei Rebase verwenden"
 
 #: builtin/rebase.c:1534
 msgid "use merging strategies to rebase"
@@ -18824,7 +18816,7 @@ msgstr ""
 
 #: builtin/rebase.c:1547
 msgid "how to handle commits that become empty"
-msgstr ""
+msgstr "wie sollen Commits behandelt werden, die leer werden"
 
 #: builtin/rebase.c:1554
 msgid "move commits that begin with squash!/fixup! under -i"
@@ -18961,16 +18953,15 @@ msgid "--strategy requires --merge or --interactive"
 msgstr "--strategy erfordert --merge oder --interactive"
 
 #: builtin/rebase.c:1899
-#, fuzzy
 msgid "cannot combine apply options with merge options"
 msgstr ""
-"Optionen für \"am\" können nicht mit Optionen für \"interactive\" oder "
-"\"merge\" kombiniert werden."
+"Optionen für \"am\" können nicht mit Optionen für \"merge\" kombiniert "
+"werden."
 
 #: builtin/rebase.c:1912
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown rebase backend: %s"
-msgstr "Unbekannter Unterbefehl: %s"
+msgstr "Unbekanntes Rebase-Backend: %s"
 
 #: builtin/rebase.c:1937
 msgid "--reschedule-failed-exec requires --exec or --interactive"
@@ -19399,9 +19390,9 @@ msgid "(delete)"
 msgstr "(lösche)"
 
 #: builtin/remote.c:653
-#, fuzzy, c-format
+#, c-format
 msgid "could not set '%s'"
-msgstr "Konnte '%s' nicht aufheben."
+msgstr "konnte '%s' nicht setzen"
 
 #: builtin/remote.c:658
 #, c-format
@@ -19410,6 +19401,9 @@ msgid ""
 "\t%s:%d\n"
 "now names the non-existent remote '%s'"
 msgstr ""
+"Die %s Konfiguration remote.pushDefault in:\n"
+"\t%s:%d\n"
+"benennt jetzt das nicht existierende Remote-Repository '%s'"
 
 #: builtin/remote.c:689 builtin/remote.c:832 builtin/remote.c:940
 #, c-format
@@ -20334,9 +20328,8 @@ msgid "rev-list does not support display of notes"
 msgstr "rev-list unterstützt keine Anzeige von Notizen"
 
 #: builtin/rev-list.c:615
-#, fuzzy
 msgid "marked counting is incompatible with --objects"
-msgstr "Die Optionen --first-parent und --bisect sind inkompatibel."
+msgstr "markiertes Zählen ist inkompatibel mit der Option --objects"
 
 #: builtin/rev-parse.c:408
 msgid "git rev-parse --parseopt [<options>] -- [<args>...]"
@@ -20527,6 +20520,8 @@ msgstr "mit Rückgabewert 0 beenden, wenn keine Übereinstimmung gefunden wurde"
 #: builtin/rm.c:282
 msgid "No pathspec was given. Which files should I remove?"
 msgstr ""
+"Es wurde keine Pfadspezifikation angegeben. Welche Dateien sollen entfernt "
+"werden?"
 
 #: builtin/rm.c:305
 msgid "please stage your changes to .gitmodules or stash them to proceed"
@@ -20795,9 +20790,8 @@ msgstr ""
 "Repository befinden"
 
 #: builtin/sparse-checkout.c:21
-#, fuzzy
 msgid "git sparse-checkout (init|list|set|add|disable) <options>"
-msgstr "git sparse-checkout (init|list|set|disable) <Optionen>"
+msgstr "git sparse-checkout (init|list|set|add|disable) <Optionen>"
 
 #: builtin/sparse-checkout.c:64
 msgid "this worktree is not sparse (sparse-checkout file may not exist)"
@@ -20806,9 +20800,9 @@ msgstr ""
 "existiert eventuell nicht)."
 
 #: builtin/sparse-checkout.c:225
-#, fuzzy
 msgid "failed to create directory for sparse-checkout file"
-msgstr "Fehler beim Erstellen von Verzeichnis '%s'"
+msgstr "Fehler beim Erstellen eines Verzeichnisses für Datei eines partiellen "
+"Checkouts"
 
 #: builtin/sparse-checkout.c:266
 msgid "failed to set extensions.worktreeConfig setting"
@@ -20832,24 +20826,22 @@ msgid "failed to open '%s'"
 msgstr "Fehler beim Öffnen von '%s'"
 
 #: builtin/sparse-checkout.c:398
-#, fuzzy, c-format
+#, c-format
 msgid "could not normalize path %s"
-msgstr "konnte Patch '%s' nicht parsen"
+msgstr "konnte Pfad '%s' nicht normalisieren"
 
 #: builtin/sparse-checkout.c:410
-#, fuzzy
 msgid "git sparse-checkout (set|add) (--stdin | <patterns>)"
-msgstr "git sparse-checkout set (--stdin | <Muster>)"
+msgstr "git sparse-checkout (set|add) (--stdin | <Muster>)"
 
 #: builtin/sparse-checkout.c:435
-#, fuzzy, c-format
+#, c-format
 msgid "unable to unquote C-style string '%s'"
-msgstr "Konnte Anführungszeichen von '%s' nicht entfernen."
+msgstr "konnte Anführungszeichen von C-Style Zeichenkette '%s' nicht entfernen"
 
 #: builtin/sparse-checkout.c:489 builtin/sparse-checkout.c:513
-#, fuzzy
 msgid "unable to load existing sparse-checkout patterns"
-msgstr "Setze Muster für partielles Auschecken"
+msgstr "konnte die existierenden Muster des partiellen Checkouts nicht laden"
 
 #: builtin/sparse-checkout.c:558
 msgid "read patterns from standard in"
@@ -20857,7 +20849,7 @@ msgstr "Muster von der Standard-Eingabe lesen"
 
 #: builtin/sparse-checkout.c:564
 msgid "set sparse-checkout patterns"
-msgstr "Setze Muster für partielles Auschecken"
+msgstr "setze Muster für partiellen Checkout"
 
 #: builtin/sparse-checkout.c:581
 msgid "disable sparse-checkout"
@@ -20892,7 +20884,6 @@ msgid "git stash clear"
 msgstr "git stash clear"
 
 #: builtin/stash.c:28
-#, fuzzy
 msgid ""
 "git stash [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]\n"
 "          [-u|--include-untracked] [-a|--all] [-m|--message <message>]\n"
@@ -20901,6 +20892,7 @@ msgid ""
 msgstr ""
 "git stash [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]\n"
 "          [-u|--include-untracked] [-a|--all] [-m|--message <Nachricht>]\n"
+"          [--pathspec-from-file=<Datei> [--pathspec-file-nul]]\n"
 "          [--] [<Pfadspezifikation>...]]"
 
 #: builtin/stash.c:32 builtin/stash.c:85
@@ -21414,15 +21406,14 @@ msgid "disallow cloning into non-empty directory"
 msgstr "Klonen in ein nicht leeres Verzeichnis verbieten"
 
 #: builtin/submodule--helper.c:1424
-#, fuzzy
 msgid ""
 "git submodule--helper clone [--prefix=<path>] [--quiet] [--reference "
 "<repository>] [--name <name>] [--depth <depth>] [--single-branch] --url "
 "<url> --path <path>"
 msgstr ""
 "git submodule--helper clone [--prefix=<Pfad>] [--quiet] [--reference "
-"<Repository>] [--name <Name>] [--url <URL>] [--name <Name>] [--depth "
-"<Tiefe>] --url <URL> --path <Pfad>"
+"<Repository>] [--name <Name>] [--depth <Tiefe>] [--single-branch] --url "
+"<URL> --path <Pfad>"
 
 #: builtin/submodule--helper.c:1449
 #, c-format
@@ -24446,27 +24437,24 @@ msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be\n"
 "marked for staging."
 msgstr ""
-"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete Patch-"
-"Block\n"
-"direkt als zum Hinzufügen zur Staging-Area markiert."
+"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete\n"
+"Patch-Block direkt zum Hinzufügen zur Staging-Area markiert."
 
 #: git-add--interactive.perl:1056
 msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be\n"
 "marked for stashing."
 msgstr ""
-"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete Patch-"
-"Block\n"
-"direkt als zum Hinzufügen zum Stash markiert."
+"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete\n"
+"Patch-Block direkt zum Hinzufügen zum Stash markiert."
 
 #: git-add--interactive.perl:1059
 msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be\n"
 "marked for unstaging."
 msgstr ""
-"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete Patch-"
-"Block\n"
-"direkt als zum Entfernen aus der Staging-Area markiert."
+"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete\n"
+"Patch-Block direkt zum Entfernen aus der Staging-Area markiert."
 
 #: git-add--interactive.perl:1062 git-add--interactive.perl:1071
 #: git-add--interactive.perl:1077
@@ -24474,9 +24462,8 @@ msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be\n"
 "marked for applying."
 msgstr ""
-"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete Patch-"
-"Block\n"
-"direkt als zum Anwenden markiert."
+"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete\n"
+"Patch-Block direkt zum Anwenden markiert."
 
 #: git-add--interactive.perl:1065 git-add--interactive.perl:1068
 #: git-add--interactive.perl:1074
@@ -24484,9 +24471,8 @@ msgid ""
 "If the patch applies cleanly, the edited hunk will immediately be\n"
 "marked for discarding."
 msgstr ""
-"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete Patch-"
-"Block\n"
-"direkt als zum Verwerfen markiert."
+"Wenn der Patch sauber angewendet werden kann, wird der bearbeitete\n"
+"Patch-Block direkt zum Verwerfen markiert."
 
 #: git-add--interactive.perl:1111
 #, perl-format
@@ -25152,251 +25138,3 @@ msgstr "Lasse %s mit Backup-Suffix '%s' aus.\n"
 #, perl-format
 msgid "Do you really want to send %s? [y|N]: "
 msgstr "Wollen Sie %s wirklich versenden? [y|N]: "
-
-#~ msgid "Stage mode change [y,n,a,q,d%s,?]? "
-#~ msgstr "Modusänderung der Staging-Area hinzufügen [y,n,a,q,d%s,?]? "
-
-#~ msgid "Stage deletion [y,n,a,q,d%s,?]? "
-#~ msgstr "Löschung der Staging-Area hinzufügen [y,n,a,q,d%s,?]? "
-
-#~ msgid "Stage this hunk [y,n,a,q,d%s,?]? "
-#~ msgstr "Diesen Patch-Block der Staging-Area hinzufügen [y,n,a,q,d%s,?]? "
-
-#~ msgid ""
-#~ "If the patch applies cleanly, the edited hunk will immediately be\n"
-#~ "marked for staging.\n"
-#~ msgstr ""
-#~ "Wenn der Patch sauber angewendet werden kann, wird der bearbeitete Patch-"
-#~ "Block\n"
-#~ "direkt als zum Hinzufügen zur Staging-Area markiert.\n"
-
-#~ msgid ""
-#~ "y - stage this hunk\n"
-#~ "n - do not stage this hunk\n"
-#~ "q - quit; do not stage this hunk or any of the remaining ones\n"
-#~ "a - stage this and all the remaining hunks\n"
-#~ "d - do not stage this hunk nor any of the remaining hunks\n"
-#~ msgstr ""
-#~ "y - diesen Patch-Block zum Commit vormerken\n"
-#~ "n - diesen Patch-Block nicht zum Commit vormerken\n"
-#~ "q - Beenden; diesen oder alle verbleibenden Patch-Blöcke nicht zum Commit "
-#~ "vormerken\n"
-#~ "a - diesen und alle weiteren Patch-Blöcke zum Commit vormerken\n"
-#~ "d - diesen und alle weiteren Patch-Blöcke nicht zum Commit vormerken\n"
-
-#~ msgid "could not copy '%s' to '%s'."
-#~ msgstr "Konnte '%s' nicht nach '%s' kopieren."
-
-#~ msgid "malformed ident line"
-#~ msgstr "Fehlerhafte Identifikationszeile."
-
-#~ msgid "corrupted author without date information"
-#~ msgstr "Fehlerhafter Autor ohne Datumsinformationen."
-
-#~ msgid "could not parse '%.*s'"
-#~ msgstr "Konnte '%.*s' nicht parsen."
-
-#~ msgid "could not checkout %s"
-#~ msgstr "Konnte %s nicht auschecken."
-
-#~ msgid "filename in tree entry contains backslash: '%s'"
-#~ msgstr "Dateiname im Tree-Eintrag enthält Backslash: '%s'"
-
-#~ msgid "Use -f if you really want to add them.\n"
-#~ msgstr "Verwenden Sie -f wenn Sie diese wirklich hinzufügen möchten.\n"
-
-#~ msgid "Maybe you wanted to say 'git add .'?\n"
-#~ msgstr "Meinten Sie vielleicht 'git add .'?\n"
-
-#~ msgid "packfile is invalid: %s"
-#~ msgstr "Packdatei ist ungültig: %s"
-
-#~ msgid "unable to open packfile for reuse: %s"
-#~ msgstr "Konnte Packdatei nicht zur Wiederverwendung öffnen: %s"
-
-#~ msgid "unable to seek in reused packfile"
-#~ msgstr "Konnte \"seek\" nicht in wiederverwendeter Packdatei ausführen."
-
-#~ msgid "unable to read from reused packfile"
-#~ msgstr "Konnte nicht von wiederverwendeter Packdatei lesen."
-
-#~ msgid "no HEAD?"
-#~ msgstr "Kein HEAD?"
-
-#~ msgid "make committer date match author date"
-#~ msgstr "Commit-Datum und Autor-Datum sollen übereinstimmen"
-
-#~ msgid "ignore author date and use current date"
-#~ msgstr "Autor-Datum ignorieren und aktuelles Datum nutzen"
-
-#~ msgid "synonym of --reset-author-date"
-#~ msgstr "Synonym für --reset-author-date"
-
-#~ msgid "ignore changes in whitespace"
-#~ msgstr "Whitespace-Änderungen ignorieren"
-
-#~ msgid "preserve empty commits during rebase"
-#~ msgstr "leere Commits während des Rebase erhalten"
-
-#~ msgid "cannot combine --use-bitmap-index with object filtering"
-#~ msgstr ""
-#~ "--use-bitmap-index kann nicht mit dem Filtern von Objekten kombiniert "
-#~ "werden."
-
-#~ msgid ""
-#~ "The following path is ignored by one of your .gitignore files:\n"
-#~ "$sm_path\n"
-#~ "Use -f if you really want to add it."
-#~ msgstr ""
-#~ "Der folgende Pfad wird durch eine Ihrer \".gitignore\" Dateien "
-#~ "ignoriert:\n"
-#~ "$sm_path\n"
-#~ "Benutzen Sie -f wenn Sie diesen wirklich hinzufügen möchten."
-
-#~ msgid "unable to get tree for %s"
-#~ msgstr "Konnte Verzeichnis für %s nicht bestimmen."
-
-#~ msgid "Use an experimental heuristic to improve diffs"
-#~ msgstr ""
-#~ "eine experimentelle Heuristik zur Verbesserung der Darstellung\n"
-#~ "von Unterschieden verwenden"
-
-#~ msgid "git commit-graph [--object-dir <objdir>]"
-#~ msgstr "git commit-graph [--object-dir <Objektverzeichnis>]"
-
-#~ msgid "git commit-graph read [--object-dir <objdir>]"
-#~ msgstr "git commit-graph read [--object-dir <Objektverzeichnis>]"
-
-#~ msgid "unknown core.untrackedCache value '%s'; using 'keep' default value"
-#~ msgstr ""
-#~ "Unbekannter Wert '%s' in core.untrackedCache; benutze Standardwert 'keep'"
-
-#~ msgid "cannot change partial clone promisor remote"
-#~ msgstr "Kann Remote-Repository für partielles Klonen nicht ändern."
-
-#~ msgid "error building trees"
-#~ msgstr "Fehler beim Erstellen der \"Tree\"-Objekte"
-
-#~ msgid "invalid date format '%s' in '%s'"
-#~ msgstr "Ungültiges Datumsformat '%s' in '%s'"
-
-#~ msgid "writing root commit"
-#~ msgstr "Root-Commit schreiben"
-
-#~ msgid "staged changes in the following files may be lost: %s"
-#~ msgstr ""
-#~ "Zum Commit vorgemerkte Änderungen in den folgenden Dateien gehen "
-#~ "eventuell verloren: %s"
-
-#~ msgid ""
-#~ "--filter can only be used with the remote configured in extensions."
-#~ "partialClone"
-#~ msgstr ""
-#~ "--filter kann nur mit den Remote-Repositories verwendet werden,\n"
-#~ "die in core.partialClone konfiguriert sind."
-
-#~ msgid "verify commit-msg hook"
-#~ msgstr "commit-msg Hook überprüfen"
-
-#~ msgid "cannot combine '--rebase-merges' with '--strategy-option'"
-#~ msgstr ""
-#~ "'--rebase-merges' kann nicht mit '--strategy-option' kombiniert werden."
-
-#~ msgid "invalid sparse value '%s'"
-#~ msgstr "Ungültiger \"sparse\"-Wert '%s'."
-
-#~ msgid ""
-#~ "Fetch normally indicates which branches had a forced update, but that "
-#~ "check has been disabled."
-#~ msgstr ""
-#~ "'fetch' zeigt normalerweise, welche Branches eine erzwungene "
-#~ "Aktualisierung hatten, aber diese Überprüfung wurde deaktiviert."
-
-#~ msgid ""
-#~ "or run 'git config fetch.showForcedUpdates false' to avoid this check.\n"
-#~ msgstr ""
-#~ "oder führen Sie 'git config fetch.showForcedUpdates false' aus, um diese "
-#~ "Überprüfung zu umgehen.\n"
-
-#~ msgid ""
-#~ "log.mailmap is not set; its implicit value will change in an\n"
-#~ "upcoming release. To squelch this message and preserve current\n"
-#~ "behaviour, set the log.mailmap configuration value to false.\n"
-#~ "\n"
-#~ "To squelch this message and adopt the new behaviour now, set the\n"
-#~ "log.mailmap configuration value to true.\n"
-#~ "\n"
-#~ "See 'git help config' and search for 'log.mailmap' for further "
-#~ "information."
-#~ msgstr ""
-#~ "'log.mailmap' ist nicht gesetzt; der implizite Wert wird sich in einem\n"
-#~ "kommenden Release ändern. Um diese Meldung zu unterdrücken und das "
-#~ "aktuelle\n"
-#~ "Verhalten beizubehalten, setzen Sie den Konfigurationswert von'log."
-#~ "mailmap' auf 'false'.\n"
-#~ "\n"
-#~ "Um diese Meldung zu unterdrücken und jetzt das neue Verhalten zu\n"
-#~ "übernehmen, setzen Sie den Konfigurationswert von 'log.mailmap' auf "
-#~ "'true'.\n"
-#~ "\n"
-#~ "Führen Sie 'git help config' aus und suchen Sie nach 'log.mailmap', um\n"
-#~ "weitere Informationen zu erhalten."
-
-#~ msgid "Server supports multi_ack_detailed"
-#~ msgstr "Server unterstützt multi_ack_detailed"
-
-#~ msgid "Server supports no-done"
-#~ msgstr "Server unterstützt no-done"
-
-#~ msgid "Server supports multi_ack"
-#~ msgstr "Server unterstützt multi_ack"
-
-#~ msgid "Server supports side-band-64k"
-#~ msgstr "Server unterstützt side-band-64k"
-
-#~ msgid "Server supports side-band"
-#~ msgstr "Server unterstützt side-band"
-
-#~ msgid "Server supports allow-tip-sha1-in-want"
-#~ msgstr "Server unterstützt allow-tip-sha1-in-want"
-
-#~ msgid "Server supports allow-reachable-sha1-in-want"
-#~ msgstr "Server unterstützt allow-reachable-sha1-in-want"
-
-#~ msgid "Server supports ofs-delta"
-#~ msgstr "Server unterstützt ofs-delta"
-
-#~ msgid "(HEAD detached at %s)"
-#~ msgstr "(HEAD losgelöst bei %s)"
-
-#~ msgid "(HEAD detached from %s)"
-#~ msgstr "(HEAD losgelöst von %s)"
-
-#~ msgid "Checking out files"
-#~ msgstr "Checke Dateien aus"
-
-#~ msgid "cannot be interactive without stdin connected to a terminal."
-#~ msgstr ""
-#~ "Kann nicht interaktiv sein, ohne dass die Standard-Eingabe mit einem "
-#~ "Terminal verbunden ist."
-
-#~ msgid "failed to stat %s\n"
-#~ msgstr "Konnte %s nicht lesen\n"
-
-#~ msgid ""
-#~ "If you wish to skip this commit, use:\n"
-#~ "\n"
-#~ "    git reset\n"
-#~ "\n"
-#~ "Then \"git cherry-pick --continue\" will resume cherry-picking\n"
-#~ "the remaining commits.\n"
-#~ msgstr ""
-#~ "Wenn Sie diesen Commit auslassen möchten, benutzen Sie:\n"
-#~ "\n"
-#~ "    git reset\n"
-#~ "\n"
-#~ "Benutzen Sie anschließend \"git cherry-pick --continue\", um die\n"
-#~ "Cherry-Pick-Operation mit den verbleibenden Commits fortzusetzen.\n"
-
-#~ msgid "unrecognized verb: %s"
-#~ msgstr "Nicht erkanntes Verb: %s"
