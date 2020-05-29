@@ -23878,7 +23878,7 @@ msgstr ""
 
 #: command-list.h:203
 msgid "Frequently asked questions about using Git"
-msgstr ""
+msgstr "Häufig gestellte Fragen über die Nutzung von Git"
 
 #: command-list.h:204
 msgid "A Git Glossary"
