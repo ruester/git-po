@@ -467,7 +467,7 @@ msgstr "Löschung vom Index und Arbeitsverzeichnis verwerfen [y,n,q,a,d%s,?]? "
 #: add-patch.c:151 add-patch.c:196 git-add--interactive.perl:1462
 #,  c-format, perl-format
 msgid "Discard addition from index and worktree [y,n,q,a,d%s,?]? "
-msgstr "Ergänzung vom Index und Arbeitsverzeichnis verwerfen [y,n,q,a,d%s,?]? "
+msgstr "Ergänzung im Index und Arbeitsverzeichnis verwerfen [y,n,q,a,d%s,?]? "
 
 #: add-patch.c:152 add-patch.c:197 git-add--interactive.perl:1463
 #, c-format, perl-format
@@ -2222,7 +2222,7 @@ msgstr "Berechnung der Bloom-Filter für veränderte Pfade des Commits"
 
 #: commit-graph.c:1423
 msgid "Collecting referenced commits"
-msgstr "Sammeln referenzierter Commits"
+msgstr "Sammle referenzierte Commits"
 
 #: commit-graph.c:1447
 #, c-format
@@ -4085,7 +4085,7 @@ msgstr "Server unterstützt kein --deepen"
 
 #: fetch-pack.c:1054
 msgid "Server does not support this repository's object format"
-msgstr "Server unterstützt das Objekt-Format dieses Repositorys nicht"
+msgstr "Server unterstützt das Objekt-Format dieses Repositories nicht"
 
 #: fetch-pack.c:1071
 msgid "no common commits"
@@ -4103,7 +4103,7 @@ msgstr "Algorithmen stimmen nicht überein: Client %s; Server %s"
 #: fetch-pack.c:1215
 #, c-format
 msgid "the server does not support algorithm '%s'"
-msgstr "der Server unterstützt den Algorithmus '%s' nicht"
+msgstr "der Server unterstützt Algorithmus '%s' nicht"
 
 #: fetch-pack.c:1235
 msgid "Server does not support shallow requests"
@@ -8696,7 +8696,7 @@ msgstr ""
 #: transport-helper.c:1133
 #, c-format
 msgid "unsupported object format '%s'"
-msgstr "fehlerhaftes Objekt-Format bei '%s'"
+msgstr "nicht unterstütztes Objekt-Format '%s'"
 
 #: transport-helper.c:1142
 #, c-format
@@ -12845,7 +12845,7 @@ msgstr ""
 
 #: builtin/commit-graph.c:245
 msgid "Collecting commits from input"
-msgstr "Sammeln der Commits von der Standard-Eingabe"
+msgstr "Sammle Commits von der Standard-Eingabe"
 
 #: builtin/commit-tree.c:18
 msgid ""
@@ -23316,7 +23316,7 @@ msgstr "konnte nicht auf '%s' zugreifen: %s"
 #: remote-curl.c:501
 #, c-format
 msgid "redirecting to %s"
-msgstr "leite nach %s um"
+msgstr "Umleitung nach %s"
 
 #: remote-curl.c:630
 msgid "shouldn't have EOF when not gentle on EOF"
