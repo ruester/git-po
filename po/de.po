@@ -5055,8 +5055,7 @@ msgstr "multi-pack-index-Version %d nicht erkannt."
 #: midx.c:105
 #, c-format
 msgid "multi-pack-index hash version %u does not match version %u"
-msgstr ""
-"Hash-Version %u des multi-pack-index stimmt nicht mit Version %u überein"
+msgstr "multi-pack-index Hash-Version %u stimmt nicht mit Version %u überein"
 
 #: midx.c:122
 msgid "invalid chunk offset (too large)"
@@ -13936,7 +13935,7 @@ msgstr "Fehler beim Formatieren des Standardkonfigurationswertes: %s"
 #: builtin/config.c:434
 #, c-format
 msgid "cannot parse color '%s'"
-msgstr "nann Farbe '%s' nicht parsen"
+msgstr "kann Farbe '%s' nicht parsen"
 
 #: builtin/config.c:476
 msgid "unable to parse default color value"
@@ -14092,11 +14091,11 @@ msgstr "Meldungen zur Fehlersuche in Standard-Fehlerausgabe ausgeben"
 #: builtin/credential-cache--daemon.c:315
 msgid "credential-cache--daemon unavailable; no unix socket support"
 msgstr ""
-"credential-cache--daemon nicht verfügbar; Unix-Socket wird nicht unterstüzt"
+"credential-cache--daemon nicht verfügbar; Unix-Socket wird nicht unterstützt"
 
 #: builtin/credential-cache.c:154
 msgid "credential-cache unavailable; no unix socket support"
-msgstr "credential-cache nicht verfügbar; Unix-Socket wird nicht unterstüzt"
+msgstr "credential-cache nicht verfügbar; Unix-Socket wird nicht unterstützt"
 
 #: builtin/describe.c:26
 msgid "git describe [<options>] [<commit-ish>...]"
@@ -14988,7 +14987,7 @@ msgstr ""
 #: builtin/fetch.c:1891
 msgid "--stdin can only be used when fetching from one remote"
 msgstr ""
-"die Option --stdin kann nur verwendet werden, wenn von einem Remote-\n"
+"die Option --stdin kann nur verwendet werden, wenn nur von einem Remote-\n"
 "Repository abgefragt wird"
 
 #: builtin/fmt-merge-msg.c:7
@@ -22122,7 +22121,7 @@ msgstr "%s"
 #: builtin/submodule--helper.c:1055
 #, c-format
 msgid "couldn't hash object from '%s'"
-msgstr "konnte Hash nicht vom Objekt '%s' erzeugen"
+msgstr "Hash eines Objektes von '%s' konnte nicht erzeugt werden"
 
 #: builtin/submodule--helper.c:1059
 #, c-format
@@ -25651,7 +25650,7 @@ msgstr ""
 "fatal: Konfigurations-Optionen für 'sendmail' gefunden\n"
 "git-send-email wird über die Optionen sendemail.* konfiguriert - beachten "
 "Sie das 'e'.\n"
-"Setze sendemail.forbidSendmailVariables auf 'false', um diese Prüfung "
+"Setzen Sie sendemail.forbidSendmailVariables auf 'false', um diese Prüfung "
 "zu deaktivieren."
 
 #: git-send-email.perl:489 git-send-email.perl:691
