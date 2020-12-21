@@ -6267,6 +6267,18 @@ msgid ""
 "\n"
 "\tgit branch -m <name>\n"
 msgstr ""
+"Als Name für den initialen Branch wurde '%s' benutzt. Dieser\n"
+"Standard-Branchname kann sich ändern. Um den Namen des initialen Branches\n"
+"zu konfigurieren, der in allen neuen Repositories verwendet werden soll und\n"
+"um diese Warnung zu unterdrücken, führen Sie aus:\n"
+"\n"
+"\tgit config --global init.defaultBranch <Name>\n"
+"\n"
+"Häufig gewählte Namen statt 'master' sind 'main', 'trunk' und\n"
+"'development'. Der gerade erstellte Branch kann mit diesem Befehl\n"
+"umbenannt werden:\n"
+"\n"
+"\tgit branch -m <Name>\n"
 
 #: refs.c:588
 #, c-format
@@ -26120,9 +26132,3 @@ msgstr "Lasse %s mit Backup-Suffix '%s' aus.\n"
 #, perl-format
 msgid "Do you really want to send %s? [y|N]: "
 msgstr "Wollen Sie %s wirklich versenden? [y|N]: "
-
-#~ msgid "Counting distinct commits in commit graph"
-#~ msgstr "Zähle Commits in Commit-Graph"
-
-#~ msgid "the commit graph format cannot write %d commits"
-#~ msgstr "das Commit-Graph Format kann nicht %d Commits schreiben"
