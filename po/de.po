@@ -2144,24 +2144,23 @@ msgid "index-pack died"
 msgstr "Erstellung der Paketindexdatei abgebrochen"
 
 #: chunk-format.c:113
-#, fuzzy
 msgid "terminating chunk id appears earlier than expected"
-msgstr "abschließende multi-pack-index Chunk-Id erscheint eher als erwartet"
+msgstr "abschließende Chunk-ID erscheint eher als erwartet"
 
 #: chunk-format.c:122
-#, fuzzy, c-format
+#, c-format
 msgid "improper chunk offset(s) %<PRIx64> and %<PRIx64>"
-msgstr "Falscher Objekt-Offset für oid[%d] = %s: %<PRIx64> != %<PRIx64>"
+msgstr "unzulässige(r) Chunk-Offset(s) %<PRIx64> und %<PRIx64>"
 
 #: chunk-format.c:129
 #, c-format
 msgid "duplicate chunk ID %<PRIx32> found"
-msgstr ""
+msgstr "doppelte Chunk-ID %<PRIx32> gefunden"
 
 #: chunk-format.c:143
 #, c-format
 msgid "final chunk has non-zero id %<PRIx32>"
-msgstr ""
+msgstr "letzter Chunk hat nicht-Null ID %<PRIx32>"
 
 #: color.c:329
 #, c-format
@@ -4178,7 +4177,7 @@ msgstr "fetch-pack: konnte %s nicht starten"
 
 #: fetch-pack.c:952
 msgid "fetch-pack: invalid index-pack output"
-msgstr ""
+msgstr "fetch-pack: ungültige index-pack Ausgabe"
 
 #: fetch-pack.c:969
 #, c-format
@@ -5250,9 +5249,8 @@ msgid "unable to write new index file"
 msgstr "Konnte neue Index-Datei nicht schreiben."
 
 #: midx.c:62
-#, fuzzy
 msgid "multi-pack-index OID fanout is of the wrong size"
-msgstr "multi-pack-index-Version %d nicht erkannt."
+msgstr "multi-pack-index OID fanout hat die falsche Größe"
 
 #: midx.c:93
 #, c-format
@@ -6680,7 +6678,7 @@ msgstr "nicht erkanntes %%(subject) Argument: %s"
 #: ref-filter.c:334
 #, c-format
 msgid "expected %%(trailers:key=<value>)"
-msgstr ""
+msgstr "%%(trailers:key=<Wert>) erwartet"
 
 #: ref-filter.c:336
 #, c-format
@@ -23979,14 +23977,12 @@ msgid "not a git repository"
 msgstr "kein Git-Repository"
 
 #: http-fetch.c:134
-#, fuzzy
 msgid "--packfile requires --index-pack-args"
-msgstr "--pathspec-file-nul benötigt --pathspec-from-file"
+msgstr "--packfile benötigt --index-pack-args"
 
 #: http-fetch.c:143
-#, fuzzy
 msgid "--index-pack-args can only be used with --packfile"
-msgstr "-N kann nur mit -mixed benutzt werden"
+msgstr "--index-pack-args kann nur mit --packfile benutzt werden"
 
 #: t/helper/test-fast-rebase.c:141
 msgid "unhandled options"
