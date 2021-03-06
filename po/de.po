@@ -3124,7 +3124,7 @@ msgstr "Fehler beim Codieren von '%s' von %s nach %s"
 #: convert.c:462
 #, c-format
 msgid "encoding '%s' from %s to %s and back is not the same"
-msgstr "Codierung '%s' von %s nach %s und zurück ist nicht dasselbe"
+msgstr "Codierung von '%s' von %s nach %s und zurück ist nicht dasselbe"
 
 #: convert.c:665
 #, c-format
@@ -3928,7 +3928,7 @@ msgstr "die Änderung des angegebenen Pfades zuerst anzeigen"
 
 #: diff.c:5619
 msgid "skip the output to the specified path"
-msgstr "überspringe die Ausgabe zum angegebenen Pfad"
+msgstr "überspringe die Ausgabe bis zum angegebenen Pfad"
 
 #: diff.c:5621
 msgid "<object-id>"
@@ -10191,7 +10191,7 @@ msgstr "git add [<Optionen>] [--] <Pfadspezifikation>..."
 #: builtin/add.c:58
 #, c-format
 msgid "cannot chmod %cx '%s'"
-msgstr "kann nicht chmod %cx '%s'"
+msgstr "kann chmod %cx '%s' nicht ausführen"
 
 #: builtin/add.c:96
 #, c-format
@@ -11214,8 +11214,7 @@ msgstr "\"blame\"-Einträge schrittweise anzeigen, während wir sie finden"
 
 #: builtin/blame.c:868
 msgid "do not show object names of boundary commits (Default: off)"
-msgstr ""
-"keine Objektnkeine Objektnamen für Grenz-Commits anzeigen (Standard: aus)"
+msgstr "keine Objektnamen für Grenz-Commits anzeigen (Standard: aus)"
 
 #: builtin/blame.c:869
 msgid "do not treat root commits as boundaries (Default: off)"
@@ -13219,24 +13218,26 @@ msgstr "'%s' ist kein gültiger Name für ein Remote-Repository"
 #: builtin/clone.c:1211
 msgid "--depth is ignored in local clones; use file:// instead."
 msgstr ""
-"--depth wird in lokalen Klonen ignoriert; benutzen Sie stattdessen file://"
+"--depth wird in lokalen Klonen ignoriert; benutzen Sie stattdessen "
+"\"file://\"."
 
 #: builtin/clone.c:1213
 msgid "--shallow-since is ignored in local clones; use file:// instead."
 msgstr ""
 "--shallow-since wird in lokalen Klonen ignoriert; benutzen Sie stattdessen "
-"file://"
+"\"file://\"."
 
 #: builtin/clone.c:1215
 msgid "--shallow-exclude is ignored in local clones; use file:// instead."
 msgstr ""
 "--shallow-exclude wird in lokalen Klonen ignoriert; benutzen Sie stattdessen "
-"file://"
+"\"file://\"."
 
 #: builtin/clone.c:1217
 msgid "--filter is ignored in local clones; use file:// instead."
 msgstr ""
-"--filter wird in lokalen Klonen ignoriert; benutzen Sie stattdessen file://"
+"--filter wird in lokalen Klonen ignoriert; benutzen Sie stattdessen "
+"\"file://\"."
 
 #: builtin/clone.c:1220
 msgid "source repository is shallow, ignoring --local"
@@ -15869,7 +15870,7 @@ msgstr "Fehler beim Ausführen von 'git config'"
 #: builtin/gc.c:1562
 #, c-format
 msgid "failed to expand path '%s'"
-msgstr " Erweitern des Pfades '%s'"
+msgstr "Fehler beim Erweitern des Pfades '%s'"
 
 #: builtin/gc.c:1591
 msgid "failed to start launchctl"
@@ -19091,7 +19092,7 @@ msgstr ""
 "bitte eine zusätzliche Option '--i-still-use-this' in\n"
 "der Befehlszeile hinzu und lassen Sie uns wissen, dass\n"
 "Sie es immer noch verwenden, indem Sie eine E-Mail an\n"
-"<git@vger.kernel.org> senden.  Danke.\n"
+"<git@vger.kernel.org> senden. Danke.\n"
 
 #: builtin/pack-refs.c:8
 msgid "git pack-refs [<options>]"
@@ -22326,7 +22327,7 @@ msgid ""
 "            %s -> %s\n"
 "         to make room.\n"
 msgstr ""
-"WARNUNG: Nicht versionierte Datei im Weg von versionierter Datei!  "
+"WARNUNG: Nicht versionierte Datei im Weg von versionierter Datei! "
 "Umbenennung\n"
 "            %s -> %s\n"
 "         um Platz zu schaffen.\n"
@@ -22774,7 +22775,7 @@ msgstr ""
 
 #: builtin/submodule--helper.c:1625
 msgid "unregister all submodules"
-msgstr "alle Submodule autragen"
+msgstr "alle Submodule austragen"
 
 #: builtin/submodule--helper.c:1630
 msgid ""
