@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2021-05-17 16:02+0800\n"
-"PO-Revision-Date: 2021-03-03 20:13+0100\n"
+"PO-Revision-Date: 2021-05-23 18:32+0200\n"
 "Last-Translator: Matthias Rüster <matthias.ruester@gmail.com>\n"
 "Language-Team: Matthias Rüster <matthias.ruester@gmail.com>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 2.4.3\n"
 
 #: add-interactive.c:376
 #, c-format
@@ -838,11 +838,15 @@ msgid ""
 "index\n"
 "entries outside the current sparse checkout:\n"
 msgstr ""
+"Die folgenden Pfadspezifikationen entsprachen keinem geeigneten Pfad, aber\n"
+"entsprechen Index-Einträgen außerhalb des aktuellen partiellen Checkouts:\n"
 
 #: advice.c:303
 msgid ""
 "Disable or modify the sparsity rules if you intend to update such entries."
 msgstr ""
+"Deaktivieren oder verändern Sie die Regeln für partielle Checkouts, wenn Sie "
+"solche Einträge aktualisieren möchten."
 
 #: advice.c:310
 #, c-format
@@ -1166,16 +1170,15 @@ msgid "%s: does not match index"
 msgstr "%s entspricht nicht der Version im Index"
 
 #: apply.c:3571
-#, fuzzy
 msgid "repository lacks the necessary blob to perform 3-way merge."
 msgstr ""
-"Dem Repository fehlt der notwendige Blob, um auf einen 3-Wege-Merge\n"
-"zurückzufallen."
+"Dem Repository fehlt der notwendige Blob, um einen 3-Wege-Merge "
+"durchzuführen."
 
 #: apply.c:3574
-#, fuzzy, c-format
+#, c-format
 msgid "Performing three-way merge...\n"
-msgstr "Falle zurück auf 3-Wege-Merge ...\n"
+msgstr "3-Wege-Merge durchführen...\n"
 
 #: apply.c:3590 apply.c:3594
 #, c-format
@@ -1183,9 +1186,9 @@ msgid "cannot read the current contents of '%s'"
 msgstr "kann aktuelle Inhalte von '%s' nicht lesen"
 
 #: apply.c:3606
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to perform three-way merge...\n"
-msgstr "Fehler beim Zurückfallen auf 3-Wege-Merge...\n"
+msgstr "Fehler beim Durchführen des 3-Wege-Merges...\n"
 
 #: apply.c:3620
 #, c-format
@@ -1198,9 +1201,9 @@ msgid "Applied patch to '%s' cleanly.\n"
 msgstr "Patch auf '%s' sauber angewendet.\n"
 
 #: apply.c:3642
-#, fuzzy, c-format
+#, c-format
 msgid "Falling back to direct application...\n"
-msgstr "Falle zurück auf 3-Wege-Merge ...\n"
+msgstr "Ausweichen auf direkte Anwendung...\n"
 
 #: apply.c:3654
 msgid "removal patch leaves file contents"
@@ -1466,9 +1469,9 @@ msgid "also apply the patch (use with --stat/--summary/--check)"
 msgstr "Patch anwenden (Benutzung mit --stat/--summary/--check)"
 
 #: apply.c:5027
-#, fuzzy
 msgid "attempt three-way merge, fall back on normal patch if that fails"
-msgstr "versuche 3-Wege-Merge, wenn der Patch nicht angewendet werden konnte"
+msgstr ""
+"versuche 3-Wege-Merge, weiche auf normalen Patch aus, wenn dies fehlschlägt"
 
 #: apply.c:5029
 msgid "build a temporary index based on embedded index information"
@@ -4243,11 +4246,10 @@ msgid "no common commits"
 msgstr "keine gemeinsamen Commits"
 
 #: fetch-pack.c:1122 fetch-pack.c:1469 builtin/clone.c:1238
-#, fuzzy
 msgid "source repository is shallow, reject to clone."
 msgstr ""
-"Quelle ist ein Repository mit unvollständiger Historie (shallow),\n"
-"ignoriere --local"
+"Quelle ist ein Repository mit unvollständiger Historie (shallow), Klonen "
+"zurückgewiesen."
 
 #: fetch-pack.c:1128 fetch-pack.c:1651
 msgid "git fetch-pack: fetch failed."
@@ -4336,9 +4338,8 @@ msgid "remote did not send all necessary objects"
 msgstr "Remote-Repository hat nicht alle erforderlichen Objekte gesendet"
 
 #: fetch-pack.c:2056
-#, fuzzy
 msgid "unexpected 'ready' from remote"
-msgstr "Unerwartetes Dateiende"
+msgstr "unerwartetes 'ready' von Remote-Repository"
 
 #: fetch-pack.c:2079
 #, c-format
@@ -4627,9 +4628,9 @@ msgid "sparse:path filters support has been dropped"
 msgstr "Keine Unterstützung für sparse:path Filter mehr"
 
 #: list-objects-filter-options.c:105
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' for 'object:type=<type>' isnot a valid object type"
-msgstr "'%s' ist kein gültiger Zeitstempel für '%s'"
+msgstr "'%s' für 'object:type=<Typ>' ist kein gültiger Objekttyp"
 
 #: list-objects-filter-options.c:124
 #, c-format
@@ -4717,12 +4718,12 @@ msgstr "erwartete Flush nach Argumenten für die Auflistung der Referenzen"
 
 #: mailinfo.c:1050
 msgid "quoted CRLF detected"
-msgstr ""
+msgstr "angeführtes CRLF entdeckt"
 
 #: mailinfo.c:1254 builtin/am.c:176 builtin/mailinfo.c:46
-#, fuzzy, c-format
+#, c-format
 msgid "bad action '%s' for '%s'"
-msgstr "ungültiger boolescher Konfigurationswert '%s' für '%s'"
+msgstr "ungültige Aktion '%s' für '%s'"
 
 #: merge-ort.c:1116 merge-recursive.c:1205
 #, c-format
@@ -4922,22 +4923,24 @@ msgstr ""
 "nach %s verschieben."
 
 #: merge-ort.c:3055
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "CONFLICT (distinct types): %s had different types on each side; renamed both "
 "of them so each can be recorded somewhere."
 msgstr ""
 "KONFLIKT (verschiedene Typen): %s hatte unterschiedliche Typen auf jeder "
-"Seite; %s wurde(n) umbenannt, damit jeder irgendwo aufgezeichnet werden kann."
+"Seite; beide wurden umbenannt, damit jeder irgendwo aufgezeichnet werden "
+"kann."
 
 #: merge-ort.c:3062
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "CONFLICT (distinct types): %s had different types on each side; renamed one "
 "of them so each can be recorded somewhere."
 msgstr ""
 "KONFLIKT (verschiedene Typen): %s hatte unterschiedliche Typen auf jeder "
-"Seite; %s wurde(n) umbenannt, damit jeder irgendwo aufgezeichnet werden kann."
+"Seite; eines der beiden wurde umbenannt, damit jeder irgendwo aufgezeichnet "
+"werden kann."
 
 #: merge-ort.c:3162 merge-recursive.c:3081
 msgid "content"
@@ -4971,6 +4974,8 @@ msgid ""
 "Note: %s not up to date and in way of checking out conflicted version; old "
 "copy renamed to %s"
 msgstr ""
+"Hinweis: %s nicht aktuell und konfliktbehaftete Version während des "
+"Auscheckens; alte Kopie zu %s umbenannt"
 
 #. TRANSLATORS: The %s arguments are: 1) tree hash of a merge
 #. base, and 2-3) the trees for the two trees we're merging.
@@ -5383,16 +5388,14 @@ msgid "did not see pack-file %s to drop"
 msgstr "Pack-Datei %s zum Weglassen nicht gefunden"
 
 #: midx.c:1024
-#, fuzzy, c-format
+#, c-format
 msgid "unknown preferred pack: '%s'"
-msgstr "Unbekanntes Rebase-Backend: %s"
+msgstr "unbekanntes bevorzugtes Paket: '%s'"
 
 #: midx.c:1029
-#, fuzzy, c-format
+#, c-format
 msgid "preferred pack '%s' is expired"
-msgstr ""
-"Referenziertes Repository '%s' ist mit künstlichen Vorgängern (\"grafts\") "
-"eingehängt."
+msgstr "bevorzugtes Paket '%s' ist abgelaufen"
 
 #: midx.c:1045
 msgid "no pack files to index."
@@ -6218,9 +6221,9 @@ msgstr ""
 "Schreiben des Pakets fehlgeschlagen - Daten überschreiten maximale Paketgröße"
 
 #: pkt-line.c:222
-#, fuzzy, c-format
+#, c-format
 msgid "packet write failed: %s"
-msgstr "Schreiben des Pakets fehlgeschlagen."
+msgstr "Schreiben des Pakets fehlgeschlagen: %s"
 
 #: pkt-line.c:328 pkt-line.c:329
 msgid "read error"
@@ -6278,9 +6281,8 @@ msgid "promisor remote name cannot begin with '/': %s"
 msgstr "Promisor-Remote-Name kann nicht mit '/' beginnen: %s"
 
 #: protocol-caps.c:103
-#, fuzzy
 msgid "object-info: expected flush after arguments"
-msgstr "erwartete Flush nach Abrufen der Argumente"
+msgstr "object-info: erwartete Flush nach Argumenten"
 
 #: prune-packed.c:35
 msgid "Removing duplicate objects"
@@ -6503,9 +6505,8 @@ msgid "could not close '%s'"
 msgstr "Konnte '%s' nicht schließen."
 
 #: read-cache.c:3138
-#, fuzzy
 msgid "failed to convert to a sparse-index"
-msgstr "Fehler beim Bereinigen des Index"
+msgstr "Konvertierung zu einem Sparse-Index fehlgeschlagen"
 
 #: read-cache.c:3209 sequencer.c:2684 sequencer.c:4441
 #, c-format
@@ -6551,7 +6552,6 @@ msgstr ""
 "Ignoriere."
 
 #: rebase-interactive.c:42
-#, fuzzy
 msgid ""
 "\n"
 "Commands:\n"
@@ -6581,8 +6581,11 @@ msgstr ""
 "r, reword <Commit> = Commit verwenden, aber Commit-Beschreibung bearbeiten\n"
 "e, edit <Commit> = Commit verwenden, aber zum Nachbessern anhalten\n"
 "s, squash <Commit> = Commit verwenden, aber mit vorherigem Commit vereinen\n"
-"f, fixup <Commit> = wie \"squash\", aber diese Commit-Beschreibung "
-"verwerfen\n"
+"f, fixup [-C | -c] <Commit> = wie \"squash\", aber nur die vorherige\n"
+"                   Commit-Beschreibung behalten, außer -C wird verwendet,\n"
+"                   in diesem Fall wird nur diese Commit-Beschreibung "
+"behalten;\n"
+"                   -c ist das Gleiche wie -C, aber ein Editor wird geöffnet\n"
 "x, exec <Commit> = Befehl (Rest der Zeile) mittels Shell ausführen\n"
 "b, break = hier anhalten (Rebase später mit 'git rebase --continue' "
 "fortsetzen)\n"
@@ -7523,13 +7526,12 @@ msgid "failed to sign the push certificate"
 msgstr "Fehler beim Signieren des \"push\"-Zertifikates"
 
 #: send-pack.c:433
-#, fuzzy
 msgid "send-pack: unable to fork off fetch subprocess"
-msgstr "Promisor-Remote: konnte Fetch-Subprozess nicht abspalten"
+msgstr "send-pack: konnte Fetch-Subprozess nicht abspalten"
 
 #: send-pack.c:455
 msgid "push negotiation failed; proceeding anyway with push"
-msgstr ""
+msgstr "Push-Übertragung fehlgeschlagen; fahre trotzdem mit dem Push fort"
 
 #: send-pack.c:520
 msgid "the receiving end does not support this repository's hash algorithm"
@@ -7889,9 +7891,8 @@ msgid "This is the commit message #%d:"
 msgstr "Das ist Commit-Beschreibung #%d:"
 
 #: sequencer.c:1738
-#, fuzzy
 msgid "The 1st commit message will be skipped:"
-msgstr "Die Commit-Beschreibung #%d wird ausgelassen:"
+msgstr "Die erste Commit-Beschreibung wird übersprungen:"
 
 #: sequencer.c:1739
 #, c-format
@@ -8043,16 +8044,16 @@ msgstr "Kann Revert nicht während eines Cherry-Picks ausführen."
 #: sequencer.c:2788
 #, c-format
 msgid "invalid value for %s: %s"
-msgstr "Ungültiger Wert für %s: %s"
+msgstr "ungültiger Wert für %s: %s"
 
 #: sequencer.c:2897
 msgid "unusable squash-onto"
-msgstr "Unbenutzbares squash-onto."
+msgstr "unbenutzbares squash-onto"
 
 #: sequencer.c:2917
 #, c-format
 msgid "malformed options sheet: '%s'"
-msgstr "Fehlerhaftes Optionsblatt: '%s'"
+msgstr "fehlerhaftes Optionsblatt: '%s'"
 
 #: sequencer.c:3012 sequencer.c:4869
 msgid "empty commit set passed"
@@ -8065,7 +8066,7 @@ msgstr "\"revert\" ist bereits im Gange"
 #: sequencer.c:3031
 #, c-format
 msgid "try \"git revert (--continue | %s--abort | --quit)\""
-msgstr "Versuchen Sie \"git revert (--continue | %s--abort | --quit)\""
+msgstr "versuchen Sie \"git revert (--continue | %s--abort | --quit)\""
 
 #: sequencer.c:3034
 msgid "cherry-pick is already in progress"
@@ -8074,16 +8075,16 @@ msgstr "\"cherry-pick\" wird bereits durchgeführt"
 #: sequencer.c:3036
 #, c-format
 msgid "try \"git cherry-pick (--continue | %s--abort | --quit)\""
-msgstr "Versuchen Sie \"git cherry-pick (--continue | %s--abort | --quit)\""
+msgstr "versuchen Sie \"git cherry-pick (--continue | %s--abort | --quit)\""
 
 #: sequencer.c:3050
 #, c-format
 msgid "could not create sequencer directory '%s'"
-msgstr "Konnte \"sequencer\"-Verzeichnis '%s' nicht erstellen."
+msgstr "konnte \"sequencer\"-Verzeichnis '%s' nicht erstellen"
 
 #: sequencer.c:3065
 msgid "could not lock HEAD"
-msgstr "Konnte HEAD nicht sperren"
+msgstr "konnte HEAD nicht sperren"
 
 #: sequencer.c:3125 sequencer.c:4582
 msgid "no cherry-pick or revert in progress"
@@ -8105,11 +8106,11 @@ msgstr "kann '%s' nicht öffnen"
 #: sequencer.c:3161
 #, c-format
 msgid "cannot read '%s': %s"
-msgstr "Kann '%s' nicht lesen: %s"
+msgstr "kann '%s' nicht lesen: %s"
 
 #: sequencer.c:3162
 msgid "unexpected end of file"
-msgstr "Unerwartetes Dateiende"
+msgstr "unerwartetes Dateiende"
 
 #: sequencer.c:3168
 #, c-format
@@ -8123,7 +8124,7 @@ msgstr ""
 
 #: sequencer.c:3220
 msgid "no revert in progress"
-msgstr "Kein Revert im Gange"
+msgstr "kein Revert im Gange"
 
 #: sequencer.c:3229
 msgid "no cherry-pick in progress"
@@ -8135,7 +8136,7 @@ msgstr "Überspringen des Commits fehlgeschlagen"
 
 #: sequencer.c:3246
 msgid "there is nothing to skip"
-msgstr "Nichts zum Überspringen vorhanden"
+msgstr "nichts zum Überspringen vorhanden"
 
 #: sequencer.c:3249
 #, c-format
@@ -8148,12 +8149,12 @@ msgstr ""
 
 #: sequencer.c:3411 sequencer.c:4473
 msgid "cannot read HEAD"
-msgstr "Kann HEAD nicht lesen"
+msgstr "kann HEAD nicht lesen"
 
 #: sequencer.c:3428
 #, c-format
 msgid "unable to copy '%s' to '%s'"
-msgstr "Konnte '%s' nicht nach '%s' kopieren."
+msgstr "konnte '%s' nicht nach '%s' kopieren"
 
 #: sequencer.c:3436
 #, c-format
@@ -8182,12 +8183,12 @@ msgstr "Konnte %s... (%.*s) nicht anwenden"
 #: sequencer.c:3453
 #, c-format
 msgid "Could not merge %.*s"
-msgstr "Konnte \"%.*s\" nicht zusammenführen."
+msgstr "Konnte \"%.*s\" nicht zusammenführen"
 
 #: sequencer.c:3467 sequencer.c:3471 builtin/difftool.c:644
 #, c-format
 msgid "could not copy '%s' to '%s'"
-msgstr "Konnte '%s' nicht nach '%s' kopieren."
+msgstr "konnte '%s' nicht nach '%s' kopieren"
 
 #: sequencer.c:3483
 #, c-format
@@ -8235,7 +8236,7 @@ msgstr ""
 #: sequencer.c:3571
 #, c-format
 msgid "illegal label name: '%.*s'"
-msgstr "Unerlaubter Beschriftungsname: '%.*s'"
+msgstr "unerlaubter Beschriftungsname: '%.*s'"
 
 #: sequencer.c:3625
 msgid "writing fake root commit"
@@ -8248,36 +8249,36 @@ msgstr "squash-onto schreiben"
 #: sequencer.c:3714
 #, c-format
 msgid "could not resolve '%s'"
-msgstr "Konnte '%s' nicht auflösen."
+msgstr "konnte '%s' nicht auflösen"
 
 #: sequencer.c:3747
 msgid "cannot merge without a current revision"
-msgstr "Kann nicht ohne einen aktuellen Commit mergen."
+msgstr "kann nicht ohne einen aktuellen Commit mergen"
 
 #: sequencer.c:3769
 #, c-format
 msgid "unable to parse '%.*s'"
-msgstr "Konnte '%.*s' nicht parsen."
+msgstr "konnte '%.*s' nicht parsen"
 
 #: sequencer.c:3778
 #, c-format
 msgid "nothing to merge: '%.*s'"
-msgstr "Nichts zum Zusammenführen: '%.*s'"
+msgstr "nichts zum Zusammenführen: '%.*s'"
 
 #: sequencer.c:3790
 msgid "octopus merge cannot be executed on top of a [new root]"
 msgstr ""
-"Oktopus-Merge kann nicht auf Basis von [neuem Root-Commit] ausgeführt werden."
+"Oktopus-Merge kann nicht auf Basis von [neuem Root-Commit] ausgeführt werden"
 
 #: sequencer.c:3806
 #, c-format
 msgid "could not get commit message of '%s'"
-msgstr "Konnte keine Commit-Beschreibung von '%s' bekommen."
+msgstr "konnte keine Commit-Beschreibung von '%s' bekommen"
 
 #: sequencer.c:3989
 #, c-format
 msgid "could not even attempt to merge '%.*s'"
-msgstr "Konnte nicht einmal versuchen '%.*s' zu mergen."
+msgstr "konnte nicht einmal versuchen '%.*s' zu mergen"
 
 #: sequencer.c:4005
 msgid "merge: Unable to write new index file"
@@ -8285,7 +8286,7 @@ msgstr "merge: Konnte neue Index-Datei nicht schreiben."
 
 #: sequencer.c:4079
 msgid "Cannot autostash"
-msgstr "Kann automatischen Stash nicht erzeugen."
+msgstr "Kann automatischen Stash nicht erzeugen"
 
 #: sequencer.c:4082
 #, c-format
@@ -8295,7 +8296,7 @@ msgstr "Unerwartete 'stash'-Antwort: '%s'"
 #: sequencer.c:4088
 #, c-format
 msgid "Could not create directory for '%s'"
-msgstr "Konnte Verzeichnis für '%s' nicht erstellen."
+msgstr "Konnte Verzeichnis für '%s' nicht erstellen"
 
 #: sequencer.c:4091
 #, c-format
@@ -8304,7 +8305,7 @@ msgstr "Automatischen Stash erzeugt: %s\n"
 
 #: sequencer.c:4095
 msgid "could not reset --hard"
-msgstr "Konnte 'reset --hard' nicht ausführen."
+msgstr "konnte 'reset --hard' nicht ausführen"
 
 #: sequencer.c:4120
 #, c-format
@@ -8337,7 +8338,7 @@ msgstr "Automatischer Stash existiert; ein neuer Stash-Eintrag wird erstellt."
 
 #: sequencer.c:4234 git-rebase--preserve-merges.sh:769
 msgid "could not detach HEAD"
-msgstr "Konnte HEAD nicht loslösen"
+msgstr "konnte HEAD nicht loslösen"
 
 #: sequencer.c:4249
 #, c-format
@@ -8649,17 +8650,16 @@ msgstr "setsid fehlgeschlagen"
 
 #: sparse-index.c:151
 msgid "attempting to use sparse-index without cone mode"
-msgstr ""
+msgstr "versuche partiellen Index ohne Cone-Modus zu benutzen"
 
 #: sparse-index.c:156
-#, fuzzy
 msgid "unable to update cache-tree, staying full"
-msgstr "Konnte Cache-Verzeichnis nicht aktualisieren."
+msgstr "konnte Cache-Verzeichnis nicht aktualisieren, bleibt voll"
 
 #: sparse-index.c:239
 #, c-format
 msgid "index entry is a directory, but not sparse (%08x)"
-msgstr ""
+msgstr "Index-Eintrag ist ein Verzeichnis, aber nicht partiell (%08x)"
 
 #. TRANSLATORS: IEC 80000-13:2008 gibibyte
 #: strbuf.c:850
@@ -8940,9 +8940,9 @@ msgid "ls-tree returned unexpected return code %d"
 msgstr "ls-tree mit unerwartetem Rückgabewert %d beendet"
 
 #: symlinks.c:244
-#, fuzzy, c-format
+#, c-format
 msgid "failed to lstat '%s'"
-msgstr "Konnte '%s' nicht lesen"
+msgstr "'lstat' für '%s' fehlgeschlagen"
 
 #: trailer.c:244
 #, c-format
@@ -9075,7 +9075,7 @@ msgstr "kann keine Verbindung zu Subservice %s herstellen"
 
 #: transport-helper.c:693 transport.c:397
 msgid "--negotiate-only requires protocol v2"
-msgstr ""
+msgstr "--negotiate-only benötigt Protokoll v2"
 
 #: transport-helper.c:755
 msgid "'option' without a matching 'ok/error' directive"
@@ -9220,9 +9220,8 @@ msgid "server options require protocol version 2 or later"
 msgstr "Server-Optionen benötigen Protokoll-Version 2 oder höher"
 
 #: transport.c:400
-#, fuzzy
 msgid "server does not support wait-for-done"
-msgstr "Server unterstützt kein --deepen"
+msgstr "Server unterstützt nicht 'wait-for-done'"
 
 #: transport.c:751
 msgid "could not parse transport.color.* config"
@@ -9584,6 +9583,7 @@ msgstr "Aktualisiere Index-Markierungen"
 #, c-format
 msgid "worktree and untracked commit have duplicate entries: %s"
 msgstr ""
+"Arbeitsverzeichnis und unversionierter Commit haben doppelte Einträge: %s"
 
 #: upload-pack.c:1548
 msgid "expected flush after fetch arguments"
@@ -10309,24 +10309,22 @@ msgstr ""
 "%s nicht möglich: Die Staging-Area enthält nicht committete Änderungen."
 
 #: compat/simple-ipc/ipc-unix-socket.c:178
-#, fuzzy
 msgid "could not send IPC command"
-msgstr "Konnte Commit %s nicht finden."
+msgstr "konnte IPC-Befehl nicht senden"
 
 #: compat/simple-ipc/ipc-unix-socket.c:185
-#, fuzzy
 msgid "could not read IPC response"
-msgstr "konnte Referenz %s nicht lesen"
+msgstr "konnte IPC-Antwort nicht lesen"
 
 #: compat/simple-ipc/ipc-unix-socket.c:862
-#, fuzzy, c-format
+#, c-format
 msgid "could not start accept_thread '%s'"
-msgstr "konnte Datei '%s' nicht lesen"
+msgstr "konnte accept_thread nicht für '%s' starten"
 
 #: compat/simple-ipc/ipc-unix-socket.c:874
-#, fuzzy, c-format
+#, c-format
 msgid "could not start worker[0] for '%s'"
-msgstr "Konnte Log für '%s' nicht parsen."
+msgstr "konnte worker[0] nicht für '%s' starten"
 
 #: compat/precompose_utf8.c:58 builtin/clone.c:461
 #, c-format
@@ -10523,9 +10521,8 @@ msgid "adding files failed"
 msgstr "Hinzufügen von Dateien fehlgeschlagen"
 
 #: builtin/add.c:488
-#, fuzzy
 msgid "--dry-run is incompatible with --interactive/--patch"
-msgstr "--pathspec-from-file und --interactive/--patch sind inkompatibel"
+msgstr "--dry-run und --interactive/--patch sind inkompatibel"
 
 #: builtin/add.c:490 builtin/commit.c:357
 msgid "--pathspec-from-file is incompatible with --interactive/--patch"
@@ -10865,9 +10862,8 @@ msgid "strip everything before a scissors line"
 msgstr "alles vor einer Scheren-Zeile entfernen"
 
 #: builtin/am.c:2294
-#, fuzzy
 msgid "pass it through git-mailinfo"
-msgstr "an git-apply übergeben"
+msgstr "an git-mailinfo weitergeben"
 
 #: builtin/am.c:2297 builtin/am.c:2300 builtin/am.c:2303 builtin/am.c:2306
 #: builtin/am.c:2309 builtin/am.c:2312 builtin/am.c:2315 builtin/am.c:2318
@@ -11259,9 +11255,9 @@ msgid "Bad rev input: %s"
 msgstr "Ungültige Referenz-Eingabe: %s"
 
 #: builtin/bisect--helper.c:887
-#, fuzzy, c-format
+#, c-format
 msgid "Bad rev input (not a commit): %s"
-msgstr "Ungültige Referenz-Eingabe: %s"
+msgstr "Ungültige Referenz-Eingabe (kein Commit): %s"
 
 #: builtin/bisect--helper.c:919
 msgid "We are not bisecting."
@@ -12263,9 +12259,8 @@ msgid "no contacts specified"
 msgstr "keine Kontakte angegeben"
 
 #: builtin/checkout--worker.c:110
-#, fuzzy
 msgid "git checkout--worker [<options>]"
-msgstr "git checkout [<Optionen>] <Branch>"
+msgstr "git checkout--worker [<Optionen>]"
 
 #: builtin/checkout--worker.c:118 builtin/checkout-index.c:201
 #: builtin/column.c:31 builtin/submodule--helper.c:1825
@@ -13051,9 +13046,8 @@ msgid "git clone [<options>] [--] <repo> [<dir>]"
 msgstr "git clone [<Optionen>] [--] <Repository> [<Verzeichnis>]"
 
 #: builtin/clone.c:96
-#, fuzzy
 msgid "don't clone shallow repository"
-msgstr "von einem lokalen Repository klonen"
+msgstr "Repository mit unvollständiger Historie nicht klonen"
 
 #: builtin/clone.c:98
 msgid "don't create a checkout"
@@ -13441,24 +13435,20 @@ msgid "layout to use"
 msgstr "zu verwendende Anordnung"
 
 #: builtin/column.c:30
-#, fuzzy
 msgid "maximum width"
 msgstr "maximale Breite"
 
 #: builtin/column.c:31
-#, fuzzy
 msgid "padding space on left border"
-msgstr "Abstand zum linken Rand"
+msgstr "Abstand zum linken Rand auffüllen"
 
 #: builtin/column.c:32
-#, fuzzy
 msgid "padding space on right border"
-msgstr "Abstand zum rechten Rand"
+msgstr "Abstand zum rechten Rand auffüllen"
 
 #: builtin/column.c:33
-#, fuzzy
 msgid "padding space between columns"
-msgstr "Abstand zwischen Spalten"
+msgstr "Abstand zwischen Spalten auffüllen"
 
 #: builtin/column.c:51
 msgid "--command must be the first argument"
@@ -13801,9 +13791,9 @@ msgid "could not read log file '%s'"
 msgstr "Konnte Log-Datei '%s' nicht lesen"
 
 #: builtin/commit.c:801
-#, fuzzy, c-format
+#, c-format
 msgid "cannot combine -m with --fixup:%s"
-msgstr "'--root' kann nicht mit '--fork-point' kombiniert werden"
+msgstr "-m kann nicht mit --fixup:%s kombiniert werden"
 
 #: builtin/commit.c:813 builtin/commit.c:829
 msgid "could not read SQUASH_MSG"
@@ -13888,9 +13878,8 @@ msgid "Cannot read index"
 msgstr "Kann Index nicht lesen"
 
 #: builtin/commit.c:1018
-#, fuzzy
 msgid "unable to pass trailers to --trailers"
-msgstr "Konnte Kopfbereich von %s nicht parsen."
+msgstr "konnte Anhänge nicht an --trailers weitergeben"
 
 #: builtin/commit.c:1058
 msgid "Error building trees"
@@ -13924,27 +13913,27 @@ msgid "--long and -z are incompatible"
 msgstr "--long und -z sind inkompatibel"
 
 #: builtin/commit.c:1219
-#, fuzzy
 msgid "You are in the middle of a merge -- cannot reword."
-msgstr "Ein Merge ist im Gange -- kann \"--amend\" nicht ausführen."
+msgstr "Ein Merge ist im Gange -- kann Umformulierung nicht durchführen."
 
 #: builtin/commit.c:1221
-#, fuzzy
 msgid "You are in the middle of a cherry-pick -- cannot reword."
-msgstr "\"cherry-pick\" ist im Gange -- kann \"--amend\" nicht ausführen."
+msgstr "\"cherry-pick\" ist im Gange -- kann Umformulierung nicht durchführen."
 
 #: builtin/commit.c:1224
-#, fuzzy, c-format
+#, c-format
 msgid "cannot combine reword option of --fixup with path '%s'"
 msgstr ""
-"Optionen für \"am\" können nicht mit Optionen für \"merge\" kombiniert "
-"werden."
+"Option für Umformulierung bei --fixup kann nicht mit Pfad '%s' kombiniert "
+"werden"
 
 #: builtin/commit.c:1226
 msgid ""
 "reword option of --fixup is mutually exclusive with --patch/--interactive/--"
 "all/--include/--only"
 msgstr ""
+"Umformulierungsoption von --fixup und --patch/--interactive/--all/--"
+"include/--only schließen sich gegenseitig aus"
 
 #: builtin/commit.c:1245
 msgid "Using both --reset-author and --author does not make sense"
@@ -13990,9 +13979,9 @@ msgstr ""
 "verwendet werden."
 
 #: builtin/commit.c:1331
-#, fuzzy, c-format
+#, c-format
 msgid "unknown option: --fixup=%s:%s"
-msgstr "Unbekannte Option: %s\n"
+msgstr "unbekannte Option: --fixup=%s:%s"
 
 #: builtin/commit.c:1345
 #, c-format
@@ -14130,23 +14119,21 @@ msgstr "Beschreibung des angegebenen Commits wiederverwenden"
 #. and only translate <commit>.
 #.
 #: builtin/commit.c:1621
-#, fuzzy
 msgid "[(amend|reword):]commit"
-msgstr "vorherigen Commit ändern"
+msgstr "[(amend|reword):]Commit"
 
 #: builtin/commit.c:1621
-#, fuzzy
 msgid ""
 "use autosquash formatted message to fixup or amend/reword specified commit"
 msgstr ""
-"eine automatisch zusammengesetzte Beschreibung zum Nachbessern des "
+"eine autosquash-formatierte Beschreibung zum Nachbessern/Umformulieren des "
 "angegebenen Commits verwenden"
 
 #: builtin/commit.c:1622
 msgid "use autosquash formatted message to squash specified commit"
 msgstr ""
-"eine automatisch zusammengesetzte Beschreibung beim \"squash\" des "
-"angegebenen Commits verwenden"
+"eine autosquash-formatierte Beschreibung beim \"squash\" des angegebenen "
+"Commits verwenden"
 
 #: builtin/commit.c:1623
 msgid "the commit is authored by me now (used with -C/-c/--amend)"
@@ -14158,7 +14145,7 @@ msgstr "Anhang"
 
 #: builtin/commit.c:1624
 msgid "add custom trailer(s)"
-msgstr ""
+msgstr "benutzerdefinierte Anhänge hinzufügen"
 
 #: builtin/commit.c:1625 builtin/log.c:1751 builtin/merge.c:302
 #: builtin/pull.c:145 builtin/revert.c:110
@@ -14250,9 +14237,9 @@ msgid "Aborting commit; you did not edit the message.\n"
 msgstr "Commit abgebrochen; Sie haben die Beschreibung nicht editiert.\n"
 
 #: builtin/commit.c:1788
-#, fuzzy, c-format
+#, c-format
 msgid "Aborting commit due to empty commit message body.\n"
-msgstr "Commit aufgrund leerer Beschreibung abgebrochen.\n"
+msgstr "Commit aufgrund leerer Commit-Beschreibung abgebrochen.\n"
 
 #: builtin/commit.c:1824
 msgid ""
@@ -15201,6 +15188,8 @@ msgstr "Anzahl der parallel anzufordernden Submodule"
 #: builtin/fetch.c:164
 msgid "modify the refspec to place all refs within refs/prefetch/"
 msgstr ""
+"Refspec verändern, damit alle Referenzen unter refs/prefetch/ platziert "
+"werden"
 
 #: builtin/fetch.c:166 builtin/pull.c:198
 msgid "prune remote-tracking branches no longer on remote"
@@ -15284,6 +15273,8 @@ msgstr ""
 #: builtin/fetch.c:210
 msgid "do not fetch a packfile; instead, print ancestors of negotiation tips"
 msgstr ""
+"keine Packdatei anfordern; stattdessen die Vorgänger der Verhandlungstipps "
+"anzeigen"
 
 #: builtin/fetch.c:213 builtin/fetch.c:215
 msgid "run 'maintenance --auto' after fetching"
@@ -15537,11 +15528,11 @@ msgstr ""
 
 #: builtin/fetch.c:2055
 msgid "must supply remote when using --negotiate-only"
-msgstr ""
+msgstr "Remote wird benötigt, wenn --negotiate-only benutzt wird"
 
 #: builtin/fetch.c:2060
 msgid "Protocol does not support --negotiate-only, exiting."
-msgstr ""
+msgstr "Protokoll unterstützt --negotiate-only nicht, beende."
 
 #: builtin/fetch.c:2079
 msgid ""
@@ -16035,9 +16026,8 @@ msgid "failed to write commit-graph"
 msgstr "Fehler beim Schreiben des Commit-Graph"
 
 #: builtin/gc.c:905
-#, fuzzy
 msgid "failed to prefetch remotes"
-msgstr "Fehler beim Eintragen der Remote-Repositories"
+msgstr "Vorabruf der Remote-Repositories fehlgeschlagen"
 
 #: builtin/gc.c:1022
 msgid "failed to start 'git pack-objects' process"
@@ -17312,7 +17302,7 @@ msgstr "die Nummerierung der Patches bei <n> statt bei 1 beginnen"
 
 #: builtin/log.c:1762
 msgid "reroll-count"
-msgstr ""
+msgstr "Reroll-Anzahl"
 
 #: builtin/log.c:1763
 msgid "mark the series as Nth re-roll"
@@ -17750,56 +17740,52 @@ msgstr ""
 
 #. TRANSLATORS: keep <> in "<" mail ">" info.
 #: builtin/mailinfo.c:14
-#, fuzzy
 msgid "git mailinfo [<options>] <msg> <patch> < mail >info"
-msgstr "git diff --no-index [<Optionen>] <Pfad> <Pfad>"
+msgstr "git mailinfo [<Optionen>] <Nachricht> <Patch> < mail >info"
 
 #: builtin/mailinfo.c:58
-#, fuzzy
 msgid "keep subject"
-msgstr "nicht erreichbare Objekte behalten"
+msgstr "Betreff beibehalten"
 
 #: builtin/mailinfo.c:60
 msgid "keep non patch brackets in subject"
-msgstr ""
+msgstr "behalte Klammern im Betreff, die nicht zum Patch gehören"
 
 #: builtin/mailinfo.c:62
-#, fuzzy
 msgid "copy Message-ID to the end of commit message"
-msgstr "Commit-Beschreibung bearbeiten"
+msgstr "Message-ID an das Ende der Commit-Beschreibung kopieren"
 
 #: builtin/mailinfo.c:64
 msgid "re-code metadata to i18n.commitEncoding"
-msgstr ""
+msgstr "Neukodierung der Metadaten nach 'i18n.commitEncoding'"
 
 #: builtin/mailinfo.c:67
 msgid "disable charset re-coding of metadata"
-msgstr ""
+msgstr "Zeichen-Neukodierung der Metadaten deaktivieren"
 
 #: builtin/mailinfo.c:69
 msgid "encoding"
-msgstr ""
+msgstr "Encoding"
 
 #: builtin/mailinfo.c:70
 msgid "re-code metadata to this encoding"
-msgstr ""
+msgstr "Neukodierung der Metadaten zu diesem Encoding"
 
 #: builtin/mailinfo.c:72
 msgid "use scissors"
-msgstr ""
+msgstr "nutze Scherenmarkierungen"
 
 #: builtin/mailinfo.c:73
-#, fuzzy
 msgid "<action>"
-msgstr "Aktion"
+msgstr "<Aktion>"
 
 #: builtin/mailinfo.c:74
 msgid "action when quoted CR is found"
-msgstr ""
+msgstr "Aktion, wenn ein angeführtes CR gefunden wird"
 
 #: builtin/mailinfo.c:77
 msgid "use headers in message's body"
-msgstr ""
+msgstr "nutze Header im Inhalt der Nachricht"
 
 #: builtin/mailsplit.c:241
 #, c-format
@@ -18055,14 +18041,13 @@ msgid "read-tree failed"
 msgstr "read-tree fehlgeschlagen"
 
 #: builtin/merge.c:400
-#, fuzzy
 msgid "Already up to date. (nothing to squash)"
-msgstr " (nichts zu quetschen)"
+msgstr "Bereits auf dem neuesten Stand. (nichts für Squash-Merge vorhanden)"
 
 #: builtin/merge.c:414
 #, c-format
 msgid "Squash commit -- not updating HEAD\n"
-msgstr "Quetsche Commit -- HEAD wird nicht aktualisiert\n"
+msgstr "Squash Commit -- HEAD wird nicht aktualisiert\n"
 
 #: builtin/merge.c:464
 #, c-format
@@ -18233,7 +18218,7 @@ msgstr "Kein Commit angegeben und merge.defaultToUpstream ist nicht gesetzt."
 #: builtin/merge.c:1430
 msgid "Squash commit into empty head not supported yet"
 msgstr ""
-"Bin auf einem Commit, der noch geboren wird; kann \"squash\" nicht ausführen."
+"Squash-Merge auf einen leeren Branch wird noch nicht unterstützt"
 
 #: builtin/merge.c:1432
 msgid "Non-fast-forward commit does not make sense into an empty head"
@@ -18248,11 +18233,11 @@ msgstr "%s - nichts was wir zusammenführen können"
 
 #: builtin/merge.c:1439
 msgid "Can merge only exactly one commit into empty head"
-msgstr "Kann nur exakt einen Commit in einem leeren Branch zusammenführen."
+msgstr "Kann nur exakt einen Commit in einem leeren Branch zusammenführen"
 
 #: builtin/merge.c:1520
 msgid "refusing to merge unrelated histories"
-msgstr "Verweigere den Merge von nicht zusammenhängenden Historien."
+msgstr "verweigere den Merge von nicht zusammenhängenden Historien"
 
 #: builtin/merge.c:1539
 #, c-format
@@ -18363,28 +18348,20 @@ msgid "allow creation of more than one tree"
 msgstr "die Erstellung von mehr als einem \"Tree\"-Objekt erlauben"
 
 #: builtin/multi-pack-index.c:10
-#, fuzzy
 msgid "git multi-pack-index [<options>] write [--preferred-pack=<pack>]"
-msgstr ""
-"git multi-pack-index [<Optionen>] (write|verify|expire|repack --batch-"
-"size=<Größe>)"
+msgstr "git multi-pack-index [<Optionen>] write [--preferred-pack=<Paket>]"
 
 #: builtin/multi-pack-index.c:13
-#, fuzzy
 msgid "git multi-pack-index [<options>] verify"
-msgstr "git upload-pack [<Optionen>] <Verzeichnis>"
+msgstr "git multi-pack-index [<Optionen>] verify"
 
 #: builtin/multi-pack-index.c:16
-#, fuzzy
 msgid "git multi-pack-index [<options>] expire"
-msgstr "git upload-pack [<Optionen>] <Verzeichnis>"
+msgstr "git multi-pack-index [<Optionen>] expire"
 
 #: builtin/multi-pack-index.c:19
-#, fuzzy
 msgid "git multi-pack-index [<options>] repack [--batch-size=<size>]"
-msgstr ""
-"git multi-pack-index [<Optionen>] (write|verify|expire|repack --batch-"
-"size=<Größe>)"
+msgstr "git multi-pack-index [<Optionen>] repack [--batch-size=<Größe>]"
 
 #: builtin/multi-pack-index.c:54
 msgid "object directory containing set of packfile and pack-index pairs"
@@ -18393,11 +18370,12 @@ msgstr ""
 
 #: builtin/multi-pack-index.c:69
 msgid "preferred-pack"
-msgstr ""
+msgstr "bevorzugtes Paket"
 
 #: builtin/multi-pack-index.c:70
 msgid "pack for reuse when computing a multi-pack bitmap"
 msgstr ""
+"Paket für die Wiederbenutzung, wenn ein Multi-Pack Bitmap berechnet wird"
 
 #: builtin/multi-pack-index.c:128
 msgid ""
@@ -19124,14 +19102,14 @@ msgstr ""
 "('%s' erhalten)"
 
 #: builtin/pack-objects.c:3039
-#, fuzzy, c-format
+#, c-format
 msgid "could not get type of object %s in pack %s"
-msgstr "Konnte Art von Objekt '%s' nicht bestimmen."
+msgstr "konnte Typ von Objekt %s in Paket %s nicht bestimmen"
 
 #: builtin/pack-objects.c:3161 builtin/pack-objects.c:3175
-#, fuzzy, c-format
+#, c-format
 msgid "could not find pack '%s'"
-msgstr "Konnte '%s' nicht abschließen."
+msgstr "Konnte Paket '%s' nicht finden"
 
 #: builtin/pack-objects.c:3218
 #, c-format
@@ -19271,9 +19249,8 @@ msgid "include objects referred to by the index"
 msgstr "Objekte einschließen, die vom Index referenziert werden"
 
 #: builtin/pack-objects.c:3795
-#, fuzzy
 msgid "read packs from stdin"
-msgstr "Aktualisierungen von der Standard-Eingabe lesen"
+msgstr "Pakete von der Standard-Eingabe lesen"
 
 #: builtin/pack-objects.c:3797
 msgid "output pack to stdout"
@@ -19396,14 +19373,13 @@ msgid "cannot use --filter without --stdout"
 msgstr "Kann --filter nicht ohne --stdout benutzen."
 
 #: builtin/pack-objects.c:3952
-#, fuzzy
 msgid "cannot use --filter with --stdin-packs"
-msgstr "Kann --filter nicht ohne --stdout benutzen."
+msgstr "kann --filter nicht mit --stdin-packs benutzen"
 
 #: builtin/pack-objects.c:3956
-#, fuzzy
 msgid "cannot use internal rev list with --stdin-packs"
-msgstr "Angabe von Pfadnamen kann nicht gemeinsam mit --stdin verwendet werden"
+msgstr ""
+"interne rev-list kann nicht gemeinsam mit --stdin-packs verwendet werden"
 
 #: builtin/pack-objects.c:4015
 msgid "Enumerating objects"
@@ -21456,19 +21432,20 @@ msgstr ""
 "Remote-Repositories nicht abschließen."
 
 #: builtin/repack.c:309
-#, fuzzy, c-format
+#, c-format
 msgid "cannot open index for %s"
-msgstr "Fehler beim Öffnen des Index für %s."
+msgstr "konnte Index für %s nicht öffnen"
 
 #: builtin/repack.c:368
 #, c-format
 msgid "pack %s too large to consider in geometric progression"
 msgstr ""
+"Paket %s zu groß, um es bei der geometrischen Progression zu berücksichtigen"
 
 #: builtin/repack.c:401 builtin/repack.c:408 builtin/repack.c:413
 #, c-format
 msgid "pack %s too large to roll up"
-msgstr ""
+msgstr "Paket %s zu groß, um aufzurollen"
 
 #: builtin/repack.c:460
 msgid "pack everything in a single pack"
@@ -21555,7 +21532,7 @@ msgstr "dieses Paket nicht neu packen"
 
 #: builtin/repack.c:498
 msgid "find a geometric progression with factor <N>"
-msgstr ""
+msgstr "eine geometrische Progression mit Faktor <N> finden"
 
 #: builtin/repack.c:508
 msgid "cannot delete packs in a precious-objects repo"
@@ -21566,9 +21543,8 @@ msgid "--keep-unreachable and -A are incompatible"
 msgstr "--keep-unreachable und -A sind inkompatibel"
 
 #: builtin/repack.c:527
-#, fuzzy
 msgid "--geometric is incompatible with -A, -a"
-msgstr "--long und --abbrev=0 sind inkompatibel"
+msgstr "--geometric ist inkompatibel mit -A, -a"
 
 #: builtin/repack.c:639
 msgid "Nothing new to pack."
@@ -21652,66 +21628,66 @@ msgstr ""
 #: builtin/replace.c:229
 #, c-format
 msgid "unable to open %s for writing"
-msgstr "Konnte '%s' nicht zum Schreiben öffnen."
+msgstr "konnte '%s' nicht zum Schreiben öffnen"
 
 #: builtin/replace.c:242
 msgid "cat-file reported failure"
-msgstr "cat-file meldete Fehler."
+msgstr "cat-file meldete Fehler"
 
 #: builtin/replace.c:258
 #, c-format
 msgid "unable to open %s for reading"
-msgstr "Konnte '%s' nicht zum Lesen öffnen."
+msgstr "konnte '%s' nicht zum Lesen öffnen"
 
 #: builtin/replace.c:272
 msgid "unable to spawn mktree"
-msgstr "Konnte mktree nicht ausführen."
+msgstr "konnte mktree nicht ausführen"
 
 #: builtin/replace.c:276
 msgid "unable to read from mktree"
-msgstr "Konnte nicht von mktree lesen."
+msgstr "konnte nicht von mktree lesen"
 
 #: builtin/replace.c:285
 msgid "mktree reported failure"
-msgstr "mktree meldete Fehler."
+msgstr "mktree meldete Fehler"
 
 #: builtin/replace.c:289
 msgid "mktree did not return an object name"
-msgstr "mktree lieferte keinen Objektnamen zurück."
+msgstr "mktree lieferte keinen Objektnamen zurück"
 
 #: builtin/replace.c:298
 #, c-format
 msgid "unable to fstat %s"
-msgstr "Kann fstat auf %s nicht ausführen."
+msgstr "kann fstat auf %s nicht ausführen"
 
 #: builtin/replace.c:303
 msgid "unable to write object to database"
-msgstr "Konnte Objekt nicht in Datenbank schreiben."
+msgstr "konnte Objekt nicht in Datenbank schreiben"
 
 #: builtin/replace.c:322 builtin/replace.c:378 builtin/replace.c:424
 #: builtin/replace.c:454
 #, c-format
 msgid "not a valid object name: '%s'"
-msgstr "Kein gültiger Objektname: '%s'"
+msgstr "kein gültiger Objektname: '%s'"
 
 #: builtin/replace.c:326
 #, c-format
 msgid "unable to get object type for %s"
-msgstr "Konnte Objektart von %s nicht bestimmten."
+msgstr "konnte Objektart von %s nicht bestimmten"
 
 #: builtin/replace.c:342
 msgid "editing object file failed"
-msgstr "Bearbeiten von Objektdatei fehlgeschlagen."
+msgstr "bearbeiten von Objektdatei fehlgeschlagen"
 
 #: builtin/replace.c:351
 #, c-format
 msgid "new object is the same as the old one: '%s'"
-msgstr "Neues Objekt ist dasselbe wie das alte: '%s'"
+msgstr "neues Objekt ist dasselbe wie das alte: '%s'"
 
 #: builtin/replace.c:384
 #, c-format
 msgid "could not parse %s as a commit"
-msgstr "Konnte nicht %s als Commit parsen."
+msgstr "konnte nicht %s als Commit parsen"
 
 #: builtin/replace.c:416
 #, c-format
@@ -21735,26 +21711,26 @@ msgstr ""
 #: builtin/replace.c:469
 #, c-format
 msgid "the original commit '%s' has a gpg signature"
-msgstr "Der originale Commit '%s' hat eine GPG-Signatur."
+msgstr "der originale Commit '%s' hat eine GPG-Signatur"
 
 #: builtin/replace.c:470
 msgid "the signature will be removed in the replacement commit!"
-msgstr "Die Signatur wird in dem Ersetzungs-Commit entfernt!"
+msgstr "die Signatur wird in dem Ersetzungs-Commit entfernt!"
 
 #: builtin/replace.c:480
 #, c-format
 msgid "could not write replacement commit for: '%s'"
-msgstr "Konnte Ersetzungs-Commit für '%s' nicht schreiben"
+msgstr "konnte Ersetzungs-Commit für '%s' nicht schreiben"
 
 #: builtin/replace.c:488
 #, c-format
 msgid "graft for '%s' unnecessary"
-msgstr "Künstlicher Vorgänger (\"graft\") für '%s' nicht notwendig."
+msgstr "künstlicher Vorgänger (\"graft\") für '%s' nicht notwendig"
 
 #: builtin/replace.c:492
 #, c-format
 msgid "new commit is the same as the old one: '%s'"
-msgstr "Neuer Commit ist derselbe wie der alte: '%s'"
+msgstr "neuer Commit ist derselbe wie der alte: '%s'"
 
 #: builtin/replace.c:527
 #, c-format
@@ -21762,7 +21738,7 @@ msgid ""
 "could not convert the following graft(s):\n"
 "%s"
 msgstr ""
-"Konnte die folgenden künstlichen Vorgänger (\"grafts\") nicht konvertieren:\n"
+"konnte die folgenden künstlichen Vorgänger (\"grafts\") nicht konvertieren:\n"
 "%s"
 
 #: builtin/replace.c:548
@@ -21799,31 +21775,31 @@ msgstr "das angegebene Format benutzen"
 
 #: builtin/replace.c:569
 msgid "--format cannot be used when not listing"
-msgstr "--format kann nicht beim Auflisten verwendet werden."
+msgstr "--format kann nicht beim Auflisten verwendet werden"
 
 #: builtin/replace.c:577
 msgid "-f only makes sense when writing a replacement"
-msgstr "-f macht nur beim Schreiben einer Ersetzung Sinn."
+msgstr "-f macht nur beim Schreiben einer Ersetzung Sinn"
 
 #: builtin/replace.c:581
 msgid "--raw only makes sense with --edit"
-msgstr "--raw macht nur mit --edit Sinn."
+msgstr "--raw macht nur mit --edit Sinn"
 
 #: builtin/replace.c:587
 msgid "-d needs at least one argument"
-msgstr "-d benötigt mindestens ein Argument."
+msgstr "-d benötigt mindestens ein Argument"
 
 #: builtin/replace.c:593
 msgid "bad number of arguments"
-msgstr "Ungültige Anzahl von Argumenten."
+msgstr "Ungültige Anzahl von Argumenten"
 
 #: builtin/replace.c:599
 msgid "-e needs exactly one argument"
-msgstr "-e benötigt genau ein Argument."
+msgstr "-e benötigt genau ein Argument"
 
 #: builtin/replace.c:605
 msgid "-g needs at least one argument"
-msgstr "-g benötigt mindestens ein Argument."
+msgstr "-g benötigt mindestens ein Argument"
 
 #: builtin/replace.c:611
 msgid "--convert-graft-file takes no argument"
@@ -21831,7 +21807,7 @@ msgstr "--convert-graft-file erwartet keine Argumente"
 
 #: builtin/replace.c:617
 msgid "only one pattern can be given with -l"
-msgstr "Mit -l kann nur ein Muster angegeben werden."
+msgstr "Mit -l kann nur ein Muster angegeben werden"
 
 #: builtin/rerere.c:13
 msgid "git rerere [clear | forget <path>... | status | remaining | diff | gc]"
@@ -21843,12 +21819,12 @@ msgstr "saubere Auflösungen im Index registrieren"
 
 #: builtin/rerere.c:79
 msgid "'git rerere forget' without paths is deprecated"
-msgstr "'git rerere forget' ohne Pfade ist veraltet."
+msgstr "'git rerere forget' ohne Pfade ist veraltet"
 
 #: builtin/rerere.c:113
 #, c-format
 msgid "unable to generate diff for '%s'"
-msgstr "Konnte kein Diff für '%s' generieren."
+msgstr "konnte kein Diff für '%s' generieren"
 
 #: builtin/reset.c:32
 msgid ""
@@ -22536,9 +22512,8 @@ msgid "failed to set extensions.worktreeConfig setting"
 msgstr "Einstellung für extensions.worktreeConfig konnte nicht gesetzt werden"
 
 #: builtin/sparse-checkout.c:290
-#, fuzzy
 msgid "git sparse-checkout init [--cone] [--[no-]sparse-index]"
-msgstr "git sparse-checkout init [--cone]"
+msgstr "git sparse-checkout init [--cone] [--[no-]sparse-index]"
 
 #: builtin/sparse-checkout.c:310
 msgid "initialize the sparse-checkout in cone mode"
@@ -22546,12 +22521,11 @@ msgstr "initialisiere den partiellen Checkout im Cone-Modus"
 
 #: builtin/sparse-checkout.c:312
 msgid "toggle the use of a sparse index"
-msgstr ""
+msgstr "die Nutzung des Sparse-Index umschalten"
 
 #: builtin/sparse-checkout.c:340
-#, fuzzy
 msgid "failed to modify sparse-index config"
-msgstr "Fehler beim Laden des Pack-Index für Packdatei %s"
+msgstr "Verändern der Konfiguration für Sparse-Index fehlgeschlagen"
 
 #: builtin/sparse-checkout.c:361
 #, c-format
@@ -22753,24 +22727,20 @@ msgid "No branch name specified"
 msgstr "Kein Branchname spezifiziert"
 
 #: builtin/stash.c:808
-#, fuzzy
 msgid "failed to parse tree"
-msgstr "Fehler beim Parsen von %s."
+msgstr "Parsen der Tree-Objekte fehlgeschlagen"
 
 #: builtin/stash.c:819
-#, fuzzy
 msgid "failed to unpack trees"
-msgstr "Fehler beim Entpacken des Tree-Objektes von HEAD."
+msgstr "Entpacken der Tree-Objekte fehlgeschlagen"
 
 #: builtin/stash.c:839
-#, fuzzy
 msgid "include untracked files in the stash"
 msgstr "unversionierte Dateien in Stash einbeziehen"
 
 #: builtin/stash.c:842
-#, fuzzy
 msgid "only show untracked files in the stash"
-msgstr "unversionierte Dateien in Stash einbeziehen"
+msgstr "nur unversionierte Dateien in Stash anzeigen"
 
 #: builtin/stash.c:932 builtin/stash.c:969
 #, c-format
@@ -24410,9 +24380,9 @@ msgid "-c expects a configuration string\n"
 msgstr "-c erwartet einen Konfigurationsstring.\n"
 
 #: git.c:260
-#, fuzzy, c-format
+#, c-format
 msgid "no config key given for --config-env\n"
-msgstr "Kein Verzeichnis für --work-tree angegeben.\n"
+msgstr "kein Konfigurationsschlüssel für --config-env angegeben\n"
 
 #: git.c:300
 #, c-format
@@ -24534,111 +24504,108 @@ msgstr "direkt nach Anzeige der angebotenen Fähigkeiten beenden"
 #: t/helper/test-simple-ipc.c:262
 #, c-format
 msgid "socket/pipe already in use: '%s'"
-msgstr ""
+msgstr "Socket/Pipe bereits in Benutzung: '%s'"
 
 #: t/helper/test-simple-ipc.c:264
-#, fuzzy, c-format
+#, c-format
 msgid "could not start server on: '%s'"
-msgstr "konnte Datei '%s' nicht lesen"
+msgstr "konnte Server nicht starten auf: '%s'"
 
 #: t/helper/test-simple-ipc.c:295 t/helper/test-simple-ipc.c:331
 msgid "could not spawn daemon in the background"
-msgstr ""
+msgstr "Daemon konnte nicht im Hintergrund erzeugt werden"
 
 #: t/helper/test-simple-ipc.c:356
-#, fuzzy
 msgid "waitpid failed"
-msgstr "setsid fehlgeschlagen"
+msgstr "waitpid fehlgeschlagen"
 
 #: t/helper/test-simple-ipc.c:376
 msgid "daemon not online yet"
-msgstr ""
+msgstr "Daemon ist noch nicht online"
 
 #: t/helper/test-simple-ipc.c:406
-#, fuzzy
 msgid "daemon failed to start"
-msgstr "Konnte '%s' nicht lesen"
+msgstr "Fehler beim Starten des Daemons"
 
 #: t/helper/test-simple-ipc.c:410
 msgid "waitpid is confused"
-msgstr ""
+msgstr "waitpid ist verwirrt"
 
 #: t/helper/test-simple-ipc.c:541
 msgid "daemon has not shutdown yet"
-msgstr ""
+msgstr "Daemon ist noch nicht heruntergefahren"
 
 #: t/helper/test-simple-ipc.c:682
 msgid "test-helper simple-ipc is-active    [<name>] [<options>]"
-msgstr ""
+msgstr "test-helper simple-ipc is-active    [<Name>] [<Optionen>]"
 
 #: t/helper/test-simple-ipc.c:683
 msgid "test-helper simple-ipc run-daemon   [<name>] [<threads>]"
-msgstr ""
+msgstr "test-helper simple-ipc run-daemon   [<Name>] [<Threads>]"
 
 #: t/helper/test-simple-ipc.c:684
 msgid "test-helper simple-ipc start-daemon [<name>] [<threads>] [<max-wait>]"
-msgstr ""
+msgstr "test-helper simple-ipc start-daemon [<Name>] [<Threads>] [<max-wait>]"
 
 #: t/helper/test-simple-ipc.c:685
 msgid "test-helper simple-ipc stop-daemon  [<name>] [<max-wait>]"
-msgstr ""
+msgstr "test-helper simple-ipc stop-daemon  [<Name>] [<max-wait>]"
 
 #: t/helper/test-simple-ipc.c:686
 msgid "test-helper simple-ipc send         [<name>] [<token>]"
-msgstr ""
+msgstr "test-helper simple-ipc send         [<Name>] [<Token>]"
 
 #: t/helper/test-simple-ipc.c:687
 msgid "test-helper simple-ipc sendbytes    [<name>] [<bytecount>] [<byte>]"
-msgstr ""
+msgstr "test-helper simple-ipc sendbytes    [<Name>] [<bytecount>] [<Byte>]"
 
 #: t/helper/test-simple-ipc.c:688
 msgid ""
 "test-helper simple-ipc multiple     [<name>] [<threads>] [<bytecount>] "
 "[<batchsize>]"
 msgstr ""
+"test-helper simple-ipc multiple     [<Name>] [<Threads>] [<bytecount>] "
+"[<batchsize>]"
 
 #: t/helper/test-simple-ipc.c:696
 msgid "name or pathname of unix domain socket"
-msgstr ""
+msgstr "Name oder Pfadname des UNIX-Domain-Sockets"
 
 #: t/helper/test-simple-ipc.c:698
 msgid "named-pipe name"
-msgstr ""
+msgstr "Name der benannten Pipe"
 
 #: t/helper/test-simple-ipc.c:700
 msgid "number of threads in server thread pool"
-msgstr ""
+msgstr "Anzahl der Threads im Thread-Pool des Servers"
 
 #: t/helper/test-simple-ipc.c:701
 msgid "seconds to wait for daemon to start or stop"
-msgstr ""
+msgstr "Sekunden, um auf Starten oder Stoppen des Daemons zu warten"
 
 #: t/helper/test-simple-ipc.c:703
-#, fuzzy
 msgid "number of bytes"
-msgstr "Ungültige Anzahl von Argumenten."
+msgstr "Anzahl von Bytes"
 
 #: t/helper/test-simple-ipc.c:704
-#, fuzzy
 msgid "number of requests per thread"
-msgstr "kann Thread nicht erzeugen: %s"
+msgstr "Anzahl der Anfragen pro Thread"
 
 #: t/helper/test-simple-ipc.c:706
-#, fuzzy
 msgid "byte"
-msgstr "Bytes"
+msgstr "Byte"
 
 #: t/helper/test-simple-ipc.c:706
 msgid "ballast character"
-msgstr ""
+msgstr "Ballast-Zeichen"
 
 #: t/helper/test-simple-ipc.c:707
 msgid "token"
-msgstr ""
+msgstr "Token"
 
 #: t/helper/test-simple-ipc.c:707
 msgid "command token to send to the server"
-msgstr ""
+msgstr "Befehlstoken, der an den Server gesendet werden soll"
 
 #: http.c:399
 #, c-format
@@ -26610,7 +26577,7 @@ msgstr "lokaler Zeit-Offset größer oder gleich 24 Stunden\n"
 #: git-send-email.perl:222
 #, perl-format
 msgid "fatal: command '%s' died with exit code %d"
-msgstr ""
+msgstr "fatal: Befehl '%s' mit Exit-Code %d beendet"
 
 #: git-send-email.perl:235
 msgid "the editor exited uncleanly, aborting everything"
@@ -26966,14 +26933,15 @@ msgid "invalid transfer encoding"
 msgstr "Ungültiges Transfer-Encoding"
 
 #: git-send-email.perl:1966
-#, fuzzy, perl-format
+#, perl-format
 msgid ""
 "fatal: %s: rejected by sendemail-validate hook\n"
 "%s\n"
 "warning: no patches were sent\n"
 msgstr ""
-"fatal: %s: %s\n"
-"Warnung: Es wurden keine Patches versendet\n"
+"fatal: %s: zurückgewiesen durch 'sendemail-validate' Hook\n"
+"%s\n"
+"Warnung: Es wurden keine Patches gesendet\n"
 
 #: git-send-email.perl:1976 git-send-email.perl:2029 git-send-email.perl:2039
 #, perl-format
@@ -26981,13 +26949,13 @@ msgid "unable to open %s: %s\n"
 msgstr "konnte %s nicht öffnen: %s\n"
 
 #: git-send-email.perl:1979
-#, fuzzy, perl-format
+#, perl-format
 msgid ""
 "fatal: %s:%d is longer than 998 characters\n"
 "warning: no patches were sent\n"
 msgstr ""
-"fatal: %s: %s\n"
-"Warnung: Es wurden keine Patches versendet\n"
+"fatal: %s:%d ist länger als 998 Zeichen\n"
+"Warnung: Es wurden keine Patches gesendet\n"
 
 #: git-send-email.perl:1997
 #, perl-format
