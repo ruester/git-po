@@ -1178,7 +1178,7 @@ msgstr ""
 #: apply.c:3574
 #, c-format
 msgid "Performing three-way merge...\n"
-msgstr "3-Wege-Merge durchführen...\n"
+msgstr "Führe 3-Wege-Merge durch...\n"
 
 #: apply.c:3590 apply.c:3594
 #, c-format
@@ -7531,7 +7531,7 @@ msgstr "send-pack: konnte Fetch-Subprozess nicht abspalten"
 
 #: send-pack.c:455
 msgid "push negotiation failed; proceeding anyway with push"
-msgstr "Push-Übertragung fehlgeschlagen; fahre trotzdem mit dem Push fort"
+msgstr "Push-Verhandlung fehlgeschlagen; fahre trotzdem mit dem Push fort"
 
 #: send-pack.c:520
 msgid "the receiving end does not support this repository's hash algorithm"
@@ -18375,7 +18375,7 @@ msgstr "bevorzugtes Paket"
 #: builtin/multi-pack-index.c:70
 msgid "pack for reuse when computing a multi-pack bitmap"
 msgstr ""
-"Paket für die Wiederbenutzung, wenn ein Multi-Pack Bitmap berechnet wird"
+"Paket für die Wiederbenutzung, wenn eine Multi-Pack Bitmap berechnet wird"
 
 #: builtin/multi-pack-index.c:128
 msgid ""
@@ -19379,7 +19379,7 @@ msgstr "kann --filter nicht mit --stdin-packs benutzen"
 #: builtin/pack-objects.c:3956
 msgid "cannot use internal rev list with --stdin-packs"
 msgstr ""
-"interne rev-list kann nicht gemeinsam mit --stdin-packs verwendet werden"
+"interne Commit-Liste kann nicht gemeinsam mit --stdin-packs verwendet werden"
 
 #: builtin/pack-objects.c:4015
 msgid "Enumerating objects"
@@ -21445,7 +21445,7 @@ msgstr ""
 #: builtin/repack.c:401 builtin/repack.c:408 builtin/repack.c:413
 #, c-format
 msgid "pack %s too large to roll up"
-msgstr "Paket %s zu groß, um aufzurollen"
+msgstr "Paket %s zu groß zum Aufrollen"
 
 #: builtin/repack.c:460
 msgid "pack everything in a single pack"
@@ -21687,7 +21687,7 @@ msgstr "neues Objekt ist dasselbe wie das alte: '%s'"
 #: builtin/replace.c:384
 #, c-format
 msgid "could not parse %s as a commit"
-msgstr "konnte nicht %s als Commit parsen"
+msgstr "konnte %s nicht als Commit parsen"
 
 #: builtin/replace.c:416
 #, c-format
@@ -22740,7 +22740,7 @@ msgstr "unversionierte Dateien in Stash einbeziehen"
 
 #: builtin/stash.c:842
 msgid "only show untracked files in the stash"
-msgstr "nur unversionierte Dateien in Stash anzeigen"
+msgstr "nur unversionierte Dateien im Stash anzeigen"
 
 #: builtin/stash.c:932 builtin/stash.c:969
 #, c-format
